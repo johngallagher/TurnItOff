@@ -1,0 +1,18 @@
+System Prefs file
+
+On load, check if Helper App is running. Set status message and text on Startup/Shutdown Button appropriately.
+
+On startup/shutdown button click, flip the running status:
+
+If running status is true:
+Set it to false, then send a message to the Helper App to terminate
+
+If running status is false:
+Set it to true, then launch Helper App
+
+
+When any text field changes, send notification to Helper App with new parameters for all fields.
+
+
+Helper App
+

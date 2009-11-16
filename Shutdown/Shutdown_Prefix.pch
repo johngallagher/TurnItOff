@@ -1,0 +1,12 @@
+//
+// Prefix header for all source files of the 'Shutdown' target in the 'Shutdown' project.
+//
+
+#import <Foundation/Foundation.h>
+#import <AppKit/AppKit.h>
+#import <Cocoa/Cocoa.h>
+#import "JGDefines.h"
+#import "JGConstants.h"
+#import "AbstractSingletonObject.h"
+#import "HelperAppController.h"
+#import "PrefPaneController.h"

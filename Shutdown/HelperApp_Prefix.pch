@@ -1,0 +1,15 @@
+/*
+ *  HelperApp_Prefix.pch
+ *  Shutdown
+ *
+ *  Created by John Gallagher on 16/11/2009.
+ *  Copyright 2009 Synaptic Mishap. All rights reserved.
+ *
+ */
+
+#import <Foundation/Foundation.h>
+#import <AppKit/AppKit.h>
+#import <Cocoa/Cocoa.h>
+#import "JGDefines.h"
+#import "JGConstants.h"
+#import "AbstractSingletonObject.h"
