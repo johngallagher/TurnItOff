@@ -300,7 +300,7 @@
 							<object class="NSTextFieldCell" key="NSCell" id="979707651">
 								<int key="NSCellFlags">68288064</int>
 								<int key="NSCellFlags2">272630784</int>
-								<string key="NSContents">minutes before quit</string>
+								<string key="NSContents">minutes beforequit</string>
 								<reference key="NSSupport" ref="694810069"/>
 								<reference key="NSControlView" ref="208252269"/>
 								<reference key="NSBackgroundColor" ref="226113362"/>
@@ -353,15 +353,35 @@
 						<object class="NSButton" id="514743499">
 							<reference key="NSNextResponder" ref="1037298196"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{558, 12}, {96, 32}}</string>
+							<string key="NSFrame">{{450, 12}, {96, 32}}</string>
 							<reference key="NSSuperview" ref="1037298196"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="205822745">
 								<int key="NSCellFlags">67239424</int>
 								<int key="NSCellFlags2">134217728</int>
-								<string key="NSContents">Defaults</string>
+								<string key="NSContents">Revert</string>
 								<reference key="NSSupport" ref="694810069"/>
 								<reference key="NSControlView" ref="514743499"/>
+								<int key="NSButtonFlags">-2038284033</int>
+								<int key="NSButtonFlags2">129</int>
+								<string key="NSAlternateContents"/>
+								<string key="NSKeyEquivalent"/>
+								<int key="NSPeriodicDelay">200</int>
+								<int key="NSPeriodicInterval">25</int>
+							</object>
+						</object>
+						<object class="NSButton" id="685241907">
+							<reference key="NSNextResponder" ref="1037298196"/>
+							<int key="NSvFlags">268</int>
+							<string key="NSFrame">{{558, 12}, {96, 32}}</string>
+							<reference key="NSSuperview" ref="1037298196"/>
+							<bool key="NSEnabled">YES</bool>
+							<object class="NSButtonCell" key="NSCell" id="424083944">
+								<int key="NSCellFlags">67239424</int>
+								<int key="NSCellFlags2">134217728</int>
+								<string key="NSContents">Apply</string>
+								<reference key="NSSupport" ref="694810069"/>
+								<reference key="NSControlView" ref="685241907"/>
 								<int key="NSButtonFlags">-2038284033</int>
 								<int key="NSButtonFlags2">129</int>
 								<string key="NSAlternateContents"/>
@@ -380,15 +400,6 @@
 			</object>
 			<object class="NSCustomObject" id="296236602">
 				<string key="NSClassName">Shutdown_AppDelegate</string>
-			</object>
-			<object class="NSUserDefaultsController" id="537928401">
-				<object class="NSMutableArray" key="NSDeclaredKeys">
-					<bool key="EncodedWithXMLCoder">YES</bool>
-					<string>com.synapticmishap.shutdown.stopTime</string>
-					<string>com.synapticmishap.shutdown.startTime</string>
-					<string>com.synapticmishap.shutdown.reminderTime</string>
-				</object>
-				<bool key="NSSharedInstance">YES</bool>
 			</object>
 		</object>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
@@ -507,60 +518,52 @@
 					<int key="connectionID">171</int>
 				</object>
 				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">enabled: shutdownIsRunning</string>
+						<reference key="source" ref="685241907"/>
+						<reference key="destination" ref="296236602"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="685241907"/>
+							<reference key="NSDestination" ref="296236602"/>
+							<string key="NSLabel">enabled: shutdownIsRunning</string>
+							<string key="NSBinding">enabled</string>
+							<string key="NSKeyPath">shutdownIsRunning</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">216</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">enabled: shutdownIsRunning</string>
+						<reference key="source" ref="514743499"/>
+						<reference key="destination" ref="296236602"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="514743499"/>
+							<reference key="NSDestination" ref="296236602"/>
+							<string key="NSLabel">enabled: shutdownIsRunning</string>
+							<string key="NSBinding">enabled</string>
+							<string key="NSKeyPath">shutdownIsRunning</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">217</int>
+				</object>
+				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
-						<string key="label">revertToInitialValues:</string>
-						<reference key="source" ref="537928401"/>
+						<string key="label">applyPreferences:</string>
+						<reference key="source" ref="296236602"/>
+						<reference key="destination" ref="685241907"/>
+					</object>
+					<int key="connectionID">219</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">applyPreferences:</string>
+						<reference key="source" ref="296236602"/>
 						<reference key="destination" ref="514743499"/>
 					</object>
-					<int key="connectionID">187</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">value: values.com.synapticmishap.shutdown.stopTime</string>
-						<reference key="source" ref="798147157"/>
-						<reference key="destination" ref="537928401"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="798147157"/>
-							<reference key="NSDestination" ref="537928401"/>
-							<string key="NSLabel">value: values.com.synapticmishap.shutdown.stopTime</string>
-							<string key="NSBinding">value</string>
-							<string key="NSKeyPath">values.com.synapticmishap.shutdown.stopTime</string>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">193</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">value: values.com.synapticmishap.shutdown.startTime</string>
-						<reference key="source" ref="871589613"/>
-						<reference key="destination" ref="537928401"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="871589613"/>
-							<reference key="NSDestination" ref="537928401"/>
-							<string key="NSLabel">value: values.com.synapticmishap.shutdown.startTime</string>
-							<string key="NSBinding">value</string>
-							<string key="NSKeyPath">values.com.synapticmishap.shutdown.startTime</string>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">194</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">value: values.com.synapticmishap.shutdown.reminderTime</string>
-						<reference key="source" ref="264835647"/>
-						<reference key="destination" ref="537928401"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="264835647"/>
-							<reference key="NSDestination" ref="537928401"/>
-							<string key="NSLabel">value: values.com.synapticmishap.shutdown.reminderTime</string>
-							<string key="NSBinding">value</string>
-							<string key="NSKeyPath">values.com.synapticmishap.shutdown.reminderTime</string>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">195</int>
+					<int key="connectionID">220</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -608,6 +611,7 @@
 							<reference ref="890197412"/>
 							<reference ref="264835647"/>
 							<reference ref="208252269"/>
+							<reference ref="685241907"/>
 							<reference ref="514743499"/>
 						</object>
 						<reference key="parent" ref="660800786"/>
@@ -791,9 +795,18 @@
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">179</int>
-						<reference key="object" ref="537928401"/>
-						<reference key="parent" ref="0"/>
+						<int key="objectID">211</int>
+						<reference key="object" ref="685241907"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="424083944"/>
+						</object>
+						<reference key="parent" ref="1037298196"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">212</int>
+						<reference key="object" ref="424083944"/>
+						<reference key="parent" ref="685241907"/>
 					</object>
 				</object>
 			</object>
@@ -835,7 +848,8 @@
 					<string>122.IBPluginDependency</string>
 					<string>146.IBPluginDependency</string>
 					<string>147.IBPluginDependency</string>
-					<string>159.IBPluginDependency</string>
+					<string>211.IBPluginDependency</string>
+					<string>212.IBPluginDependency</string>
 					<string>6.IBPluginDependency</string>
 					<string>6.ImportedFromIB2</string>
 				</object>
@@ -864,12 +878,13 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{307, 808}, {668, 141}}</string>
+					<string>{{330, 439}, {668, 141}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{307, 808}, {668, 141}}</string>
+					<string>{{330, 439}, {668, 141}}</string>
 					<integer value="1"/>
 					<integer value="1"/>
 					<string>{224.664, 10}</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -896,7 +911,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">195</int>
+			<int key="maxID">220</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -921,8 +936,17 @@
 					<string key="className">Shutdown_AppDelegate</string>
 					<string key="superclassName">NSObject</string>
 					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">startStopHelperApp:</string>
-						<string key="NS.object.0">id</string>
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>applyPreferences:</string>
+							<string>startStopHelperApp:</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
+							<string>id</string>
+						</object>
 					</object>
 					<object class="NSMutableDictionary" key="outlets">
 						<bool key="EncodedWithXMLCoder">YES</bool>

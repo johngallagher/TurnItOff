@@ -59,13 +59,13 @@
     // If prefs are incorrect, or we get no reply in a second, repeat the message.
     
     // If the message has been sent a second time without any reply or the incorrect reply, log an error.
-    NSLog(@"Prefs changed to: %@", preferencesDict);
+    //NSLog(@"Prefs changed to: %@", preferencesDict);
 
-//    [[NSDistributedNotificationCenter defaultCenter] postNotificationName:PrefPanePreferencesChanged 
-//                                                                   object:@"PrefPane"];
     [[NSDistributedNotificationCenter defaultCenter] postNotificationName:PrefPanePreferencesChanged 
-                                                                   object:@"PrefPane" 
-                                                                 userInfo:preferencesDict];
+                                                                   object:@"PrefPane"];
+//    [[NSDistributedNotificationCenter defaultCenter] postNotificationName:PrefPanePreferencesChanged 
+//                                                                   object:@"PrefPane" 
+//                                                                 userInfo:preferencesDict];
 }
 
 -(BOOL)isHelperAppRunning {

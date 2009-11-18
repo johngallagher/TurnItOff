@@ -12,22 +12,44 @@
 @implementation Shutdown_AppDelegate
 
 @synthesize shutdownIsRunning;
-+(void)initialize {
-    NSDictionary *defaultsDict = [NSDictionary dictionaryWithObjectsAndKeys:[NSDate dateWithTimeIntervalSince1970:(NSTimeInterval)32400], kStartTime,
-                                  [NSDate dateWithTimeIntervalSince1970:(NSTimeInterval)62400], kStopTime,
-                                  [NSNumber numberWithInt:10], kReminderTime, nil];
-    [[[NSUserDefaultsController sharedUserDefaultsController] defaults] registerDefaults:defaultsDict];
+
+//+(void)initialize {
+//    NSDictionary *defaultsDict = [NSDictionary dictionaryWithObjectsAndKeys:[NSDate dateWithTimeIntervalSince1970:(NSTimeInterval)32400], kStartTime,
+//                                  [NSDate dateWithTimeIntervalSince1970:(NSTimeInterval)62400], kStopTime,
+//                                  [NSNumber numberWithInt:10], kReminderTime, nil];
+//    
+//    [[NSUserDefaults standardUserDefaults] registerDefaults:defaultsDict];
+//}
+
+-(IBAction)applyPreferences:(id)sender {
+    // Set up the preference.
+    NSLog(@"About to set the prefs.");
+    CFPreferencesSetValue((CFStringRef)kStartTime,
+                          (CFStringRef)[startTime objectValue],
+                          (CFStringRef)HELPERAPP_BUNDLE_IDENTIFIER,
+                          kCFPreferencesCurrentUser,
+                          kCFPreferencesAnyHost);
     
-    [[NSUserDefaultsController sharedUserDefaultsController] setInitialValues:defaultsDict];
+    // Write out the preference data.
+    CFPreferencesSynchronize((CFStringRef)HELPERAPP_BUNDLE_IDENTIFIER,
+                             kCFPreferencesCurrentUser,
+                             kCFPreferencesAnyHost);
+    
+    NSLog(@"Just synced the prefs data. Sending notification.");
+    [[NSDistributedNotificationCenter defaultCenter] postNotificationName:PrefPanePreferencesChanged 
+                                                                   object:@"PrefPane"];
+//    [helperAppController preferencesChangedTo:nil error:&tellError];
+
 }
 
 -(void)awakeFromNib {
-
+    
     helperAppController = [HelperAppController sharedInstance];
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(preferencesChanged:)
-                                                 name:NSUserDefaultsDidChangeNotification 
-                                               object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self
+//                                             selector:@selector(preferencesChanged:)
+//                                                 name:NSUserDefaultsDidChangeNotification 
+//                                               object:nil];
+    
     [self startHelperApp];
 }
 
@@ -75,22 +97,10 @@
 }
 
 -(void)preferencesChanged:(NSNotification *)notification {
-    if ([[notification object] isEqual:[[NSUserDefaultsController sharedUserDefaultsController] defaults]]) {
+    if ([[notification object] isEqual:[NSUserDefaults standardUserDefaults]]) {
+        [[NSUserDefaults standardUserDefaults] synchronize];
         NSError         *tellError = nil;
-        // Show error message if the time is before start time or after stop time.
-        // Spending far too much time on this. Do it later!
-//        NSDate *startTimeDate = [[[NSUserDefaultsController sharedUserDefaultsController] defaults] objectForKey:kStartTime];
-//        NSDate *stopTimeDate = [[[NSUserDefaultsController sharedUserDefaultsController] defaults] objectForKey:kStopTime];
-//        NSTimeInterval *startTimeInterval = [startTimeDate timeIntervalSince1970];
-//        
-//        NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-//        // Get the hour and minute 
-//        
-//        if ([[NSDate date]  ] || [stopTimeDate isLessThan:[NSDate date]] ) {
-//        }
-//        
-        NSDictionary    *preferencesDict = [[[NSUserDefaultsController sharedUserDefaultsController] defaults] dictionaryRepresentation];
-        [helperAppController preferencesChangedTo:preferencesDict error:&tellError];
+        [helperAppController preferencesChangedTo:nil error:&tellError];
     }
     NSLog(@"Prefs changed.");
 }

@@ -11,9 +11,14 @@
 
 @implementation JGConstants
 
-NSString    *kStartTime         = @"com.synapticmishap.shutdown.startTime"      ;
-NSString    *kStopTime          = @"com.synapticmishap.shutdown.stopTime"       ;
-NSString    *kReminderTime      = @"com.synapticmishap.shutdown.reminderTime"   ;
+//NSString    *kStartTime         = @"com.synapticmishap.shutdown.startTime"      ;
+//NSString    *kStopTime          = @"com.synapticmishap.shutdown.stopTime"       ;
+//NSString    *kReminderTime      = @"com.synapticmishap.shutdown.reminderTime"   ;
+//NSString    *kUserDefaultDomain      = @"com.synapticmishap.shutdown"   ;
+
+NSString    *kStartTime         = @"startTime"      ;
+NSString    *kStopTime          = @"stopTime"       ;
+NSString    *kReminderTime      = @"reminderTime"   ;
 NSString    *kUserDefaultDomain      = @"com.synapticmishap.shutdown"   ;
 
 @end

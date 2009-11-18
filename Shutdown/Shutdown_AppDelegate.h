@@ -30,4 +30,6 @@
 
 -(IBAction)startStopHelperApp:(id)sender;
 
+-(IBAction)applyPreferences:(id)sender;
+
 @end

@@ -7,7 +7,7 @@
 //
 
 @interface HelperApp_AppDelegate : NSObject {
-
+    NSUserDefaults      *userDefaults;
 }
 
 @end
