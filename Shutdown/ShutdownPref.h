@@ -7,10 +7,9 @@
 //
 
 #import <PreferencePanes/PreferencePanes.h>
-
+#import "Shutdown_AppDelegate.h"
 
 @interface ShutdownPref : NSPreferencePane {
-    BOOL shutdownIsRunning;
 }
 
 -(void)mainViewDidLoad;

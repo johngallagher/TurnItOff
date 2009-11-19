@@ -20,12 +20,66 @@
 //    
 //    [[NSUserDefaults standardUserDefaults] registerDefaults:defaultsDict];
 //}
+-(void)readPrefs {
+    CFPreferencesSynchronize((CFStringRef)HELPERAPP_BUNDLE_IDENTIFIER,
+                             kCFPreferencesCurrentUser,
+                             kCFPreferencesAnyHost);
+    // Read from the prefs.
+    CFPropertyListRef startTimeValue = CFPreferencesCopyValue((CFStringRef)kStartTime, (CFStringRef)HELPERAPP_BUNDLE_IDENTIFIER, kCFPreferencesCurrentUser, kCFPreferencesAnyHost);
+    CFPropertyListRef stopTimeValue = CFPreferencesCopyValue((CFStringRef)kStopTime, (CFStringRef)HELPERAPP_BUNDLE_IDENTIFIER, kCFPreferencesCurrentUser, kCFPreferencesAnyHost);
+    CFPropertyListRef reminderTimeValue = CFPreferencesCopyValue((CFStringRef)kReminderTime, (CFStringRef)HELPERAPP_BUNDLE_IDENTIFIER, kCFPreferencesCurrentUser, kCFPreferencesAnyHost);
+    [startTime      setObjectValue:(NSDate *)startTimeValue];
+    [stopTime       setObjectValue:(NSDate *)stopTimeValue];
+    [reminderTime   setObjectValue:(NSNumber *)reminderTimeValue];
+}
+
+-(void)controlTextDidEndEditing:(NSNotification *)aNotification {
+    [self applyPreferences];
+}
+-(void)applyPreferences {
+    CFPreferencesSetValue((CFStringRef)kStartTime,
+                          (CFStringRef)[startTime objectValue],
+                          (CFStringRef)HELPERAPP_BUNDLE_IDENTIFIER,
+                          kCFPreferencesCurrentUser,
+                          kCFPreferencesAnyHost);
+    
+    CFPreferencesSetValue((CFStringRef)kStopTime,
+                          (CFStringRef)[stopTime objectValue],
+                          (CFStringRef)HELPERAPP_BUNDLE_IDENTIFIER,
+                          kCFPreferencesCurrentUser,
+                          kCFPreferencesAnyHost);
+    
+    CFPreferencesSetValue((CFStringRef)kReminderTime,
+                          (CFStringRef)[reminderTime objectValue],
+                          (CFStringRef)HELPERAPP_BUNDLE_IDENTIFIER,
+                          kCFPreferencesCurrentUser,
+                          kCFPreferencesAnyHost);
+
+    CFPreferencesSynchronize((CFStringRef)HELPERAPP_BUNDLE_IDENTIFIER,
+                             kCFPreferencesCurrentUser,
+                             kCFPreferencesAnyHost);
+    
+    [[NSDistributedNotificationCenter defaultCenter] postNotificationName:PrefPanePreferencesChanged 
+                                                                   object:@"PrefPane"];
+}
 
 -(IBAction)applyPreferences:(id)sender {
     // Set up the preference.
     NSLog(@"About to set the prefs.");
     CFPreferencesSetValue((CFStringRef)kStartTime,
                           (CFStringRef)[startTime objectValue],
+                          (CFStringRef)HELPERAPP_BUNDLE_IDENTIFIER,
+                          kCFPreferencesCurrentUser,
+                          kCFPreferencesAnyHost);
+
+    CFPreferencesSetValue((CFStringRef)kStopTime,
+                          (CFStringRef)[stopTime objectValue],
+                          (CFStringRef)HELPERAPP_BUNDLE_IDENTIFIER,
+                          kCFPreferencesCurrentUser,
+                          kCFPreferencesAnyHost);
+
+    CFPreferencesSetValue((CFStringRef)kReminderTime,
+                          (CFStringRef)[reminderTime objectValue],
                           (CFStringRef)HELPERAPP_BUNDLE_IDENTIFIER,
                           kCFPreferencesCurrentUser,
                           kCFPreferencesAnyHost);
@@ -50,10 +104,8 @@
 //                                                 name:NSUserDefaultsDidChangeNotification 
 //                                               object:nil];
     
-    [self startHelperApp];
-}
-
--(void)applicationDidFinishLaunching:(NSNotification *)notification {
+//    [self startHelperApp];
+//    [self readPrefs];
 }
 
 -(IBAction)startStopHelperApp:(id)sender {

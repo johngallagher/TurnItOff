@@ -1,0 +1,311 @@
+// !$*UTF8*$!
+{
+	08FB7793FE84155DC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 5242C35210B4ACFE0005CFFF /* App */;
+		activeTarget = E4F1F2BD0B0DECA3003CDB5F /* App */;
+		codeSenseManager = 5242C36010B4AD320005CFFF /* Code sense */;
+		executables = (
+			5242C35210B4ACFE0005CFFF /* App */,
+			5242C35310B4ACFE0005CFFF /* HelperTool */,
+			5242C35410B4ACFE0005CFFF /* InstallTool */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					10,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					651,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 280321227;
+			PBXWorkspaceStateSaveDate = 280321227;
+		};
+		perUserProjectItems = {
+			5232335110B4C9E4003E4A62 = 5232335110B4C9E4003E4A62 /* PlistBookmark */;
+			5232335210B4C9E4003E4A62 = 5232335210B4C9E4003E4A62 /* PBXTextBookmark */;
+			5232335310B4C9E4003E4A62 = 5232335310B4C9E4003E4A62 /* PBXTextBookmark */;
+			5232335410B4C9E4003E4A62 = 5232335410B4C9E4003E4A62 /* PBXTextBookmark */;
+			5242C37010B4AF3F0005CFFF = 5242C37010B4AF3F0005CFFF /* PBXTextBookmark */;
+			5242C37210B4AF3F0005CFFF = 5242C37210B4AF3F0005CFFF /* PBXTextBookmark */;
+			5242C37410B4AF3F0005CFFF = 5242C37410B4AF3F0005CFFF /* PBXTextBookmark */;
+			52AD5CDC10B55CC50099E7AD = 52AD5CDC10B55CC50099E7AD /* PBXTextBookmark */;
+		};
+		sourceControlManager = 5242C35F10B4AD320005CFFF /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	5232335110B4C9E4003E4A62 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = E4F1F2C00B0DECA3003CDB5F /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/Time Tracking/Code Repo (GitHub)/Shutdown/BetterAuthorizationSample/Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	5232335210B4C9E4003E4A62 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E4F1F1950B0DD65D003CDB5F /* SampleCommon.h */;
+		name = "SampleCommon.h: 72";
+		rLen = 21;
+		rLoc = 3581;
+		rType = 0;
+		vrLen = 1036;
+		vrLoc = 646;
+	};
+	5232335310B4C9E4003E4A62 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E4F1F1940B0DD65D003CDB5F /* SampleCommon.c */;
+		name = "SampleCommon.c: 76";
+		rLen = 21;
+		rLoc = 4241;
+		rType = 0;
+		vrLen = 1099;
+		vrLoc = 2987;
+	};
+	5232335410B4C9E4003E4A62 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 845767000ADC312500D69CBB /* SampleTool.c */;
+		name = "SampleTool.c: 166";
+		rLen = 49;
+		rLoc = 5978;
+		rType = 0;
+		vrLen = 667;
+		vrLoc = 3154;
+	};
+	5242C35210B4ACFE0005CFFF /* App */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = App;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	5242C35310B4ACFE0005CFFF /* HelperTool */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = HelperTool;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	5242C35410B4ACFE0005CFFF /* InstallTool */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = InstallTool;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	5242C35F10B4AD320005CFFF /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	5242C36010B4AD320005CFFF /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	5242C37010B4AF3F0005CFFF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E449EC820B619E4B009E190A /* BetterAuthorizationSampleLibInstallTool.c */;
+		name = "BetterAuthorizationSampleLibInstallTool.c: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 986;
+		vrLoc = 4038;
+	};
+	5242C37210B4AF3F0005CFFF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 84D6DD960AD2F84F001E6F67 /* BetterAuthorizationSampleLib.c */;
+		name = "BetterAuthorizationSampleLib.c: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1698;
+		vrLoc = 0;
+	};
+	5242C37410B4AF3F0005CFFF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 845767D10ADC565F00D69CBB /* SampleApp.m */;
+		name = "SampleApp.m: 162";
+		rLen = 21;
+		rLoc = 6665;
+		rType = 0;
+		vrLen = 926;
+		vrLoc = 7335;
+	};
+	52AD5CDC10B55CC50099E7AD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 845767000ADC312500D69CBB /* SampleTool.c */;
+		name = "SampleTool.c: 166";
+		rLen = 49;
+		rLoc = 5978;
+		rType = 0;
+		vrLen = 667;
+		vrLoc = 3154;
+	};
+	845767000ADC312500D69CBB /* SampleTool.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {873, 4242}}";
+			sepNavSelRange = "{5978, 49}";
+			sepNavVisRange = "{3154, 1060}";
+		};
+	};
+	845767A50ADC470900D69CBB /* HelperTool */ = {
+		activeExec = 0;
+		executables = (
+			5242C35310B4ACFE0005CFFF /* HelperTool */,
+		);
+	};
+	845767D10ADC565F00D69CBB /* SampleApp.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {881, 6944}}";
+			sepNavSelRange = "{6665, 21}";
+			sepNavVisRange = "{7335, 926}";
+		};
+	};
+	84D6DD960AD2F84F001E6F67 /* BetterAuthorizationSampleLib.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {881, 33922}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1698}";
+		};
+	};
+	E449EC630B619E02009E190A /* InstallTool */ = {
+		activeExec = 0;
+		executables = (
+			5242C35410B4ACFE0005CFFF /* InstallTool */,
+		);
+	};
+	E449EC820B619E4B009E190A /* BetterAuthorizationSampleLibInstallTool.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {881, 6202}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{4038, 986}";
+		};
+	};
+	E4F1F1940B0DD65D003CDB5F /* SampleCommon.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1296, 1330}}";
+			sepNavSelRange = "{4241, 21}";
+			sepNavVisRange = "{2987, 1099}";
+		};
+	};
+	E4F1F1950B0DD65D003CDB5F /* SampleCommon.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {881, 1540}}";
+			sepNavSelRange = "{3581, 21}";
+			sepNavVisRange = "{646, 1036}";
+		};
+	};
+	E4F1F2BD0B0DECA3003CDB5F /* App */ = {
+		activeExec = 0;
+		executables = (
+			5242C35210B4ACFE0005CFFF /* App */,
+		);
+	};
+}

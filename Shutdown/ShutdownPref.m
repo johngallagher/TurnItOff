@@ -8,15 +8,16 @@
 
 #import "ShutdownPref.h"
 
-
 @implementation ShutdownPref
 
 -(void)awakeFromNib {
 }
 
 -(void)mainViewDidLoad {
-
-    
+    [(Shutdown_AppDelegate *)[NSApp delegate] startHelperApp];
+    [(Shutdown_AppDelegate *)[NSApp delegate] readPrefs];
+//    [(Shutdown_AppDelegate *)[NSApp delegate] performSelector:@selector(readPrefs) withObject:nil afterDelay:1];
+//    [(Shutdown_AppDelegate *)[NSApp delegate] readPrefs];
 }
 
 @end

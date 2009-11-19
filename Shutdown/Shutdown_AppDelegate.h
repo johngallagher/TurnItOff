@@ -22,6 +22,12 @@
 
 @property (assign) BOOL shutdownIsRunning;
 
+-(void)readPrefs;
+
+-(void)controlTextDidEndEditing:(NSNotification *)aNotification;
+
+-(void)applyPreferences;
+
 -(void)startHelperApp;
 
 -(void)stopHelperApp;
