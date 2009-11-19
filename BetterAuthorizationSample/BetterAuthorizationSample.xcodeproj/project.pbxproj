@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5288402B10B56C0900892DFC /* SampleApp2.m in Sources */ = {isa = PBXBuildFile; fileRef = 5288402A10B56C0900892DFC /* SampleApp2.m */; };
+		52FB00D710B568F200D2CB5F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52FB00D610B568F200D2CB5F /* MainMenu.xib */; };
 		845767A80ADC471400D69CBB /* SampleTool.c in Sources */ = {isa = PBXBuildFile; fileRef = 845767000ADC312500D69CBB /* SampleTool.c */; };
 		845767A90ADC471D00D69CBB /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AB6884FE841BABC02AAC07 /* CoreFoundation.framework */; };
 		845767AA0ADC471D00D69CBB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D6DDDB0AD302A2001E6F67 /* Security.framework */; };
@@ -17,7 +19,6 @@
 		E4BBC2760B69194B00DC1BB6 /* InstallTool in CopyFiles */ = {isa = PBXBuildFile; fileRef = E449EC6E0B619E02009E190A /* InstallTool */; };
 		E4F1F1960B0DD65D003CDB5F /* SampleCommon.c in Sources */ = {isa = PBXBuildFile; fileRef = E4F1F1940B0DD65D003CDB5F /* SampleCommon.c */; };
 		E4F1F2FE0B0DED0C003CDB5F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F1F2FD0B0DED0C003CDB5F /* Cocoa.framework */; };
-		E4F1F32C0B0DED85003CDB5F /* SampleApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 845767D10ADC565F00D69CBB /* SampleApp.m */; };
 		E4F1F3560B0DED94003CDB5F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D6DDDB0AD302A2001E6F67 /* Security.framework */; };
 		E4F1F3580B0DED9F003CDB5F /* BetterAuthorizationSampleLib.c in Sources */ = {isa = PBXBuildFile; fileRef = 84D6DD960AD2F84F001E6F67 /* BetterAuthorizationSampleLib.c */; };
 		E4F1F4BB0B0E11EE003CDB5F /* SampleCommon.c in Sources */ = {isa = PBXBuildFile; fileRef = E4F1F1940B0DD65D003CDB5F /* SampleCommon.c */; };
@@ -57,6 +58,9 @@
 
 /* Begin PBXFileReference section */
 		09AB6884FE841BABC02AAC07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		5288402910B56C0900892DFC /* SampleApp2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleApp2.h; sourceTree = "<group>"; };
+		5288402A10B56C0900892DFC /* SampleApp2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleApp2.m; sourceTree = "<group>"; };
+		52FB00D610B568F200D2CB5F /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		845767000ADC312500D69CBB /* SampleTool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SampleTool.c; sourceTree = "<group>"; };
 		845767A60ADC470900D69CBB /* HelperTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelperTool; sourceTree = BUILT_PRODUCTS_DIR; };
 		845767D10ADC565F00D69CBB /* SampleApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleApp.m; sourceTree = "<group>"; };
@@ -106,10 +110,13 @@
 		08FB7794FE84155DC02AAC07 /* BetterAuthorizationSample */ = {
 			isa = PBXGroup;
 			children = (
+				5288402910B56C0900892DFC /* SampleApp2.h */,
+				5288402A10B56C0900892DFC /* SampleApp2.m */,
 				845767D10ADC565F00D69CBB /* SampleApp.m */,
 				845767000ADC312500D69CBB /* SampleTool.c */,
 				E4F1F1950B0DD65D003CDB5F /* SampleCommon.h */,
 				E4F1F1940B0DD65D003CDB5F /* SampleCommon.c */,
+				52FB00D610B568F200D2CB5F /* MainMenu.xib */,
 				E403D7500B13B0C8007A707A /* SampleApp.nib */,
 				E42F4A730B13443B00A50F72 /* SampleAuthorizationPrompts.strings */,
 				E4F1F2C00B0DECA3003CDB5F /* Info.plist */,
@@ -211,7 +218,7 @@
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 1DEB924B08733DCA0010E9CD /* Build configuration list for PBXProject "BetterAuthorizationSample" */;
-			compatibilityVersion = "Xcode 2.4";
+			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -238,6 +245,7 @@
 			files = (
 				E42F4A740B13443B00A50F72 /* SampleAuthorizationPrompts.strings in Resources */,
 				E403D7510B13B0C8007A707A /* SampleApp.nib in Resources */,
+				52FB00D710B568F200D2CB5F /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,9 +274,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4F1F32C0B0DED85003CDB5F /* SampleApp.m in Sources */,
 				E4F1F3580B0DED9F003CDB5F /* BetterAuthorizationSampleLib.c in Sources */,
 				E4F1F4BB0B0E11EE003CDB5F /* SampleCommon.c in Sources */,
+				5288402B10B56C0900892DFC /* SampleApp2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +329,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = macosx10.6;
 				WARNING_CFLAGS = "-Wall";
 			};
 			name = Debug;
@@ -348,7 +356,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
 				WARNING_CFLAGS = "-Wall";
 			};
 			name = Release;
@@ -426,7 +434,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SDKROOT = macosx10.5;
 				WARNING_CFLAGS = "-Wall";
 			};
 			name = Debug64;

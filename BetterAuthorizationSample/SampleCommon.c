@@ -87,6 +87,13 @@ const BASCommandSpec kSampleCommandSet[] = {
         NULL                                    // userData
 	},
 
+    {	kShutdownCommand,                  // commandName
+        kShutdownRightName,                    // rightName
+        "default",                                // -- by default, you have to have admin credentials (see the "default" rule in the authorization policy database, currently "/etc/authorization")
+        "GetUIDsPrompt",						// rightDescriptionKey -- key for custom prompt in "SampleAuthorizationPrompts.strings
+        NULL                                    // userData
+	},
+    
     {	NULL,                                   // the array is null terminated
         NULL, 
         NULL, 

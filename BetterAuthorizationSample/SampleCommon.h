@@ -83,6 +83,20 @@
 	#define kSampleGetUIDsResponseEUID			"EUID"                      // CFNumber
 
 
+///////////////////////////////////////
+
+// Shutdown
+
+#define kShutdownCommand           "Shutdown"
+
+// Shutdown right name
+
+#define	kShutdownRightName					"com.example.BetterAuthorizationSample.Shutdown"
+
+/////////////////////////////////////
+
+
+
 // "LowNumberedPorts" asks the helper tool to open some low-numbered ports on our behalf.
 
 #define kSampleLowNumberedPortsCommand		"LowNumberedPorts"
