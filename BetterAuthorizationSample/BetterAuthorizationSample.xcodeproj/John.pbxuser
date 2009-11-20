@@ -32,7 +32,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					170,
+					125,
 					20,
 					48,
 					43,
@@ -54,7 +54,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					23,
+					131,
 					60,
 					20,
 					48,
@@ -77,6 +77,16 @@
 		perUserProjectItems = {
 			5200D77810B6263400A817C0 = 5200D77810B6263400A817C0 /* PBXTextBookmark */;
 			520F2A2710B6C1D8001D0EB2 /* PlistBookmark */ = 520F2A2710B6C1D8001D0EB2 /* PlistBookmark */;
+			520F2BE510B6CAA0001D0EB2 /* PlistBookmark */ = 520F2BE510B6CAA0001D0EB2 /* PlistBookmark */;
+			520F2BE610B6CAA0001D0EB2 /* PBXTextBookmark */ = 520F2BE610B6CAA0001D0EB2 /* PBXTextBookmark */;
+			520F2BE710B6CAA0001D0EB2 /* PBXTextBookmark */ = 520F2BE710B6CAA0001D0EB2 /* PBXTextBookmark */;
+			520F2BE810B6CAA0001D0EB2 /* PBXTextBookmark */ = 520F2BE810B6CAA0001D0EB2 /* PBXTextBookmark */;
+			520F2BE910B6CAA0001D0EB2 /* PBXTextBookmark */ = 520F2BE910B6CAA0001D0EB2 /* PBXTextBookmark */;
+			520F2BEA10B6CAA0001D0EB2 /* PBXTextBookmark */ = 520F2BEA10B6CAA0001D0EB2 /* PBXTextBookmark */;
+			520F2BEB10B6CAA0001D0EB2 /* PBXTextBookmark */ = 520F2BEB10B6CAA0001D0EB2 /* PBXTextBookmark */;
+			520F2BEC10B6CAA0001D0EB2 /* PBXTextBookmark */ = 520F2BEC10B6CAA0001D0EB2 /* PBXTextBookmark */;
+			520F2BED10B6CAA0001D0EB2 /* PBXTextBookmark */ = 520F2BED10B6CAA0001D0EB2 /* PBXTextBookmark */;
+			520F2BEE10B6CAA0001D0EB2 /* PBXTextBookmark */ = 520F2BEE10B6CAA0001D0EB2 /* PBXTextBookmark */;
 			5242C37010B4AF3F0005CFFF = 5242C37010B4AF3F0005CFFF /* PBXTextBookmark */;
 			5288409710B5758400892DFC = 5288409710B5758400892DFC /* PBXTextBookmark */;
 			5288409910B5758400892DFC = 5288409910B5758400892DFC /* PBXTextBookmark */;
@@ -124,6 +134,105 @@
 		name = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/Time Tracking/Code Repo (GitHub)/Shutdown/BetterAuthorizationSample/Info.plist";
 		rLen = 13;
 		rLoc = 0;
+	};
+	520F2BE510B6CAA0001D0EB2 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = E4F1F2C00B0DECA3003CDB5F /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			NSPrincipalClass,
+		);
+		name = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/Time Tracking/Code Repo (GitHub)/Shutdown/BetterAuthorizationSample/Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	520F2BE610B6CAA0001D0EB2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E4F1F1940B0DD65D003CDB5F /* SampleCommon.c */;
+		name = "SampleCommon.c: 91";
+		rLen = 18;
+		rLoc = 5245;
+		rType = 0;
+		vrLen = 1419;
+		vrLoc = 3236;
+	};
+	520F2BE710B6CAA0001D0EB2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E4F1F1950B0DD65D003CDB5F /* SampleCommon.h */;
+		name = "SampleCommon.h: 46";
+		rLen = 91;
+		rLoc = 2967;
+		rType = 0;
+		vrLen = 681;
+		vrLoc = 2810;
+	};
+	520F2BE810B6CAA0001D0EB2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5288402A10B56C0900892DFC /* SampleApp2.m */;
+		name = "SampleApp2.m: 458";
+		rLen = 0;
+		rLoc = 16470;
+		rType = 0;
+		vrLen = 817;
+		vrLoc = 13484;
+	};
+	520F2BE910B6CAA0001D0EB2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5288402910B56C0900892DFC /* SampleApp2.h */;
+		name = "SampleApp2.h: 54";
+		rLen = 140;
+		rLoc = 2686;
+		rType = 0;
+		vrLen = 982;
+		vrLoc = 2156;
+	};
+	520F2BEA10B6CAA0001D0EB2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 845767D10ADC565F00D69CBB /* SampleApp.m */;
+		name = "SampleApp.m: 46";
+		rLen = 140;
+		rLoc = 2982;
+		rType = 0;
+		vrLen = 1145;
+		vrLoc = 2209;
+	};
+	520F2BEB10B6CAA0001D0EB2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 845767000ADC312500D69CBB /* SampleTool.c */;
+		name = "SampleTool.c: 58";
+		rLen = 0;
+		rLoc = 3209;
+		rType = 0;
+		vrLen = 794;
+		vrLoc = 3286;
+	};
+	520F2BEC10B6CAA0001D0EB2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 84D6DD950AD2F84F001E6F67 /* BetterAuthorizationSampleLib.h */;
+		name = "BetterAuthorizationSampleLib.h: 46";
+		rLen = 213;
+		rLoc = 2978;
+		rType = 0;
+		vrLen = 1105;
+		vrLoc = 2346;
+	};
+	520F2BED10B6CAA0001D0EB2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E449EC820B619E4B009E190A /* BetterAuthorizationSampleLibInstallTool.c */;
+		rLen = 21;
+		rLoc = 3332;
+		rType = 0;
+	};
+	520F2BEE10B6CAA0001D0EB2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E449EC820B619E4B009E190A /* BetterAuthorizationSampleLibInstallTool.c */;
+		name = "BetterAuthorizationSampleLibInstallTool.c: 47";
+		rLen = 388;
+		rLoc = 3011;
+		rType = 0;
+		vrLen = 582;
+		vrLoc = 2946;
 	};
 	5242C35210B4ACFE0005CFFF /* App */ = {
 		isa = PBXExecutable;
@@ -237,16 +346,16 @@
 	};
 	5288402910B56C0900892DFC /* SampleApp2.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {540, 1232}}";
-			sepNavSelRange = "{3458, 0}";
-			sepNavVisRange = "{2315, 704}";
+			sepNavIntBoundsRect = "{{0, 0}, {681, 1232}}";
+			sepNavSelRange = "{2686, 140}";
+			sepNavVisRange = "{2156, 982}";
 		};
 	};
 	5288402A10B56C0900892DFC /* SampleApp2.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {857, 7434}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{2371, 466}";
+			sepNavIntBoundsRect = "{{0, 0}, {681, 7546}}";
+			sepNavSelRange = "{16470, 0}";
+			sepNavVisRange = "{13484, 817}";
 		};
 	};
 	5288408210B573BF00892DFC /* SampleApp2.m:408 */ = {
@@ -521,9 +630,9 @@
 	};
 	845767000ADC312500D69CBB /* SampleTool.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {594, 4970}}";
-			sepNavSelRange = "{6957, 0}";
-			sepNavVisRange = "{0, 1413}";
+			sepNavIntBoundsRect = "{{0, 0}, {681, 4802}}";
+			sepNavSelRange = "{3209, 0}";
+			sepNavVisRange = "{3286, 794}";
 		};
 	};
 	845767A50ADC470900D69CBB /* HelperTool */ = {
@@ -534,16 +643,16 @@
 	};
 	845767D10ADC565F00D69CBB /* SampleApp.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {708, 8498}}";
-			sepNavSelRange = "{16124, 33}";
-			sepNavVisRange = "{2349, 899}";
+			sepNavIntBoundsRect = "{{0, 0}, {681, 8008}}";
+			sepNavSelRange = "{2982, 140}";
+			sepNavVisRange = "{2209, 1145}";
 		};
 	};
 	84D6DD950AD2F84F001E6F67 /* BetterAuthorizationSampleLib.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {708, 10878}}";
-			sepNavSelRange = "{22728, 7}";
-			sepNavVisRange = "{23766, 613}";
+			sepNavIntBoundsRect = "{{0, 0}, {708, 10290}}";
+			sepNavSelRange = "{2978, 213}";
+			sepNavVisRange = "{2346, 1105}";
 		};
 	};
 	84D6DD960AD2F84F001E6F67 /* BetterAuthorizationSampleLib.c */ = {
@@ -568,23 +677,23 @@
 	};
 	E449EC820B619E4B009E190A /* BetterAuthorizationSampleLibInstallTool.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {881, 6202}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{4038, 986}";
+			sepNavIntBoundsRect = "{{0, 0}, {681, 6174}}";
+			sepNavSelRange = "{3011, 388}";
+			sepNavVisRange = "{2946, 582}";
 		};
 	};
 	E4F1F1940B0DD65D003CDB5F /* SampleCommon.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1296, 1624}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1296, 1456}}";
 			sepNavSelRange = "{5245, 18}";
-			sepNavVisRange = "{3665, 569}";
+			sepNavVisRange = "{3236, 1419}";
 		};
 	};
 	E4F1F1950B0DD65D003CDB5F /* SampleCommon.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {636, 1694}}";
-			sepNavSelRange = "{4087, 80}";
-			sepNavVisRange = "{0, 1400}";
+			sepNavIntBoundsRect = "{{0, 0}, {744, 1708}}";
+			sepNavSelRange = "{2967, 91}";
+			sepNavVisRange = "{2810, 681}";
 		};
 	};
 	E4F1F2BD0B0DECA3003CDB5F /* App */ = {

@@ -1,4 +1,13 @@
 
+#include <unistd.h>
+#include <netinet/in.h>
+
+#import <Cocoa/Cocoa.h>
+
+#include "BetterAuthorizationSampleLib.h"
+
+#include "SampleCommon.h"
+
 /////////////////////////////////////////////////////////////////
 #pragma mark ***** Globals
 
