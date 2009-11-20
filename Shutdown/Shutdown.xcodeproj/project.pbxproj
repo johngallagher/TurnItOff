@@ -19,7 +19,6 @@
 		5217B30810B1DE59008A3DE6 /* HelperApp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5217B30710B1DE59008A3DE6 /* HelperApp.xib */; };
 		5217B37210B1E16F008A3DE6 /* ShutdownHelperApp.app in Resources */ = {isa = PBXBuildFile; fileRef = 52154BC410B0716E0018F774 /* ShutdownHelperApp.app */; };
 		52A896D810B5C39400220B47 /* ShellTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A896D710B5C39300220B47 /* ShellTask.m */; };
-		52A896DF10B5C3C900220B47 /* shutdown.sh in Resources */ = {isa = PBXBuildFile; fileRef = 52A896DE10B5C3C900220B47 /* shutdown.sh */; };
 		52BD946810B1A5C800291F3D /* JGConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 52BD946610B1A5C800291F3D /* JGConstants.h */; };
 		52BD946910B1A5C800291F3D /* JGConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BD946710B1A5C800291F3D /* JGConstants.m */; };
 		52BD946A10B1A5C800291F3D /* JGConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BD946710B1A5C800291F3D /* JGConstants.m */; };
@@ -379,7 +378,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5217B30810B1DE59008A3DE6 /* HelperApp.xib in Resources */,
-				52A896DF10B5C3C900220B47 /* shutdown.sh in Resources */,
 				52FE1AC810B635B200AC2DA3 /* ShutdownAuthorizationPrompt.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +507,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_GC = supported;
+				GCC_INPUT_FILETYPE = sourcecode.c.objc;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -536,6 +535,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -549,7 +549,7 @@
 				GCC_PREFIX_HEADER = HelperApp_Prefix.pch;
 				INFOPLIST_FILE = "ShutdownHelperApp-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,

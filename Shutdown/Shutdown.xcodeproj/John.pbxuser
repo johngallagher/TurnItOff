@@ -2,8 +2,8 @@
 {
 	089C1669FE841209C02AAC07 /* Project object */ = {
 		activeBuildConfigurationName = Debug;
-		activeExecutable = 5217B14810B1BE74008A3DE6 /* System Prefs */;
-		activeTarget = 8D202CE80486D31800D8A456 /* Shutdown */;
+		activeExecutable = 52154BC510B0716E0018F774 /* ShutdownHelperApp */;
+		activeTarget = 52154BC310B0716E0018F774 /* ShutdownHelperApp */;
 		addToTargets = (
 			52154BC310B0716E0018F774 /* ShutdownHelperApp */,
 		);
@@ -102,6 +102,15 @@
 			520F2BAF10B6C404001D0EB2 /* XCBuildMessageTextBookmark */ = 520F2BAF10B6C404001D0EB2 /* XCBuildMessageTextBookmark */;
 			520F2BB010B6C404001D0EB2 /* PBXTextBookmark */ = 520F2BB010B6C404001D0EB2 /* PBXTextBookmark */;
 			520F2BB110B6C404001D0EB2 /* PBXTextBookmark */ = 520F2BB110B6C404001D0EB2 /* PBXTextBookmark */;
+			520F2BC110B6C702001D0EB2 /* PBXTextBookmark */ = 520F2BC110B6C702001D0EB2 /* PBXTextBookmark */;
+			520F2BC310B6C702001D0EB2 /* PBXTextBookmark */ = 520F2BC310B6C702001D0EB2 /* PBXTextBookmark */;
+			520F2BC410B6C702001D0EB2 /* PBXTextBookmark */ = 520F2BC410B6C702001D0EB2 /* PBXTextBookmark */;
+			520F2BC510B6C702001D0EB2 /* PBXTextBookmark */ = 520F2BC510B6C702001D0EB2 /* PBXTextBookmark */;
+			520F2BC610B6C702001D0EB2 /* PBXTextBookmark */ = 520F2BC610B6C702001D0EB2 /* PBXTextBookmark */;
+			520F2BC710B6C702001D0EB2 /* PBXTextBookmark */ = 520F2BC710B6C702001D0EB2 /* PBXTextBookmark */;
+			520F2BC810B6C702001D0EB2 /* PBXTextBookmark */ = 520F2BC810B6C702001D0EB2 /* PBXTextBookmark */;
+			520F2BC910B6C702001D0EB2 /* PBXTextBookmark */ = 520F2BC910B6C702001D0EB2 /* PBXTextBookmark */;
+			520F2BCA10B6C702001D0EB2 /* PBXTextBookmark */ = 520F2BCA10B6C702001D0EB2 /* PBXTextBookmark */;
 			5217B22510B1CE41008A3DE6 = 5217B22510B1CE41008A3DE6 /* PBXTextBookmark */;
 			5217B3DB10B1E8A2008A3DE6 = 5217B3DB10B1E8A2008A3DE6 /* PBXTextBookmark */;
 			5229407010B41F3F0069F04D = 5229407010B41F3F0069F04D /* PBXTextBookmark */;
@@ -147,7 +156,7 @@
 	};
 	32DBCFA20370C41700C91783 /* Shutdown_Prefix.pch */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {844, 404}}";
+			sepNavIntBoundsRect = "{{0, 0}, {670, 334}}";
 			sepNavSelRange = "{97, 229}";
 			sepNavVisRange = "{0, 326}";
 		};
@@ -157,7 +166,7 @@
 		fRef = 5217B30410B1DDF0008A3DE6 /* HelperApp_Prefix.pch */;
 		name = "HelperApp_Prefix.pch: 16";
 		rLen = 0;
-		rLoc = 475;
+		rLoc = 465;
 		rType = 0;
 		vrLen = 459;
 		vrLoc = 0;
@@ -167,7 +176,7 @@
 		fRef = 5217B30410B1DDF0008A3DE6 /* HelperApp_Prefix.pch */;
 		name = "HelperApp_Prefix.pch: 20";
 		rLen = 0;
-		rLoc = 369;
+		rLoc = 323;
 		rType = 0;
 		vrLen = 461;
 		vrLoc = 0;
@@ -195,8 +204,8 @@
 		isa = PBXTextBookmark;
 		fRef = 5217B30410B1DDF0008A3DE6 /* HelperApp_Prefix.pch */;
 		name = "HelperApp_Prefix.pch: 19";
-		rLen = 106;
-		rLoc = 369;
+		rLen = 142;
+		rLoc = 323;
 		rType = 0;
 		vrLen = 475;
 		vrLoc = 0;
@@ -383,6 +392,11 @@
 		name = Foundation.h;
 		path = /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h;
 		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {670, 2226}}";
+			sepNavSelRange = "{123, 37}";
+			sepNavVisRange = "{0, 677}";
+		};
 	};
 	520F2BAF10B6C404001D0EB2 /* XCBuildMessageTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -390,7 +404,7 @@
 		fRef = 5217B30410B1DDF0008A3DE6 /* HelperApp_Prefix.pch */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 12;
+		rLoc = 10;
 		rType = 1;
 	};
 	520F2BB010B6C404001D0EB2 /* PBXTextBookmark */ = {
@@ -398,12 +412,108 @@
 		fRef = 5217B30410B1DDF0008A3DE6 /* HelperApp_Prefix.pch */;
 		name = "HelperApp_Prefix.pch: 13";
 		rLen = 34;
-		rLoc = 203;
+		rLoc = 157;
 		rType = 0;
 		vrLen = 475;
 		vrLoc = 0;
 	};
 	520F2BB110B6C404001D0EB2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 520F2A3810B6C2B9001D0EB2 /* NSObject.h */;
+		name = "NSObject.h: 5";
+		rLen = 13;
+		rLoc = 96;
+		rType = 0;
+		vrLen = 751;
+		vrLoc = 0;
+	};
+	520F2BC110B6C702001D0EB2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 520F2BC210B6C702001D0EB2 /* AppKit.h */;
+		name = "AppKit.h: 10";
+		rLen = 34;
+		rLoc = 280;
+		rType = 0;
+		vrLen = 765;
+		vrLoc = 0;
+	};
+	520F2BC210B6C702001D0EB2 /* AppKit.h */ = {
+		isa = PBXFileReference;
+		name = AppKit.h;
+		path = /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h;
+		sourceTree = "<absolute>";
+	};
+	520F2BC310B6C702001D0EB2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52FE1AF910B63A1200AC2DA3 /* NSObjCRuntime.h */;
+		name = "NSObjCRuntime.h: 180";
+		rLen = 27;
+		rLoc = 6179;
+		rType = 0;
+		vrLen = 865;
+		vrLoc = 5824;
+	};
+	520F2BC410B6C702001D0EB2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 520F2BAE10B6C404001D0EB2 /* Foundation.h */;
+		name = "Foundation.h: 8";
+		rLen = 37;
+		rLoc = 123;
+		rType = 0;
+		vrLen = 677;
+		vrLoc = 0;
+	};
+	520F2BC510B6C702001D0EB2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52FE1AC710B635B200AC2DA3 /* ShutdownAuthorizationPrompt.strings */;
+		name = "ShutdownAuthorizationPrompt.strings: 8";
+		rLen = 0;
+		rLoc = 160;
+		rType = 0;
+		vrLen = 231;
+		vrLoc = 0;
+	};
+	520F2BC610B6C702001D0EB2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52A896DE10B5C3C900220B47 /* shutdown.sh */;
+		name = "shutdown.sh: 9";
+		rLen = 0;
+		rLoc = 151;
+		rType = 0;
+		vrLen = 152;
+		vrLoc = 0;
+	};
+	520F2BC710B6C702001D0EB2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32DBCFA20370C41700C91783 /* Shutdown_Prefix.pch */;
+		name = "Shutdown_Prefix.pch: 5";
+		rLen = 229;
+		rLoc = 97;
+		rType = 0;
+		vrLen = 326;
+		vrLoc = 0;
+	};
+	520F2BC810B6C702001D0EB2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5217B30410B1DDF0008A3DE6 /* HelperApp_Prefix.pch */;
+		name = "HelperApp_Prefix.pch: 23";
+		rLen = 0;
+		rLoc = 465;
+		rType = 0;
+		vrLen = 477;
+		vrLoc = 0;
+	};
+	520F2BC910B6C702001D0EB2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5217B30410B1DDF0008A3DE6 /* HelperApp_Prefix.pch */;
+		name = "HelperApp_Prefix.pch: 13";
+		rLen = 34;
+		rLoc = 157;
+		rType = 0;
+		vrLen = 475;
+		vrLoc = 0;
+	};
+	520F2BCA10B6C702001D0EB2 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 520F2A3810B6C2B9001D0EB2 /* NSObject.h */;
 		name = "NSObject.h: 5";
@@ -610,8 +720,8 @@
 	5217B30410B1DDF0008A3DE6 /* HelperApp_Prefix.pch */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {670, 334}}";
-			sepNavSelRange = "{203, 34}";
-			sepNavVisRange = "{0, 475}";
+			sepNavSelRange = "{326, 139}";
+			sepNavVisRange = "{0, 465}";
 		};
 	};
 	5217B3DB10B1E8A2008A3DE6 /* PBXTextBookmark */ = {
@@ -680,7 +790,7 @@
 	};
 	52A896DE10B5C3C900220B47 /* shutdown.sh */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {336, 354}}";
+			sepNavIntBoundsRect = "{{0, 0}, {670, 334}}";
 			sepNavSelRange = "{151, 0}";
 			sepNavVisRange = "{0, 152}";
 		};
@@ -955,9 +1065,9 @@
 	};
 	52FE19CD10B62FDF00AC2DA3 /* BetterAuthorizationSampleLib.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {855, 34174}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{12659, 770}";
+			sepNavIntBoundsRect = "{{0, 0}, {708, 34076}}";
+			sepNavSelRange = "{61205, 90}";
+			sepNavVisRange = "{60837, 843}";
 		};
 	};
 	52FE19D110B6301D00AC2DA3 /* SampleTool.c */ = {
@@ -983,21 +1093,21 @@
 	};
 	52FE1AC210B6335D00AC2DA3 /* ShutdownHelperTool.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {522, 339}}";
-			sepNavSelRange = "{496, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {670, 336}}";
+			sepNavSelRange = "{95, 31}";
 			sepNavVisRange = "{0, 787}";
 		};
 	};
 	52FE1AC310B6335D00AC2DA3 /* ShutdownHelperTool.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {708, 1638}}";
-			sepNavSelRange = "{226, 0}";
-			sepNavVisRange = "{0, 669}";
+			sepNavIntBoundsRect = "{{0, 0}, {670, 1876}}";
+			sepNavSelRange = "{272, 30}";
+			sepNavVisRange = "{0, 570}";
 		};
 	};
 	52FE1AC710B635B200AC2DA3 /* ShutdownAuthorizationPrompt.strings */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {438, 548}}";
+			sepNavIntBoundsRect = "{{0, 0}, {670, 334}}";
 			sepNavSelRange = "{160, 0}";
 			sepNavVisRange = "{0, 231}";
 		};
@@ -1199,7 +1309,7 @@
 		fRef = 5217B30410B1DDF0008A3DE6 /* HelperApp_Prefix.pch */;
 		name = "HelperApp_Prefix.pch: 16";
 		rLen = 0;
-		rLoc = 475;
+		rLoc = 465;
 		rType = 0;
 		vrLen = 340;
 		vrLoc = 0;
