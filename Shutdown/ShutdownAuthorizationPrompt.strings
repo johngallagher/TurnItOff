@@ -1,0 +1,8 @@
+/* 
+   ShutdownAuthorizationPrompt.strings
+   Shutdown
+
+   Created by John Gallagher on 20/11/2009.
+   Copyright 2009 Synaptic Mishap. All rights reserved.
+ */
+"ShutdownPrompt" = "You must be authorized to shut the computer down.";

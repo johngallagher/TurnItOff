@@ -160,27 +160,29 @@ static OSStatus DoGetUID(
 	return retval;
 }
 
-/////////////////////////////////////////////////////////////////
-#pragma mark ***** Do Shutdown Command
+
 
 static OSStatus DoShutdown(
-                         AuthorizationRef			auth,
-                         const void *                userData,
-                         CFDictionaryRef				request,
-                         CFMutableDictionaryRef      response,
-                         aslclient                   asl,
-                         aslmsg                      aslMsg
-                         )
-// Implements the kDoShutdown Command. Shuts down the machine.
+                          AuthorizationRef			auth,
+                          const void *                userData,
+                          CFDictionaryRef				request,
+                          CFMutableDictionaryRef      response,
+                          aslclient                   asl,
+                          aslmsg                      aslMsg
+                          )
+// Implements the kSampleLowNumberedPortsCommand.  Opens three low-numbered ports 
+// and adds them to the descriptor array in the response dictionary.
 {	
 	OSStatus					retval = noErr;
-    int                         err;
-	const char                  *shutdownCommand = "shutdown"
-    const char                  *shutdownHaltArg = "-h"
-    const char                  *shutdownHaltTimeArg = "+0"
+	
+    const char                  *shutdownCommand = "/shutdown.sh";
+//    const char                  *shutdownHaltArg = "-h";
+//    const char                  *shutdownHaltTimeArg = "+0";
     
 	// Pre-conditions
 	
+	// Pre-conditions
+    
 	assert(auth != NULL);
     // userData may be NULL
 	assert(request != NULL);
@@ -188,37 +190,23 @@ static OSStatus DoShutdown(
     // asl may be NULL
     // aslMsg may be NULL
 	
-    err = execl(shutdownCommand, shutdownHaltArg, shutdownHaltTimeArg);
+//    execl(shutdownCommand, shutdownHaltArg, shutdownHaltTimeArg, NULL);
+    system(shutdownCommand);
     
-//    // Get the UIDs.
+    //
+//	if (retval == noErr) {
+//        CFDictionaryAddValue(response, CFSTR(kBASDescriptorArrayKey), descArray);
+//	}
+//	
+//    // Clean up.
 //    
-//	euid = geteuid();
-//	ruid = getuid();
-	
-//	err = asl_log(asl, aslMsg, ASL_LEVEL_DEBUG, "euid=%ld, ruid=%ld", (long) euid, (long) ruid);
-//    assert(err == 0);
-	
-    // Add them to the response.
-    
-//	tmp = euid;
-//	values[0] = CFNumberCreate(NULL, kCFNumberLongLongType, &tmp);
-//	tmp = ruid;
-//	values[1] = CFNumberCreate(NULL, kCFNumberLongLongType, &tmp);
-//	
-//	if ( (values[0] == NULL) || (values[1] == NULL) ) {
-//		retval = coreFoundationUnknownErr;
-//    } else {
-//        CFDictionaryAddValue(response, CFSTR(kSampleGetUIDsResponseRUID), values[0]);
-//        CFDictionaryAddValue(response, CFSTR(kSampleGetUIDsResponseEUID), values[1]);
+//	if (retval != noErr) {
+//		BASCloseDescriptorArray(descArray);
+//	}
+//	if (descArray != NULL) {
+//		CFRelease(descArray);
 //	}
 //	
-//	if (values[0] != NULL) {
-//		CFRelease(values[0]);
-//	}
-//	if (values[1] != NULL) {
-//		CFRelease(values[1]);
-//	}
-    
 	return retval;
 }
 

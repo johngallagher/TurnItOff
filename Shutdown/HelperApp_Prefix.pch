@@ -6,6 +6,9 @@
  *  Copyright 2009 Synaptic Mishap. All rights reserved.
  *
  */
+//
+//#import <unistd.h>
+//#import <netinet/in.h>
 
 #import <Foundation/Foundation.h>
 #import <AppKit/AppKit.h>
@@ -13,3 +16,7 @@
 #import "JGDefines.h"
 #import "JGConstants.h"
 #import "AbstractSingletonObject.h"
+//
+//#import "BetterAuthorizationSampleLib.h"
+//#import "SampleCommon.h"
+//#import "ShutdownHelperTool.h"

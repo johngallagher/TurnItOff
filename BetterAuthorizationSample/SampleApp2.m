@@ -457,18 +457,14 @@ static OSStatus DoLowNumberedPorts(
     
     // Log our results.
     
-    //    if (err == noErr) {
-    //        [textView insertText:
-    //         [NSString stringWithFormat:@"RUID = %@, EUID=%@\n", 
-    //          [(NSDictionary *)response objectForKey:@kSampleGetUIDsResponseRUID],
-    //          [(NSDictionary *)response objectForKey:@kSampleGetUIDsResponseEUID]
-    //          ]
-    //         ];
-    //    } else {
-    //        [textView insertText:
-    //         [NSString stringWithFormat:@"Failed with error %ld.\n", (long) err]
-    //         ];
-    //    }
+    if (err == noErr) {
+        [textView insertText:@"Success shutdown."
+         ];
+    } else {
+        [textView insertText:
+         [NSString stringWithFormat:@"Failed with error %ld.\n", (long) err]
+         ];
+    }
     
     if (response != NULL) {
         CFRelease(response);

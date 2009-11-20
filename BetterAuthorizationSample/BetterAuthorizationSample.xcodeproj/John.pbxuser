@@ -1,12 +1,21 @@
 // !$*UTF8*$!
 {
 	08FB7793FE84155DC02AAC07 /* Project object */ = {
-		activeArchitecturePreference = i386;
+		activeArchitecturePreference = x86_64;
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 5242C35210B4ACFE0005CFFF /* App */;
 		activeTarget = E4F1F2BD0B0DECA3003CDB5F /* App */;
 		addToTargets = (
 			E4F1F2BD0B0DECA3003CDB5F /* App */,
+		);
+		breakpoints = (
+			5288408210B573BF00892DFC /* SampleApp2.m:408 */,
+			5288409110B5748300892DFC /* SampleApp2.m:214 */,
+			52A8964110B5A0FB00220B47 /* SampleApp.m:479 */,
+			52A8968010B5A3E100220B47 /* SampleTool.c:212 */,
+			52A8968D10B5A4B800220B47 /* SampleApp2.m:87 */,
+			52A896B510B5A63100220B47 /* SampleTool.c:124 */,
+			52A896BD10B5A65800220B47 /* SampleTool.c:312 */,
 		);
 		codeSenseManager = 5242C36010B4AD320005CFFF /* Code sense */;
 		executables = (
@@ -14,13 +23,16 @@
 			5242C35310B4ACFE0005CFFF /* HelperTool */,
 			5242C35410B4ACFE0005CFFF /* InstallTool */,
 		);
+		expressions = (
+			kSampleCommandSet,
+		);
 		perUserDictionary = {
 			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
 				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					538,
+					170,
 					20,
 					48,
 					43,
@@ -42,7 +54,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					651,
+					23,
 					60,
 					20,
 					48,
@@ -59,40 +71,59 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 280325050;
-			PBXWorkspaceStateSaveDate = 280325050;
+			PBXPerProjectTemplateStateSaveDate = 280412610;
+			PBXWorkspaceStateSaveDate = 280412610;
 		};
 		perUserProjectItems = {
+			5200D77810B6263400A817C0 = 5200D77810B6263400A817C0 /* PBXTextBookmark */;
+			520F2A2710B6C1D8001D0EB2 /* PlistBookmark */ = 520F2A2710B6C1D8001D0EB2 /* PlistBookmark */;
 			5242C37010B4AF3F0005CFFF = 5242C37010B4AF3F0005CFFF /* PBXTextBookmark */;
-			5288403010B56C3F00892DFC /* PBXTextBookmark */ = 5288403010B56C3F00892DFC /* PBXTextBookmark */;
-			5288403110B56C3F00892DFC /* PBXTextBookmark */ = 5288403110B56C3F00892DFC /* PBXTextBookmark */;
-			5288403210B56C3F00892DFC /* PBXTextBookmark */ = 5288403210B56C3F00892DFC /* PBXTextBookmark */;
-			5288403C10B56DB300892DFC /* PBXTextBookmark */ = 5288403C10B56DB300892DFC /* PBXTextBookmark */;
-			5288403D10B56DB300892DFC /* PBXTextBookmark */ = 5288403D10B56DB300892DFC /* PBXTextBookmark */;
-			5288403E10B56DB300892DFC /* PlistBookmark */ = 5288403E10B56DB300892DFC /* PlistBookmark */;
-			5288403F10B56DB300892DFC /* PBXTextBookmark */ = 5288403F10B56DB300892DFC /* PBXTextBookmark */;
-			5288404010B56DB300892DFC /* PBXTextBookmark */ = 5288404010B56DB300892DFC /* PBXTextBookmark */;
-			5288404110B56DB500892DFC /* PBXTextBookmark */ = 5288404110B56DB500892DFC /* PBXTextBookmark */;
-			5288404A10B56E2600892DFC /* PBXTextBookmark */ = 5288404A10B56E2600892DFC /* PBXTextBookmark */;
-			5288404B10B56E4100892DFC /* PBXTextBookmark */ = 5288404B10B56E4100892DFC /* PBXTextBookmark */;
-			5288404C10B56E4100892DFC /* PBXTextBookmark */ = 5288404C10B56E4100892DFC /* PBXTextBookmark */;
-			5288404D10B56E4100892DFC /* PBXTextBookmark */ = 5288404D10B56E4100892DFC /* PBXTextBookmark */;
-			5288404E10B56E4100892DFC /* PBXTextBookmark */ = 5288404E10B56E4100892DFC /* PBXTextBookmark */;
-			5288405110B56E5000892DFC /* PBXTextBookmark */ = 5288405110B56E5000892DFC /* PBXTextBookmark */;
-			5288405210B56E5100892DFC /* PBXTextBookmark */ = 5288405210B56E5100892DFC /* PBXTextBookmark */;
-			5288405410B56E6000892DFC /* PBXTextBookmark */ = 5288405410B56E6000892DFC /* PBXTextBookmark */;
-			5288405510B56E6000892DFC /* PBXTextBookmark */ = 5288405510B56E6000892DFC /* PBXTextBookmark */;
-			52FB00B010B5672A00D2CB5F = 52FB00B010B5672A00D2CB5F /* PBXTextBookmark */;
-			52FB00B110B5672A00D2CB5F = 52FB00B110B5672A00D2CB5F /* PBXTextBookmark */;
-			52FB00C710B5686600D2CB5F = 52FB00C710B5686600D2CB5F /* PlistBookmark */;
-			52FB00C810B5686600D2CB5F = 52FB00C810B5686600D2CB5F /* PBXTextBookmark */;
-			52FB00C910B5686600D2CB5F = 52FB00C910B5686600D2CB5F /* PBXTextBookmark */;
-			52FB00CA10B5686600D2CB5F = 52FB00CA10B5686600D2CB5F /* PBXTextBookmark */;
-			52FB00D910B568F700D2CB5F = 52FB00D910B568F700D2CB5F /* PBXTextBookmark */;
+			5288409710B5758400892DFC = 5288409710B5758400892DFC /* PBXTextBookmark */;
+			5288409910B5758400892DFC = 5288409910B5758400892DFC /* PBXTextBookmark */;
+			52FE1B0210B63A1300AC2DA3 = 52FE1B0210B63A1300AC2DA3 /* PBXTextBookmark */;
+			52FE1B0310B63A1300AC2DA3 = 52FE1B0310B63A1300AC2DA3 /* PBXTextBookmark */;
+			52FE1B0410B63A1300AC2DA3 = 52FE1B0410B63A1300AC2DA3 /* PBXTextBookmark */;
+			52FE1B0510B63A1300AC2DA3 = 52FE1B0510B63A1300AC2DA3 /* PBXTextBookmark */;
+			52FE1B0610B63A1300AC2DA3 = 52FE1B0610B63A1300AC2DA3 /* PBXTextBookmark */;
+			52FE1B0710B63A1300AC2DA3 = 52FE1B0710B63A1300AC2DA3 /* PBXTextBookmark */;
+			52FE1B0810B63A1300AC2DA3 = 52FE1B0810B63A1300AC2DA3 /* PBXTextBookmark */;
+			52FE1B0910B63A1300AC2DA3 = 52FE1B0910B63A1300AC2DA3 /* PBXTextBookmark */;
+			52FE1B0A10B63A1300AC2DA3 = 52FE1B0A10B63A1300AC2DA3 /* PBXTextBookmark */;
+			52FE1B0B10B63A1300AC2DA3 = 52FE1B0B10B63A1300AC2DA3 /* PlistBookmark */;
+			52FE1B0C10B63A1300AC2DA3 = 52FE1B0C10B63A1300AC2DA3 /* PlistBookmark */;
 		};
 		sourceControlManager = 5242C35F10B4AD320005CFFF /* Source Control */;
 		userBuildSettings = {
 		};
+	};
+	5200D77810B6263400A817C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 84D6DD960AD2F84F001E6F67 /* BetterAuthorizationSampleLib.c */;
+		name = "BetterAuthorizationSampleLib.c: 1524";
+		rLen = 0;
+		rLoc = 49503;
+		rType = 0;
+		vrLen = 924;
+		vrLoc = 47066;
+	};
+	5200D78110B626C700A817C0 /* SampleUninstall.sh */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = text.script.sh;
+		name = SampleUninstall.sh;
+		path = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/Time Tracking/Code Repo (GitHub)/Shutdown/BetterAuthorizationSample/SampleUninstall.sh";
+		sourceTree = "<absolute>";
+	};
+	520F2A2710B6C1D8001D0EB2 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = E4F1F2C00B0DECA3003CDB5F /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			NSPrincipalClass,
+		);
+		name = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/Time Tracking/Code Repo (GitHub)/Shutdown/BetterAuthorizationSample/Info.plist";
+		rLen = 13;
+		rLoc = 0;
 	};
 	5242C35210B4ACFE0005CFFF /* App */ = {
 		isa = PBXExecutable;
@@ -123,6 +154,8 @@
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
+		variableFormatDictionary = {
+		};
 	};
 	5242C35310B4ACFE0005CFFF /* HelperTool */ = {
 		isa = PBXExecutable;
@@ -204,66 +237,265 @@
 	};
 	5288402910B56C0900892DFC /* SampleApp2.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {728, 1232}}";
+			sepNavIntBoundsRect = "{{0, 0}, {540, 1232}}";
 			sepNavSelRange = "{3458, 0}";
-			sepNavVisRange = "{832, 2851}";
+			sepNavVisRange = "{2315, 704}";
 		};
 	};
 	5288402A10B56C0900892DFC /* SampleApp2.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {728, 7420}}";
-			sepNavSelRange = "{13667, 33}";
-			sepNavVisRange = "{13568, 2483}";
+			sepNavIntBoundsRect = "{{0, 0}, {857, 7434}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{2371, 466}";
 		};
 	};
-	5288403010B56C3F00892DFC /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 845767D10ADC565F00D69CBB /* SampleApp.m */;
-		name = "SampleApp.m: 548";
-		rLen = 0;
-		rLoc = 19510;
-		rType = 0;
-		vrLen = 2313;
-		vrLoc = 18234;
+	5288408210B573BF00892DFC /* SampleApp2.m:408 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 5288402A10B56C0900892DFC /* SampleApp2.m */;
+		functionName = "-doShutdown:";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 408;
+		location = "BetterAuthorizationSample SampleApp";
+		modificationTime = 280339991.260172;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
 	};
-	5288403110B56C3F00892DFC /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 5288402910B56C0900892DFC /* SampleApp2.h */;
-		rLen = 0;
-		rLoc = 9223372036854779261;
-		rType = 0;
+	5288409110B5748300892DFC /* SampleApp2.m:214 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 5288402A10B56C0900892DFC /* SampleApp2.m */;
+		functionName = "DoLowNumberedPorts()";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 214;
+		location = "BetterAuthorizationSample SampleApp";
+		modificationTime = 280339976.830789;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
 	};
-	5288403210B56C3F00892DFC /* PBXTextBookmark */ = {
+	5288409710B5758400892DFC /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 5288402910B56C0900892DFC /* SampleApp2.h */;
-		name = "SampleApp2.h: 1";
+		fRef = 5288409810B5758400892DFC /* errno.h */;
+		name = "errno.h: 138";
+		rLen = 51;
+		rLoc = 6253;
+		rType = 0;
+		vrLen = 2627;
+		vrLoc = 8685;
+	};
+	5288409810B5758400892DFC /* errno.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = errno.h;
+		path = /Developer/SDKs/MacOSX10.6.sdk/usr/include/sys/errno.h;
+		sourceTree = "<absolute>";
+	};
+	5288409910B5758400892DFC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5288409A10B5758400892DFC /* cssmapple.h */;
+		name = "cssmapple.h: 1135";
+		rLen = 33;
+		rLoc = 46331;
+		rType = 0;
+		vrLen = 1990;
+		vrLoc = 44479;
+	};
+	5288409A10B5758400892DFC /* cssmapple.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = cssmapple.h;
+		path = /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Security.framework/Versions/A/Headers/cssmapple.h;
+		sourceTree = "<absolute>";
+	};
+	52A8964110B5A0FB00220B47 /* SampleApp.m:479 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 845767D10ADC565F00D69CBB /* SampleApp.m */;
+		functionName = "-doShutdown:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 479;
+		modificationTime = 280340762.575745;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	52A8968010B5A3E100220B47 /* SampleTool.c:212 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 845767000ADC312500D69CBB /* SampleTool.c */;
+		functionName = "DoShutdown()";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 212;
+		modificationTime = 280340006.237578;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	52A8968D10B5A4B800220B47 /* SampleApp2.m:87 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 5288402A10B56C0900892DFC /* SampleApp2.m */;
+		functionName = "-doGetUIDs:";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 87;
+		location = "BetterAuthorizationSample SampleApp";
+		modificationTime = 280340025.613305;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	52A896B510B5A63100220B47 /* SampleTool.c:124 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 845767000ADC312500D69CBB /* SampleTool.c */;
+		functionName = "DoGetUID()";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 124;
+		modificationTime = 280340762.576897;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	52A896BD10B5A65800220B47 /* SampleTool.c:312 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 845767000ADC312500D69CBB /* SampleTool.c */;
+		functionName = "DoGetLowNumberedPorts()";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 312;
+		modificationTime = 280340762.576187;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	52FE1B0210B63A1300AC2DA3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5200D78110B626C700A817C0 /* SampleUninstall.sh */;
+		name = "SampleUninstall.sh: 1";
 		rLen = 0;
 		rLoc = 0;
 		rType = 0;
-		vrLen = 229;
+		vrLen = 0;
 		vrLoc = 0;
 	};
-	5288403C10B56DB300892DFC /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 5288402910B56C0900892DFC /* SampleApp2.h */;
-		name = "SampleApp2.h: 9";
-		rLen = 0;
-		rLoc = 159;
-		rType = 0;
-		vrLen = 2827;
-		vrLoc = 832;
-	};
-	5288403D10B56DB300892DFC /* PBXTextBookmark */ = {
+	52FE1B0310B63A1300AC2DA3 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 5288402A10B56C0900892DFC /* SampleApp2.m */;
-		name = "SampleApp2.m: 10";
+		name = "SampleApp2.m: 458";
 		rLen = 0;
-		rLoc = 182;
+		rLoc = 16470;
 		rType = 0;
-		vrLen = 2340;
-		vrLoc = 159;
+		vrLen = 626;
+		vrLoc = 13645;
 	};
-	5288403E10B56DB300892DFC /* PlistBookmark */ = {
+	52FE1B0410B63A1300AC2DA3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5288402910B56C0900892DFC /* SampleApp2.h */;
+		name = "SampleApp2.h: 79";
+		rLen = 0;
+		rLoc = 3458;
+		rType = 0;
+		vrLen = 704;
+		vrLoc = 2315;
+	};
+	52FE1B0510B63A1300AC2DA3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E42F4C260B13656200A50F72 /* en */;
+		name = "SampleAuthorizationPrompts.strings: 2";
+		rLen = 67;
+		rLoc = 85;
+		rType = 0;
+		vrLen = 318;
+		vrLoc = 0;
+	};
+	52FE1B0610B63A1300AC2DA3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E4F1F1940B0DD65D003CDB5F /* SampleCommon.c */;
+		name = "SampleCommon.c: 91";
+		rLen = 18;
+		rLoc = 5245;
+		rType = 0;
+		vrLen = 569;
+		vrLoc = 3665;
+	};
+	52FE1B0710B63A1300AC2DA3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E4F1F1950B0DD65D003CDB5F /* SampleCommon.h */;
+		name = "SampleCommon.h: 94";
+		rLen = 80;
+		rLoc = 4087;
+		rType = 0;
+		vrLen = 1400;
+		vrLoc = 0;
+	};
+	52FE1B0810B63A1300AC2DA3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 845767000ADC312500D69CBB /* SampleTool.c */;
+		name = "SampleTool.c: 194";
+		rLen = 0;
+		rLoc = 6957;
+		rType = 0;
+		vrLen = 1413;
+		vrLoc = 0;
+	};
+	52FE1B0910B63A1300AC2DA3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 845767D10ADC565F00D69CBB /* SampleApp.m */;
+		name = "SampleApp.m: 457";
+		rLen = 33;
+		rLoc = 16124;
+		rType = 0;
+		vrLen = 899;
+		vrLoc = 2349;
+	};
+	52FE1B0A10B63A1300AC2DA3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 84D6DD950AD2F84F001E6F67 /* BetterAuthorizationSampleLib.h */;
+		name = "BetterAuthorizationSampleLib.h: 427";
+		rLen = 7;
+		rLoc = 22728;
+		rType = 0;
+		vrLen = 613;
+		vrLoc = 23766;
+	};
+	52FE1B0B10B63A1300AC2DA3 /* PlistBookmark */ = {
 		isa = PlistBookmark;
 		fRef = E4F1F2C00B0DECA3003CDB5F /* Info.plist */;
 		fallbackIsa = PBXBookmark;
@@ -272,205 +504,26 @@
 			NSPrincipalClass,
 		);
 		name = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/Time Tracking/Code Repo (GitHub)/Shutdown/BetterAuthorizationSample/Info.plist";
-		rLen = 0;
-		rLoc = 9223372036854775807;
-	};
-	5288403F10B56DB300892DFC /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 845767D10ADC565F00D69CBB /* SampleApp.m */;
-		name = "SampleApp.m: 81";
-		rLen = 17558;
-		rLoc = 3955;
-		rType = 0;
-		vrLen = 2103;
-		vrLoc = 19410;
-	};
-	5288404010B56DB300892DFC /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 845767D10ADC565F00D69CBB /* SampleApp.m */;
-		name = "SampleApp.m: 81";
-		rLen = 17558;
-		rLoc = 3955;
-		rType = 0;
-		vrLen = 2101;
-		vrLoc = 19410;
-	};
-	5288404110B56DB500892DFC /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 845767D10ADC565F00D69CBB /* SampleApp.m */;
-		name = "SampleApp.m: 81";
-		rLen = 17558;
-		rLoc = 3955;
-		rType = 0;
-		vrLen = 2101;
-		vrLoc = 19410;
-	};
-	5288404A10B56E2600892DFC /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 845767D10ADC565F00D69CBB /* SampleApp.m */;
-		name = "SampleApp.m: 574";
-		rLen = 0;
-		rLoc = 20511;
-		rType = 0;
-		vrLen = 2241;
-		vrLoc = 19272;
-	};
-	5288404B10B56E4100892DFC /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 845767D10ADC565F00D69CBB /* SampleApp.m */;
-		name = "SampleApp.m: 574";
-		rLen = 0;
-		rLoc = 20511;
-		rType = 0;
-		vrLen = 2186;
-		vrLoc = 19327;
-	};
-	5288404C10B56E4100892DFC /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 5288402A10B56C0900892DFC /* SampleApp2.m */;
-		name = "SampleApp2.m: 10";
-		rLen = 0;
-		rLoc = 182;
-		rType = 0;
-		vrLen = 2340;
-		vrLoc = 159;
-	};
-	5288404D10B56E4100892DFC /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 5288402910B56C0900892DFC /* SampleApp2.h */;
-		name = "SampleApp2.h: 9";
-		rLen = 0;
-		rLoc = 159;
-		rType = 0;
-		vrLen = 2827;
-		vrLoc = 832;
-	};
-	5288404E10B56E4100892DFC /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 5288402910B56C0900892DFC /* SampleApp2.h */;
-		name = "SampleApp2.h: 79";
-		rLen = 0;
-		rLoc = 3458;
-		rType = 0;
-		vrLen = 2851;
-		vrLoc = 832;
-	};
-	5288405110B56E5000892DFC /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 5288402910B56C0900892DFC /* SampleApp2.h */;
-		name = "SampleApp2.h: 79";
-		rLen = 0;
-		rLoc = 3458;
-		rType = 0;
-		vrLen = 2846;
-		vrLoc = 832;
-	};
-	5288405210B56E5100892DFC /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 5288402910B56C0900892DFC /* SampleApp2.h */;
-		name = "SampleApp2.h: 79";
-		rLen = 0;
-		rLoc = 3458;
-		rType = 0;
-		vrLen = 2846;
-		vrLoc = 832;
-	};
-	5288405410B56E6000892DFC /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 845767D10ADC565F00D69CBB /* SampleApp.m */;
-		name = "SampleApp.m: 574";
-		rLen = 0;
-		rLoc = 20511;
-		rType = 0;
-		vrLen = 2241;
-		vrLoc = 19272;
-	};
-	5288405510B56E6000892DFC /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 5288402910B56C0900892DFC /* SampleApp2.h */;
-		name = "SampleApp2.h: 79";
-		rLen = 0;
-		rLoc = 3458;
-		rType = 0;
-		vrLen = 3007;
-		vrLoc = 676;
-	};
-	52FB00B010B5672A00D2CB5F /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = E42F4C260B13656200A50F72 /* en */;
-		name = "SampleAuthorizationPrompts.strings: 1";
-		rLen = 0;
+		rLen = 13;
 		rLoc = 0;
-		rType = 0;
-		vrLen = 318;
-		vrLoc = 0;
 	};
-	52FB00B110B5672A00D2CB5F /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = E4F1F1950B0DD65D003CDB5F /* SampleCommon.h */;
-		name = "SampleCommon.h: 92";
-		rLen = 0;
-		rLoc = 4074;
-		rType = 0;
-		vrLen = 877;
-		vrLoc = 3773;
-	};
-	52FB00C710B5686600D2CB5F /* PlistBookmark */ = {
+	52FE1B0C10B63A1300AC2DA3 /* PlistBookmark */ = {
 		isa = PlistBookmark;
 		fRef = E4F1F2C00B0DECA3003CDB5F /* Info.plist */;
 		fallbackIsa = PBXBookmark;
 		isK = 0;
 		kPath = (
+			NSPrincipalClass,
 		);
 		name = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/Time Tracking/Code Repo (GitHub)/Shutdown/BetterAuthorizationSample/Info.plist";
-		rLen = 0;
-		rLoc = 9223372036854775808;
-	};
-	52FB00C810B5686600D2CB5F /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = E4F1F1940B0DD65D003CDB5F /* SampleCommon.c */;
-		name = "SampleCommon.c: 92";
-		rLen = 0;
-		rLoc = 5297;
-		rType = 0;
-		vrLen = 2188;
-		vrLoc = 0;
-	};
-	52FB00C910B5686600D2CB5F /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 845767000ADC312500D69CBB /* SampleTool.c */;
-		name = "SampleTool.c: 166";
-		rLen = 385;
-		rLoc = 5987;
-		rType = 0;
-		vrLen = 884;
-		vrLoc = 7303;
-	};
-	52FB00CA10B5686600D2CB5F /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 84D6DD960AD2F84F001E6F67 /* BetterAuthorizationSampleLib.c */;
-		name = "BetterAuthorizationSampleLib.c: 2421";
-		rLen = 0;
-		rLoc = 80875;
-		rType = 0;
-		vrLen = 1296;
-		vrLoc = 50407;
-	};
-	52FB00D910B568F700D2CB5F /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 845767D10ADC565F00D69CBB /* SampleApp.m */;
-		name = "SampleApp.m: 548";
-		rLen = 0;
-		rLoc = 19510;
-		rType = 0;
-		vrLen = 1340;
-		vrLoc = 18963;
+		rLen = 13;
+		rLoc = 0;
 	};
 	845767000ADC312500D69CBB /* SampleTool.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {844, 5320}}";
-			sepNavSelRange = "{5987, 385}";
-			sepNavVisRange = "{7303, 884}";
+			sepNavIntBoundsRect = "{{0, 0}, {594, 4970}}";
+			sepNavSelRange = "{6957, 0}";
+			sepNavVisRange = "{0, 1413}";
 		};
 	};
 	845767A50ADC470900D69CBB /* HelperTool */ = {
@@ -481,22 +534,29 @@
 	};
 	845767D10ADC565F00D69CBB /* SampleApp.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {708, 8456}}";
-			sepNavSelRange = "{20511, 0}";
-			sepNavVisRange = "{19272, 2241}";
+			sepNavIntBoundsRect = "{{0, 0}, {708, 8498}}";
+			sepNavSelRange = "{16124, 33}";
+			sepNavVisRange = "{2349, 899}";
+		};
+	};
+	84D6DD950AD2F84F001E6F67 /* BetterAuthorizationSampleLib.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {708, 10878}}";
+			sepNavSelRange = "{22728, 7}";
+			sepNavVisRange = "{23766, 613}";
 		};
 	};
 	84D6DD960AD2F84F001E6F67 /* BetterAuthorizationSampleLib.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {844, 34020}}";
-			sepNavSelRange = "{80875, 0}";
-			sepNavVisRange = "{50407, 1296}";
+			sepNavIntBoundsRect = "{{0, 0}, {859, 33614}}";
+			sepNavSelRange = "{49503, 0}";
+			sepNavVisRange = "{46863, 1282}";
 		};
 	};
 	E42F4C260B13656200A50F72 /* en */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {844, 478}}";
-			sepNavSelRange = "{0, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {516, 164}}";
+			sepNavSelRange = "{85, 67}";
 			sepNavVisRange = "{0, 318}";
 		};
 	};
@@ -515,16 +575,16 @@
 	};
 	E4F1F1940B0DD65D003CDB5F /* SampleCommon.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1296, 1456}}";
-			sepNavSelRange = "{5297, 0}";
-			sepNavVisRange = "{0, 2188}";
+			sepNavIntBoundsRect = "{{0, 0}, {1296, 1624}}";
+			sepNavSelRange = "{5245, 18}";
+			sepNavVisRange = "{3665, 569}";
 		};
 	};
 	E4F1F1950B0DD65D003CDB5F /* SampleCommon.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {844, 1694}}";
-			sepNavSelRange = "{4074, 0}";
-			sepNavVisRange = "{3773, 877}";
+			sepNavIntBoundsRect = "{{0, 0}, {636, 1694}}";
+			sepNavSelRange = "{4087, 80}";
+			sepNavVisRange = "{0, 1400}";
 		};
 	};
 	E4F1F2BD0B0DECA3003CDB5F /* App */ = {
