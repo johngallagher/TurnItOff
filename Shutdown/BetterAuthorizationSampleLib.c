@@ -1518,12 +1518,12 @@ extern int BASHelperToolMain(
                 // If the incoming connection just disappeared (perhaps the client 
                 // died before we accepted the connection), don't log that as an error 
                 // and don't quit.
-                err = asl_log(asl, aslMsg, ASL_LEVEL_INFO, "Connection disappeared before we could accept it: %m");
+                err = asl_log(asl, aslMsg, ASL_LEVEL_INFO, "Connection disappeared before we could accept it");
                 assert(err == 0);
             } else {
                 // Other errors mean that we're in a very weird state; we respond by 
                 // failing out with an error.
-                errStr = "Unexpected error while accepting a connection: %m";
+                errStr = "Unexpected error while accepting a connection";
                 goto done;
             }
         }
@@ -1556,7 +1556,7 @@ extern int BASHelperToolMain(
                 err = asl_log(asl, aslMsg, ASL_LEVEL_DEBUG, "Request finished");
             } else {
                 errno = thisConnectionError;            // so it can be picked up by %m
-                err = asl_log(asl, aslMsg, ASL_LEVEL_ERR, "Request failed: %m");
+                err = asl_log(asl, aslMsg, ASL_LEVEL_ERR, "Request failed");
             }
             assert(err == 0);
         }

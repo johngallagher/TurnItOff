@@ -10,3 +10,4 @@
 #import "AbstractSingletonObject.h"
 #import "HelperAppController.h"
 #import "PrefPaneController.h"
+//#import "ShutdownHelperTool.h"

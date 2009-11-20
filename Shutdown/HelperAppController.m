@@ -93,7 +93,9 @@
 
 
 -(void)launchHelperApp {
-    NSString *helperAppPath = [[NSBundle bundleWithIdentifier:@"com.synapticmishap.shutdown"] pathForResource:@"ShutdownHelperApp" ofType:@"app"];
+//    NSString *helperAppPath = [[NSBundle bundleWithIdentifier:@"com.synapticmishap.shutdown"] pathForResource:@"ShutdownHelperApp" ofType:@"app"];
+// TODO: Switch for top line once we've got the test working and the real one integrated.
+    NSString *helperAppPath = [[NSBundle bundleWithIdentifier:@"com.synapticmishap.shutdown"] pathForResource:@"ShutdownHelperAppTest" ofType:@"app"];
 	NSURL *helperURL = [NSURL fileURLWithPath:helperAppPath];
     
 	unsigned options = NSWorkspaceLaunchWithoutAddingToRecents | NSWorkspaceLaunchWithoutActivation | NSWorkspaceLaunchAsync;
@@ -107,8 +109,11 @@
 }
 
 -(void)terminateHelperApp {
-    [[NSDistributedNotificationCenter defaultCenter] postNotificationName:HELPERAPP_SHUTDOWN 
+    [[NSDistributedNotificationCenter defaultCenter] postNotificationName:Terminate_Helper_App 
                                                                    object:@"PrefPane"];
-    
+}
+-(void)shutdownComputer {
+    [[NSDistributedNotificationCenter defaultCenter] postNotificationName:Shutdown_Computer 
+                                                                   object:@"PrefPane"];
 }
 @end

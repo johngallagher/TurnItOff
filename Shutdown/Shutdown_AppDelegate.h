@@ -38,4 +38,5 @@
 
 -(IBAction)applyPreferences:(id)sender;
 
+-(IBAction)shutdownComputer:(id)sender;
 @end

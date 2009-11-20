@@ -25,5 +25,6 @@
 
 -(void)terminateHelperApp;
 
+-(void)shutdownComputer;
 
 @end

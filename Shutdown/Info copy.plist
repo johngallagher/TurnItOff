@@ -6,25 +6,29 @@
 	<string>English</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIconFile</key>
+	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>com.synapticmishap.shutdown.HelperApp</string>
+	<string>com.synapticmishap.shutdown</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
 	<key>CFBundlePackageType</key>
-	<string>APPL</string>
+	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
-	<key>LSMinimumSystemVersion</key>
-	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
+	<string>1.0</string>
 	<key>NSMainNibFile</key>
-	<string>HelperApp</string>
+	<string>ShutdownPref</string>
+	<key>NSPrefPaneIconFile</key>
+	<string>ShutdownPref.tiff</string>
+	<key>NSPrefPaneIconLabel</key>
+	<string>Shutdown</string>
 	<key>NSPrincipalClass</key>
-	<string>NSApplication</string>
-	<key>LSUIElement</key>
-	<true/>
+	<string>ShutdownPref</string>
 </dict>
 </plist>

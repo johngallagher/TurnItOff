@@ -1,10 +1,7 @@
-
-#include <unistd.h>
-#include <netinet/in.h>
-
-#import <Cocoa/Cocoa.h>
-
-#include "BetterAuthorizationSampleLib.h"
+//#include <unistd.h>
+//#include <netinet/in.h>
+//
+//#include "BetterAuthorizationSampleLib.h"
 
 #include "SampleCommon.h"
 
@@ -21,13 +18,9 @@ static AuthorizationRef gAuth;
 // It has a two outlets, one pointing to the text view where we log our results 
 // and the other referencing the "Force failure" checkbox.
 
-@interface ShutdownHelperTool : NSObject {
+@interface ShutdownHelperToolExecutor : NSObject {
 }
 
-//- (IBAction)doGetVersion:(id)sender;
-//- (IBAction)doGetUIDs:(id)sender;
-//- (IBAction)doLowNumberedPorts:(id)sender;
-//- (IBAction)doShutdown:(id)sender;
-//- (IBAction)destroyRights:(id)sender;
+-(void)doShutdown;
 
 @end

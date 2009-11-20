@@ -10,7 +10,6 @@
 		520F2B2110B6C3DA001D0EB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520F2B2010B6C3DA001D0EB2 /* Foundation.framework */; };
 		520F2C2D10B6CD64001D0EB2 /* BetterAuthorizationSampleLib.c in Sources */ = {isa = PBXBuildFile; fileRef = 52FE19CD10B62FDF00AC2DA3 /* BetterAuthorizationSampleLib.c */; };
 		520F2C2E10B6CD68001D0EB2 /* SampleCommon.c in Sources */ = {isa = PBXBuildFile; fileRef = 52FE19D310B6301D00AC2DA3 /* SampleCommon.c */; };
-		520F2C3010B6CD73001D0EB2 /* SampleTool.c in Sources */ = {isa = PBXBuildFile; fileRef = 52FE19D110B6301D00AC2DA3 /* SampleTool.c */; };
 		520F2C3310B6CD9A001D0EB2 /* ShutdownAuthorizationPrompt.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52FE1AC710B635B200AC2DA3 /* ShutdownAuthorizationPrompt.strings */; };
 		520F2C3810B6CDD5001D0EB2 /* HelperTool in CopyFiles */ = {isa = PBXBuildFile; fileRef = 520F2C0E10B6CC68001D0EB2 /* HelperTool */; };
 		520F2C3910B6CDD5001D0EB2 /* InstallTool in CopyFiles */ = {isa = PBXBuildFile; fileRef = 520F2C1510B6CC7D001D0EB2 /* InstallTool */; };
@@ -22,6 +21,7 @@
 		520F2C6C10B6CE3E001D0EB2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FE1AE210B6395A00AC2DA3 /* Security.framework */; };
 		520F2C6D10B6CE3E001D0EB2 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FE1AE610B6397100AC2DA3 /* CoreFoundation.framework */; };
 		520F2C6E10B6CE5F001D0EB2 /* BetterAuthorizationSampleLibInstallTool.c in Sources */ = {isa = PBXBuildFile; fileRef = 52FE19CE10B62FDF00AC2DA3 /* BetterAuthorizationSampleLibInstallTool.c */; };
+		520F2C7F10B6CEF2001D0EB2 /* ShutdownHelperToolExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FE1AC310B6335D00AC2DA3 /* ShutdownHelperToolExecutor.m */; };
 		52154BB610B069A30018F774 /* HelperAppController.h in Headers */ = {isa = PBXBuildFile; fileRef = 52154BB410B069A30018F774 /* HelperAppController.h */; };
 		52154BB710B069A30018F774 /* HelperAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52154BB510B069A30018F774 /* HelperAppController.m */; };
 		52154C0710B073670018F774 /* PrefPaneController.h in Headers */ = {isa = PBXBuildFile; fileRef = 52154C0510B073670018F774 /* PrefPaneController.h */; };
@@ -41,6 +41,30 @@
 		52BD946F10B1B0CB00291F3D /* AbstractSingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BD946C10B1B0CB00291F3D /* AbstractSingletonObject.m */; };
 		52DCC1A310B2D49400C9D6CE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52DCC1A210B2D49400C9D6CE /* Cocoa.framework */; };
 		52DCC2FB10B3075A00C9D6CE /* DefaultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DCC2FA10B3075A00C9D6CE /* DefaultsController.m */; };
+		52E69F9510B6F213006998F9 /* HelperApp_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5217B30210B1DDC0008A3DE6 /* HelperApp_AppDelegate.m */; };
+		52E69F9610B6F226006998F9 /* JGConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BD946710B1A5C800291F3D /* JGConstants.m */; };
+		52E69F9910B6F2D4006998F9 /* AbstractSingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BD946C10B1B0CB00291F3D /* AbstractSingletonObject.m */; };
+		52E69FA410B6F3AC006998F9 /* Shutdown_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32DBCFA20370C41700C91783 /* Shutdown_Prefix.pch */; };
+		52E69FA510B6F3AC006998F9 /* ShutdownPref.h in Headers */ = {isa = PBXBuildFile; fileRef = F506C03C013D9D7901CA16C8 /* ShutdownPref.h */; };
+		52E69FA610B6F3AC006998F9 /* HelperAppController.h in Headers */ = {isa = PBXBuildFile; fileRef = 52154BB410B069A30018F774 /* HelperAppController.h */; };
+		52E69FA710B6F3AC006998F9 /* PrefPaneController.h in Headers */ = {isa = PBXBuildFile; fileRef = 52154C0510B073670018F774 /* PrefPaneController.h */; };
+		52E69FA810B6F3AC006998F9 /* JGConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 52BD946610B1A5C800291F3D /* JGConstants.h */; };
+		52E69FA910B6F3AC006998F9 /* AbstractSingletonObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 52BD946B10B1B0CB00291F3D /* AbstractSingletonObject.h */; };
+		52E69FAA10B6F3AC006998F9 /* Shutdown_AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5217B0ED10B1B567008A3DE6 /* Shutdown_AppDelegate.h */; };
+		52E69FAB10B6F3AC006998F9 /* JGDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 5217B2FF10B1DCFF008A3DE6 /* JGDefines.h */; };
+		52E69FAD10B6F3AC006998F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		52E69FAE10B6F3AC006998F9 /* ShutdownPref.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F506C040013D9D8001CA16C8 /* ShutdownPref.tiff */; };
+		52E69FB010B6F3AC006998F9 /* ShutdownPref.xib in Resources */ = {isa = PBXBuildFile; fileRef = F506C042013D9D8C01CA16C8 /* ShutdownPref.xib */; };
+		52E69FB210B6F3AC006998F9 /* ShutdownPref.m in Sources */ = {isa = PBXBuildFile; fileRef = F506C03D013D9D7901CA16C8 /* ShutdownPref.m */; };
+		52E69FB310B6F3AC006998F9 /* HelperAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52154BB510B069A30018F774 /* HelperAppController.m */; };
+		52E69FB410B6F3AC006998F9 /* PrefPaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52154C0610B073670018F774 /* PrefPaneController.m */; };
+		52E69FB510B6F3AC006998F9 /* JGConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BD946710B1A5C800291F3D /* JGConstants.m */; };
+		52E69FB610B6F3AC006998F9 /* AbstractSingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BD946C10B1B0CB00291F3D /* AbstractSingletonObject.m */; };
+		52E69FB710B6F3AC006998F9 /* Shutdown_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5217B0EE10B1B567008A3DE6 /* Shutdown_AppDelegate.m */; };
+		52E69FB910B6F3AC006998F9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		52E69FBA10B6F3AC006998F9 /* PreferencePanes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F506C035013D953901CA16C8 /* PreferencePanes.framework */; };
+		52E69FCB10B6F3E5006998F9 /* ShutdownHelperAppTest.app in Resources */ = {isa = PBXBuildFile; fileRef = 520F2C2310B6CCCE001D0EB2 /* ShutdownHelperAppTest.app */; };
+		52E6A05B10B6FE0F006998F9 /* HelperApp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5217B30710B1DE59008A3DE6 /* HelperApp.xib */; };
 		52FE1AE310B6395A00AC2DA3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FE1AE210B6395A00AC2DA3 /* Security.framework */; };
 		52FE1AE710B6397100AC2DA3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FE1AE610B6397100AC2DA3 /* CoreFoundation.framework */; };
 		8D202CEA0486D31800D8A456 /* Shutdown_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32DBCFA20370C41700C91783 /* Shutdown_Prefix.pch */; };
@@ -58,14 +82,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 520F2C1410B6CC7D001D0EB2 /* InstallTool */;
+			remoteGlobalIDString = 520F2C1410B6CC7D001D0EB2;
 			remoteInfo = InstallTool;
 		};
 		520F2C2B10B6CD13001D0EB2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 520F2C0D10B6CC68001D0EB2 /* HelperTool */;
+			remoteGlobalIDString = 520F2C0D10B6CC68001D0EB2;
 			remoteInfo = HelperTool;
 		};
 		5217B30510B1DE14008A3DE6 /* PBXContainerItemProxy */ = {
@@ -74,6 +98,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 52154BC310B0716E0018F774;
 			remoteInfo = ShutdownHelperApp;
+		};
+		52E69FC510B6F3D9006998F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 520F2C2210B6CCCE001D0EB2;
+			remoteInfo = ShutdownHelperAppTest;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -124,14 +155,16 @@
 		52DCC1A210B2D49400C9D6CE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		52DCC2F910B3075A00C9D6CE /* DefaultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultsController.h; sourceTree = "<group>"; };
 		52DCC2FA10B3075A00C9D6CE /* DefaultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultsController.m; sourceTree = "<group>"; };
+		52E69FBF10B6F3AD006998F9 /* Shutdown.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Shutdown.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
+		52E69FC010B6F3AD006998F9 /* Info copy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info copy.plist"; sourceTree = "<group>"; };
 		52FE19CC10B62FDF00AC2DA3 /* BetterAuthorizationSampleLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetterAuthorizationSampleLib.h; sourceTree = "<group>"; };
 		52FE19CD10B62FDF00AC2DA3 /* BetterAuthorizationSampleLib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BetterAuthorizationSampleLib.c; sourceTree = "<group>"; };
 		52FE19CE10B62FDF00AC2DA3 /* BetterAuthorizationSampleLibInstallTool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BetterAuthorizationSampleLibInstallTool.c; sourceTree = "<group>"; };
 		52FE19D110B6301D00AC2DA3 /* SampleTool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SampleTool.c; sourceTree = "<group>"; };
 		52FE19D210B6301D00AC2DA3 /* SampleCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleCommon.h; sourceTree = "<group>"; };
 		52FE19D310B6301D00AC2DA3 /* SampleCommon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SampleCommon.c; sourceTree = "<group>"; };
-		52FE1AC210B6335D00AC2DA3 /* ShutdownHelperTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShutdownHelperTool.h; sourceTree = "<group>"; };
-		52FE1AC310B6335D00AC2DA3 /* ShutdownHelperTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShutdownHelperTool.m; sourceTree = "<group>"; };
+		52FE1AC210B6335D00AC2DA3 /* ShutdownHelperToolExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShutdownHelperToolExecutor.h; sourceTree = "<group>"; };
+		52FE1AC310B6335D00AC2DA3 /* ShutdownHelperToolExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShutdownHelperToolExecutor.m; sourceTree = "<group>"; };
 		52FE1AC710B635B200AC2DA3 /* ShutdownAuthorizationPrompt.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = ShutdownAuthorizationPrompt.strings; sourceTree = "<group>"; };
 		52FE1AE210B6395A00AC2DA3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		52FE1AE610B6397100AC2DA3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -181,6 +214,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		52E69FB810B6F3AC006998F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E69FB910B6F3AC006998F9 /* Cocoa.framework in Frameworks */,
+				52E69FBA10B6F3AC006998F9 /* PreferencePanes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D202CF20486D31800D8A456 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -199,8 +241,6 @@
 				5217B2E210B1DB80008A3DE6 /* Shared */,
 				5217B2E110B1DB73008A3DE6 /* Pref Pane */,
 				5217B2E010B1DB6B008A3DE6 /* Helper App */,
-				32DBCFA10370C40200C91783 /* Other Sources */,
-				089C167CFE841241C02AAC07 /* Resources */,
 				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
 				19C28FB8FE9D52D311CA2CBB /* Products */,
 				52DCC1A210B2D49400C9D6CE /* Cocoa.framework */,
@@ -225,7 +265,7 @@
 				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
 				F506C040013D9D8001CA16C8 /* ShutdownPref.tiff */,
 				F506C042013D9D8C01CA16C8 /* ShutdownPref.xib */,
-				5217B30710B1DE59008A3DE6 /* HelperApp.xib */,
+				52E69FC010B6F3AD006998F9 /* Info copy.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -277,6 +317,7 @@
 				520F2C0E10B6CC68001D0EB2 /* HelperTool */,
 				520F2C1510B6CC7D001D0EB2 /* InstallTool */,
 				520F2C2310B6CCCE001D0EB2 /* ShutdownHelperAppTest.app */,
+				52E69FBF10B6F3AD006998F9 /* Shutdown.prefPane */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -297,8 +338,8 @@
 			children = (
 				52FE19CA10B62F0400AC2DA3 /* BetterAuthorisation */,
 				5217B2E510B1DBC2008A3DE6 /* Classes */,
-				5217B30410B1DDF0008A3DE6 /* HelperApp_Prefix.pch */,
 				52E023FA10B2C49B0013F8A8 /* Resources */,
+				52E69F9810B6F248006998F9 /* Other */,
 			);
 			name = "Helper App";
 			sourceTree = "<group>";
@@ -307,6 +348,8 @@
 			isa = PBXGroup;
 			children = (
 				08FB77AFFE84173DC02AAC07 /* Classes */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				32DBCFA10370C40200C91783 /* Other Sources */,
 			);
 			name = "Pref Pane";
 			sourceTree = "<group>";
@@ -333,16 +376,25 @@
 		52E023FA10B2C49B0013F8A8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5217B30710B1DE59008A3DE6 /* HelperApp.xib */,
 				52154BC610B0716E0018F774 /* ShutdownHelperApp-Info.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		52E69F9810B6F248006998F9 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				5217B30410B1DDF0008A3DE6 /* HelperApp_Prefix.pch */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
 		52FE19CA10B62F0400AC2DA3 /* BetterAuthorisation */ = {
 			isa = PBXGroup;
 			children = (
-				52FE1AC210B6335D00AC2DA3 /* ShutdownHelperTool.h */,
-				52FE1AC310B6335D00AC2DA3 /* ShutdownHelperTool.m */,
+				52FE1AC210B6335D00AC2DA3 /* ShutdownHelperToolExecutor.h */,
+				52FE1AC310B6335D00AC2DA3 /* ShutdownHelperToolExecutor.m */,
 				52FE19D110B6301D00AC2DA3 /* SampleTool.c */,
 				52FE19D210B6301D00AC2DA3 /* SampleCommon.h */,
 				52FE19D310B6301D00AC2DA3 /* SampleCommon.c */,
@@ -365,6 +417,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		52E69FA310B6F3AC006998F9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E69FA410B6F3AC006998F9 /* Shutdown_Prefix.pch in Headers */,
+				52E69FA510B6F3AC006998F9 /* ShutdownPref.h in Headers */,
+				52E69FA610B6F3AC006998F9 /* HelperAppController.h in Headers */,
+				52E69FA710B6F3AC006998F9 /* PrefPaneController.h in Headers */,
+				52E69FA810B6F3AC006998F9 /* JGConstants.h in Headers */,
+				52E69FA910B6F3AC006998F9 /* AbstractSingletonObject.h in Headers */,
+				52E69FAA10B6F3AC006998F9 /* Shutdown_AppDelegate.h in Headers */,
+				52E69FAB10B6F3AC006998F9 /* JGDefines.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D202CE90486D31800D8A456 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -453,6 +520,27 @@
 			productReference = 52154BC410B0716E0018F774 /* ShutdownHelperApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		52E69FA010B6F3AC006998F9 /* Shutdown test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52E69FBC10B6F3AC006998F9 /* Build configuration list for PBXNativeTarget "Shutdown test" */;
+			buildPhases = (
+				52E69FA310B6F3AC006998F9 /* Headers */,
+				52E69FAC10B6F3AC006998F9 /* Resources */,
+				52E69FB110B6F3AC006998F9 /* Sources */,
+				52E69FB810B6F3AC006998F9 /* Frameworks */,
+				52E69FBB10B6F3AC006998F9 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52E69FC610B6F3D9006998F9 /* PBXTargetDependency */,
+			);
+			name = "Shutdown test";
+			productInstallPath = "$(HOME)/Library/PreferencePanes";
+			productName = Shutdown;
+			productReference = 52E69FBF10B6F3AD006998F9 /* Shutdown.prefPane */;
+			productType = "com.apple.product-type.bundle";
+		};
 		8D202CE80486D31800D8A456 /* Shutdown */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DBD214808BA80EA00186707 /* Build configuration list for PBXNativeTarget "Shutdown" */;
@@ -486,6 +574,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				52E69FA010B6F3AC006998F9 /* Shutdown test */,
 				8D202CE80486D31800D8A456 /* Shutdown */,
 				52154BC310B0716E0018F774 /* ShutdownHelperApp */,
 				520F2C2210B6CCCE001D0EB2 /* ShutdownHelperAppTest */,
@@ -500,6 +589,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52E6A05B10B6FE0F006998F9 /* HelperApp.xib in Resources */,
 				520F2C3310B6CD9A001D0EB2 /* ShutdownAuthorizationPrompt.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +599,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				5217B30810B1DE59008A3DE6 /* HelperApp.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52E69FAC10B6F3AC006998F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E69FCB10B6F3E5006998F9 /* ShutdownHelperAppTest.app in Resources */,
+				52E69FAD10B6F3AC006998F9 /* InfoPlist.strings in Resources */,
+				52E69FAE10B6F3AC006998F9 /* ShutdownPref.tiff in Resources */,
+				52E69FB010B6F3AC006998F9 /* ShutdownPref.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +627,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXRezBuildPhase section */
+		52E69FBB10B6F3AC006998F9 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D202CF50486D31800D8A456 /* Rez */ = {
 			isa = PBXRezBuildPhase;
 			buildActionMask = 2147483647;
@@ -558,9 +666,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52E69F9910B6F2D4006998F9 /* AbstractSingletonObject.m in Sources */,
 				520F2C2D10B6CD64001D0EB2 /* BetterAuthorizationSampleLib.c in Sources */,
 				520F2C2E10B6CD68001D0EB2 /* SampleCommon.c in Sources */,
-				520F2C3010B6CD73001D0EB2 /* SampleTool.c in Sources */,
+				520F2C7F10B6CEF2001D0EB2 /* ShutdownHelperToolExecutor.m in Sources */,
+				52E69F9510B6F213006998F9 /* HelperApp_AppDelegate.m in Sources */,
+				52E69F9610B6F226006998F9 /* JGConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +684,19 @@
 				5217B30310B1DDC0008A3DE6 /* HelperApp_AppDelegate.m in Sources */,
 				52DCC2FB10B3075A00C9D6CE /* DefaultsController.m in Sources */,
 				52A896D810B5C39400220B47 /* ShellTask.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52E69FB110B6F3AC006998F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E69FB210B6F3AC006998F9 /* ShutdownPref.m in Sources */,
+				52E69FB310B6F3AC006998F9 /* HelperAppController.m in Sources */,
+				52E69FB410B6F3AC006998F9 /* PrefPaneController.m in Sources */,
+				52E69FB510B6F3AC006998F9 /* JGConstants.m in Sources */,
+				52E69FB610B6F3AC006998F9 /* AbstractSingletonObject.m in Sources */,
+				52E69FB710B6F3AC006998F9 /* Shutdown_AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,6 +730,11 @@
 			isa = PBXTargetDependency;
 			target = 52154BC310B0716E0018F774 /* ShutdownHelperApp */;
 			targetProxy = 5217B30510B1DE14008A3DE6 /* PBXContainerItemProxy */;
+		};
+		52E69FC610B6F3D9006998F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 520F2C2210B6CCCE001D0EB2 /* ShutdownHelperAppTest */;
+			targetProxy = 52E69FC510B6F3D9006998F9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -798,7 +927,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_PREFIX_HEADER = HelperApp_Prefix.pch;
 				INFOPLIST_FILE = "ShutdownHelperAppTest-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
@@ -894,6 +1023,41 @@
 			};
 			name = Release;
 		};
+		52E69FBD10B6F3AC006998F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DSTROOT = /;
+				GCC_DEBUGGING_SYMBOLS = full;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Shutdown_Prefix.pch;
+				INFOPLIST_FILE = "Info copy.plist";
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				PRODUCT_NAME = Shutdown;
+				WRAPPER_EXTENSION = prefPane;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		52E69FBE10B6F3AC006998F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Shutdown_Prefix.pch;
+				INFOPLIST_FILE = "Info copy.plist";
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				PRODUCT_NAME = Shutdown;
+				WRAPPER_EXTENSION = prefPane;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -947,6 +1111,15 @@
 			buildConfigurations = (
 				52154BC710B071700018F774 /* Debug */,
 				52154BC810B071700018F774 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52E69FBC10B6F3AC006998F9 /* Build configuration list for PBXNativeTarget "Shutdown test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52E69FBD10B6F3AC006998F9 /* Debug */,
+				52E69FBE10B6F3AC006998F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

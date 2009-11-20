@@ -6,9 +6,9 @@
 //  Copyright 2009 Synaptic Mishap. All rights reserved.
 //
 
-#import "ShutdownHelperTool.h"
+#import "ShutdownHelperToolExecutor.h"
 
-@implementation ShutdownHelperTool
+@implementation ShutdownHelperToolExecutor
 
 -(void)doShutdown {
     OSStatus        err;
