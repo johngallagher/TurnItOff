@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		520F2B2110B6C3DA001D0EB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520F2B2010B6C3DA001D0EB2 /* Foundation.framework */; };
 		520F2C2D10B6CD64001D0EB2 /* BetterAuthorizationSampleLib.c in Sources */ = {isa = PBXBuildFile; fileRef = 52FE19CD10B62FDF00AC2DA3 /* BetterAuthorizationSampleLib.c */; };
 		520F2C2E10B6CD68001D0EB2 /* SampleCommon.c in Sources */ = {isa = PBXBuildFile; fileRef = 52FE19D310B6301D00AC2DA3 /* SampleCommon.c */; };
 		520F2C3310B6CD9A001D0EB2 /* ShutdownAuthorizationPrompt.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52FE1AC710B635B200AC2DA3 /* ShutdownAuthorizationPrompt.strings */; };
@@ -32,7 +31,6 @@
 		5217B30310B1DDC0008A3DE6 /* HelperApp_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5217B30210B1DDC0008A3DE6 /* HelperApp_AppDelegate.m */; };
 		5217B30810B1DE59008A3DE6 /* HelperApp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5217B30710B1DE59008A3DE6 /* HelperApp.xib */; };
 		5217B37210B1E16F008A3DE6 /* ShutdownHelperApp.app in Resources */ = {isa = PBXBuildFile; fileRef = 52154BC410B0716E0018F774 /* ShutdownHelperApp.app */; };
-		52A896D810B5C39400220B47 /* ShellTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A896D710B5C39300220B47 /* ShellTask.m */; };
 		52BD946810B1A5C800291F3D /* JGConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 52BD946610B1A5C800291F3D /* JGConstants.h */; };
 		52BD946910B1A5C800291F3D /* JGConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BD946710B1A5C800291F3D /* JGConstants.m */; };
 		52BD946A10B1A5C800291F3D /* JGConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BD946710B1A5C800291F3D /* JGConstants.m */; };
@@ -45,8 +43,13 @@
 		52D570C510BABA3300D8CC2F /* NSDate+JGUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D570C110BABA3300D8CC2F /* NSDate+JGUtilities.m */; };
 		52D570C610BABA3300D8CC2F /* NSDate+JGUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 52D570C010BABA3300D8CC2F /* NSDate+JGUtilities.h */; };
 		52D570C710BABA3300D8CC2F /* NSDate+JGUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D570C110BABA3300D8CC2F /* NSDate+JGUtilities.m */; };
+		52D5712A10BAC4E500D8CC2F /* ShutdownAuthorizationPrompt.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52FE1AC710B635B200AC2DA3 /* ShutdownAuthorizationPrompt.strings */; };
+		52D5713510BAC52900D8CC2F /* HelperTool in Copy Helper and Install Tools */ = {isa = PBXBuildFile; fileRef = 520F2C0E10B6CC68001D0EB2 /* HelperTool */; };
+		52D5713610BAC52900D8CC2F /* InstallTool in Copy Helper and Install Tools */ = {isa = PBXBuildFile; fileRef = 520F2C1510B6CC7D001D0EB2 /* InstallTool */; };
+		52D571E210BAC54A00D8CC2F /* BetterAuthorizationSampleLib.c in Sources */ = {isa = PBXBuildFile; fileRef = 52FE19CD10B62FDF00AC2DA3 /* BetterAuthorizationSampleLib.c */; };
+		52D571E310BAC54A00D8CC2F /* SampleCommon.c in Sources */ = {isa = PBXBuildFile; fileRef = 52FE19D310B6301D00AC2DA3 /* SampleCommon.c */; };
+		52D571E410BAC54A00D8CC2F /* ShutdownHelperToolExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FE1AC310B6335D00AC2DA3 /* ShutdownHelperToolExecutor.m */; };
 		52DCC1A310B2D49400C9D6CE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52DCC1A210B2D49400C9D6CE /* Cocoa.framework */; };
-		52DCC2FB10B3075A00C9D6CE /* DefaultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DCC2FA10B3075A00C9D6CE /* DefaultsController.m */; };
 		52E69F9510B6F213006998F9 /* HelperApp_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5217B30210B1DDC0008A3DE6 /* HelperApp_AppDelegate.m */; };
 		52E69F9610B6F226006998F9 /* JGConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BD946710B1A5C800291F3D /* JGConstants.m */; };
 		52E69F9910B6F2D4006998F9 /* AbstractSingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BD946C10B1B0CB00291F3D /* AbstractSingletonObject.m */; };
@@ -72,7 +75,6 @@
 		52E69FCB10B6F3E5006998F9 /* ShutdownHelperAppTest.app in Resources */ = {isa = PBXBuildFile; fileRef = 520F2C2310B6CCCE001D0EB2 /* ShutdownHelperAppTest.app */; };
 		52E6A05B10B6FE0F006998F9 /* HelperApp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5217B30710B1DE59008A3DE6 /* HelperApp.xib */; };
 		52FE1AE310B6395A00AC2DA3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FE1AE210B6395A00AC2DA3 /* Security.framework */; };
-		52FE1AE710B6397100AC2DA3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FE1AE610B6397100AC2DA3 /* CoreFoundation.framework */; };
 		8D202CEA0486D31800D8A456 /* Shutdown_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32DBCFA20370C41700C91783 /* Shutdown_Prefix.pch */; };
 		8D202CEB0486D31800D8A456 /* ShutdownPref.h in Headers */ = {isa = PBXBuildFile; fileRef = F506C03C013D9D7901CA16C8 /* ShutdownPref.h */; };
 		8D202CED0486D31800D8A456 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
@@ -105,6 +107,20 @@
 			remoteGlobalIDString = 52154BC310B0716E0018F774;
 			remoteInfo = ShutdownHelperApp;
 		};
+		52D571F810BAC61000D8CC2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 520F2C1410B6CC7D001D0EB2 /* InstallTool */;
+			remoteInfo = InstallTool;
+		};
+		52D571FA10BAC61000D8CC2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 520F2C0D10B6CC68001D0EB2 /* HelperTool */;
+			remoteInfo = HelperTool;
+		};
 		52E69FC510B6F3D9006998F9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
@@ -124,6 +140,18 @@
 				520F2C3810B6CDD5001D0EB2 /* HelperTool in CopyFiles */,
 				520F2C3910B6CDD5001D0EB2 /* InstallTool in CopyFiles */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D5713410BAC52000D8CC2F /* Copy Helper and Install Tools */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				52D5713510BAC52900D8CC2F /* HelperTool in Copy Helper and Install Tools */,
+				52D5713610BAC52900D8CC2F /* InstallTool in Copy Helper and Install Tools */,
+			);
+			name = "Copy Helper and Install Tools";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -217,8 +245,6 @@
 			files = (
 				52DCC1A310B2D49400C9D6CE /* Cocoa.framework in Frameworks */,
 				52FE1AE310B6395A00AC2DA3 /* Security.framework in Frameworks */,
-				52FE1AE710B6397100AC2DA3 /* CoreFoundation.framework in Frameworks */,
-				520F2B2110B6C3DA001D0EB2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,9 +348,9 @@
 			children = (
 				52154BC410B0716E0018F774 /* ShutdownHelperApp.app */,
 				8D202CF80486D31800D8A456 /* Shutdown.prefPane */,
+				520F2C2310B6CCCE001D0EB2 /* ShutdownHelperAppTest.app */,
 				520F2C0E10B6CC68001D0EB2 /* HelperTool */,
 				520F2C1510B6CC7D001D0EB2 /* InstallTool */,
-				520F2C2310B6CCCE001D0EB2 /* ShutdownHelperAppTest.app */,
 				52E69FBF10B6F3AD006998F9 /* Shutdown.prefPane */,
 			);
 			name = Products;
@@ -522,10 +548,13 @@
 				52154BC010B0716E0018F774 /* Resources */,
 				52154BC110B0716E0018F774 /* Sources */,
 				52154BC210B0716E0018F774 /* Frameworks */,
+				52D5713410BAC52000D8CC2F /* Copy Helper and Install Tools */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				52D571FB10BAC61000D8CC2F /* PBXTargetDependency */,
+				52D571F910BAC61000D8CC2F /* PBXTargetDependency */,
 			);
 			name = ShutdownHelperApp;
 			productName = ShutdownHelperApp;
@@ -610,6 +639,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52D5712A10BAC4E500D8CC2F /* ShutdownAuthorizationPrompt.strings in Resources */,
 				5217B30810B1DE59008A3DE6 /* HelperApp.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -694,9 +724,10 @@
 			files = (
 				52BD946A10B1A5C800291F3D /* JGConstants.m in Sources */,
 				52BD946F10B1B0CB00291F3D /* AbstractSingletonObject.m in Sources */,
+				52D571E210BAC54A00D8CC2F /* BetterAuthorizationSampleLib.c in Sources */,
+				52D571E310BAC54A00D8CC2F /* SampleCommon.c in Sources */,
+				52D571E410BAC54A00D8CC2F /* ShutdownHelperToolExecutor.m in Sources */,
 				5217B30310B1DDC0008A3DE6 /* HelperApp_AppDelegate.m in Sources */,
-				52DCC2FB10B3075A00C9D6CE /* DefaultsController.m in Sources */,
-				52A896D810B5C39400220B47 /* ShellTask.m in Sources */,
 				52D570C510BABA3300D8CC2F /* NSDate+JGUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -746,6 +777,16 @@
 			isa = PBXTargetDependency;
 			target = 52154BC310B0716E0018F774 /* ShutdownHelperApp */;
 			targetProxy = 5217B30510B1DE14008A3DE6 /* PBXContainerItemProxy */;
+		};
+		52D571F910BAC61000D8CC2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 520F2C1410B6CC7D001D0EB2 /* InstallTool */;
+			targetProxy = 52D571F810BAC61000D8CC2F /* PBXContainerItemProxy */;
+		};
+		52D571FB10BAC61000D8CC2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 520F2C0D10B6CC68001D0EB2 /* HelperTool */;
+			targetProxy = 52D571FA10BAC61000D8CC2F /* PBXContainerItemProxy */;
 		};
 		52E69FC610B6F3D9006998F9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
