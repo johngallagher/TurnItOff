@@ -18,8 +18,8 @@
     NSDate      *stopTimeToday;
     NSDate      *reminderTimeToday;
     
-    NSTimer     *shutdownTimer;
-    NSTimer     *warnBeforeShutdownTimer;
+    IBOutlet    NSTimer     *shutdownTimer;
+    IBOutlet    NSTimer     *warnBeforeShutdownTimer;
 }
 +(void)initialize;
 
@@ -33,9 +33,9 @@
 
 -(IBAction)shutdownComputerTestAction:(id)sender;
 
--(void)warnBeforeShutdown:(NSTimer *)theTimer;
+-(void)warnBeforeShutdown:(NSTimer *)timer;
 
--(void)shutdownComputer:(NSTimer *)theTimer;
+-(void)shutdownComputer:(NSTimer *)timer;
 
 
 @end

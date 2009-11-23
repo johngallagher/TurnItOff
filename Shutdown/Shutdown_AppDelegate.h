@@ -12,15 +12,23 @@
     IBOutlet        NSButton            *shutdownControlButton;
     IBOutlet        NSButton            *applyChangesButton;
     
-    IBOutlet        NSTextField         *startTime;
-    IBOutlet        NSTextField         *stopTime;
-    IBOutlet        NSTextField         *reminderTime;
+    IBOutlet        NSTextField         *startTimeTextField;
+    IBOutlet        NSTextField         *stopTimeTextField;
+    IBOutlet        NSTextField         *reminderTimeTextField;
     
     IBOutlet        NSUserDefaultsController    *userDefaultsController;
     HelperAppController                 *helperAppController;
+    
+    NSDate      *startTime   ;
+    NSDate      *stopTime    ;
+    NSNumber    *reminderTime;
+    
 }
 
 @property (assign) BOOL shutdownIsRunning;
+@property (assign) NSDate *startTime;
+@property (assign) NSDate *stopTime;
+@property (assign) NSNumber *reminderTime;
 
 -(void)readPrefs;
 
@@ -39,4 +47,6 @@
 -(IBAction)applyPreferences:(id)sender;
 
 -(IBAction)shutdownComputer:(id)sender;
+
+-(BOOL)control:(NSControl *)control textShouldEndEditing:(NSText *)fieldEditor;
 @end

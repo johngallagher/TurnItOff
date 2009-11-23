@@ -22,21 +22,8 @@
 
 -(void)convertShutdownTimesToToday {
     // Start and stop dates are just times taken with respect to the 1970 reference date. We need to convert that into a time today.
-    // Get seconds since ref date
-      NSTimeInterval startTimeIntervalOffset = [startTime timeIntervalSince1970];
-    NSTimeInterval stopTimeIntervalOffset = [stopTime timeIntervalSince1970];
-
-    // Calculate midnight today.
-    unsigned unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit |  NSDayCalendarUnit;
-    NSDate *date = [NSDate date];
-    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    NSDateComponents *midnightTodayComponents = [gregorian components:unitFlags fromDate:date];
-
-    NSDate *midnightTodayDate = [gregorian dateFromComponents:midnightTodayComponents];
-    
-    // Add seconds since ref date onto midnight today so we've got the start stop time today.
-    startTimeToday      = [midnightTodayDate dateByAddingTimeInterval:startTimeIntervalOffset];
-    stopTimeToday       = [midnightTodayDate dateByAddingTimeInterval:stopTimeIntervalOffset];
+    startTimeToday      = [startTime    convert1970RefTimeToToday];
+    stopTimeToday       = [stopTime     convert1970RefTimeToToday];
     
     // Work out the time we need to fire the reminder.
     int                 reminderSecondsBeforeShutdown = 0 - ([reminderTime intValue] * 60);
@@ -45,6 +32,7 @@
     reminderTimeToday   = [stopTimeToday  dateByAddingTimeInterval:reminderTimeIntervalBeforeShutdown];
 
 }
+
 
 -(void)installShutdownTimer {
     // Start time should be before the reminder time. If not, something's gone wrong.
@@ -56,9 +44,18 @@
     BOOL currentTimeIsLegal = (timeIsAfterStart && timeIsBeforeStop);
     if (currentTimeIsLegal) {
         // If so, setup the timers to warn and shutdown the computer.
-        // Setup timers for shutdown
+        // Setup timers for shutdown NSTimeZone
+//        stopTimeToday = [NSDate dateWithString:@"2009-11-22 18:50 +0000"];
+        [warnBeforeShutdownTimer    invalidate];
+        [shutdownTimer              invalidate];
         warnBeforeShutdownTimer     = [[NSTimer alloc] initWithFireDate:reminderTimeToday interval:0 target:self selector:@selector(warnBeforeShutdown:) userInfo:nil repeats:NO];
         shutdownTimer               = [[NSTimer alloc] initWithFireDate:stopTimeToday interval:0 target:self selector:@selector(shutdownComputer:) userInfo:nil repeats:NO];
+        
+        NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
+        
+        [runLoop addTimer:warnBeforeShutdownTimer   forMode:NSDefaultRunLoopMode];
+        [runLoop addTimer:shutdownTimer             forMode:NSDefaultRunLoopMode];
+
     } else {
         // If not, tell the user then shutdown the computer immediately.
         NSAlert *alert = [[NSAlert alloc] init];
@@ -135,7 +132,7 @@
     [self shutdownComputer:nil];
 }
 
--(void)warnBeforeShutdown:(NSTimer *)theTimer {
+-(void)warnBeforeShutdown:(NSTimer *)timer {
     NSAlert *alert = [[NSAlert alloc] init];
     [alert setAlertStyle:NSCriticalAlertStyle];
     [alert setMessageText:@"Shutdown."];
@@ -147,7 +144,7 @@
     NSInteger returnValue = [alert runModal];
 }
 
--(void)shutdownComputer:(NSTimer *)theTimer {
+-(void)shutdownComputer:(NSTimer *)timer {
     NSLog(@"Shutting down the computer...");
     //    ShutdownHelperToolExecutor *helperTool = [[ShutdownHelperToolExecutor alloc] init];
     //    [helperTool doShutdown];

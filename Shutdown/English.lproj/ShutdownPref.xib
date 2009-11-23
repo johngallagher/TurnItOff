@@ -60,12 +60,13 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{344, 89}, {96, 22}}</string>
 							<reference key="NSSuperview" ref="1037298196"/>
+							<int key="NSTag">1</int>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="144785583">
 								<int key="NSCellFlags">-1804468671</int>
 								<int key="NSCellFlags2">272630784</int>
 								<object class="NSDate" key="NSContents">
-									<double key="NS.time">-978278400</double>
+									<double key="NS.time">-978274800</double>
 								</object>
 								<object class="NSFont" key="NSSupport" id="694810069">
 									<string key="NSName">LucidaGrande</string>
@@ -147,26 +148,23 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{484, 89}, {96, 22}}</string>
 							<reference key="NSSuperview" ref="1037298196"/>
+							<int key="NSTag">2</int>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="652708404">
 								<int key="NSCellFlags">-1804468671</int>
-								<int key="NSCellFlags2">272630784</int>
-								<object class="NSDate" key="NSContents">
-									<double key="NS.time">-978249600</double>
-								</object>
+								<int key="NSCellFlags2">-1874852864</int>
+								<string key="NSContents">19:00</string>
 								<reference key="NSSupport" ref="694810069"/>
-								<object class="NSDateFormatter" key="NSFormatter" id="66596425">
+								<object class="NSDateFormatter" key="NSFormatter" id="254373007">
 									<object class="NSMutableDictionary" key="NS.attributes">
 										<bool key="EncodedWithXMLCoder">YES</bool>
 										<object class="NSArray" key="dict.sortedKeys">
 											<bool key="EncodedWithXMLCoder">YES</bool>
-											<string>dateStyle</string>
 											<string>formatterBehavior</string>
 											<string>timeStyle</string>
 										</object>
 										<object class="NSMutableArray" key="dict.values">
 											<bool key="EncodedWithXMLCoder">YES</bool>
-											<integer value="0"/>
 											<integer value="1040"/>
 											<integer value="1"/>
 										</object>
@@ -217,6 +215,7 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{344, 53}, {45, 22}}</string>
 							<reference key="NSSuperview" ref="1037298196"/>
+							<int key="NSTag">3</int>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="132747548">
 								<int key="NSCellFlags">-1804468671</int>
@@ -246,7 +245,7 @@
 												<string key="NS.identifier"/>
 											</object>
 											<real value="25"/>
-											<real value="0.0"/>
+											<real value="1"/>
 											<string>-∞</string>
 											<string/>
 											<integer value="1"/>
@@ -271,7 +270,7 @@
 											</object>
 										</object>
 									</object>
-									<real value="0.0" key="NS.min"/>
+									<real value="1" key="NS.min"/>
 									<real value="25" key="NS.max"/>
 									<object class="NSDecimalNumberHandler" key="NS.rounding">
 										<int key="NS.roundingmode">3</int>
@@ -395,30 +394,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">reminderTime</string>
-						<reference key="source" ref="296236602"/>
-						<reference key="destination" ref="264835647"/>
-					</object>
-					<int key="connectionID">160</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">stopTime</string>
-						<reference key="source" ref="296236602"/>
-						<reference key="destination" ref="798147157"/>
-					</object>
-					<int key="connectionID">162</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">startTime</string>
-						<reference key="source" ref="296236602"/>
-						<reference key="destination" ref="871589613"/>
-					</object>
-					<int key="connectionID">163</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
 						<string key="label">shutdownControlButton</string>
 						<reference key="source" ref="296236602"/>
 						<reference key="destination" ref="195850483"/>
@@ -529,6 +504,78 @@
 					</object>
 					<int key="connectionID">227</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">startTimeTextField</string>
+						<reference key="source" ref="296236602"/>
+						<reference key="destination" ref="871589613"/>
+					</object>
+					<int key="connectionID">232</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">stopTimeTextField</string>
+						<reference key="source" ref="296236602"/>
+						<reference key="destination" ref="798147157"/>
+					</object>
+					<int key="connectionID">233</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">reminderTimeTextField</string>
+						<reference key="source" ref="296236602"/>
+						<reference key="destination" ref="264835647"/>
+					</object>
+					<int key="connectionID">234</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: startTime</string>
+						<reference key="source" ref="144785583"/>
+						<reference key="destination" ref="296236602"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="144785583"/>
+							<reference key="NSDestination" ref="296236602"/>
+							<string key="NSLabel">value: startTime</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">startTime</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">236</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: stopTime</string>
+						<reference key="source" ref="798147157"/>
+						<reference key="destination" ref="296236602"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="798147157"/>
+							<reference key="NSDestination" ref="296236602"/>
+							<string key="NSLabel">value: stopTime</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">stopTime</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">237</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: reminderTime</string>
+						<reference key="source" ref="264835647"/>
+						<reference key="destination" ref="296236602"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="264835647"/>
+							<reference key="NSDestination" ref="296236602"/>
+							<string key="NSLabel">value: reminderTime</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">reminderTime</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">238</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -568,7 +615,6 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="195850483"/>
 							<reference ref="581652779"/>
-							<reference ref="871589613"/>
 							<reference ref="220730129"/>
 							<reference ref="798147157"/>
 							<reference ref="418428831"/>
@@ -576,6 +622,7 @@
 							<reference ref="264835647"/>
 							<reference ref="208252269"/>
 							<reference ref="864024534"/>
+							<reference ref="871589613"/>
 						</object>
 						<reference key="parent" ref="660800786"/>
 					</object>
@@ -618,11 +665,6 @@
 						<reference key="parent" ref="220730129"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">105</int>
-						<reference key="object" ref="850727208"/>
-						<reference key="parent" ref="144785583"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">106</int>
 						<reference key="object" ref="798147157"/>
 						<object class="NSMutableArray" key="children">
@@ -636,14 +678,9 @@
 						<reference key="object" ref="652708404"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="66596425"/>
+							<reference ref="254373007"/>
 						</object>
 						<reference key="parent" ref="798147157"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">108</int>
-						<reference key="object" ref="66596425"/>
-						<reference key="parent" ref="652708404"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">109</int>
@@ -757,6 +794,16 @@
 						<reference key="object" ref="669985029"/>
 						<reference key="parent" ref="864024534"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">230</int>
+						<reference key="object" ref="850727208"/>
+						<reference key="parent" ref="144785583"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">231</int>
+						<reference key="object" ref="254373007"/>
+						<reference key="parent" ref="652708404"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -768,12 +815,8 @@
 					<string>102.IBPluginDependency</string>
 					<string>103.IBPluginDependency</string>
 					<string>104.IBPluginDependency</string>
-					<string>105.IBDateFormatterBehaviorMetadataKey</string>
-					<string>105.IBPluginDependency</string>
 					<string>106.IBPluginDependency</string>
 					<string>107.IBPluginDependency</string>
-					<string>108.IBDateFormatterBehaviorMetadataKey</string>
-					<string>108.IBPluginDependency</string>
 					<string>109.IBPluginDependency</string>
 					<string>110.IBPluginDependency</string>
 					<string>111.IBPluginDependency</string>
@@ -797,6 +840,10 @@
 					<string>122.IBPluginDependency</string>
 					<string>224.IBPluginDependency</string>
 					<string>225.IBPluginDependency</string>
+					<string>230.IBDateFormatterBehaviorMetadataKey</string>
+					<string>230.IBPluginDependency</string>
+					<string>231.IBDateFormatterBehaviorMetadataKey</string>
+					<string>231.IBPluginDependency</string>
 					<string>6.IBPluginDependency</string>
 					<string>6.ImportedFromIB2</string>
 				</object>
@@ -807,11 +854,7 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<integer value="1"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<integer value="1"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -825,9 +868,9 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{330, 82}, {668, 141}}</string>
+					<string>{{307, 254}, {668, 141}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{330, 82}, {668, 141}}</string>
+					<string>{{307, 254}, {668, 141}}</string>
 					<integer value="1"/>
 					<integer value="1"/>
 					<string>{224.664, 10}</string>
@@ -835,6 +878,10 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<integer value="1"/>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<integer value="1"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
@@ -856,7 +903,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">227</int>
+			<int key="maxID">238</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -900,11 +947,11 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>applyChangesButton</string>
-							<string>reminderTime</string>
+							<string>reminderTimeTextField</string>
 							<string>shutdownControlButton</string>
 							<string>shutdownStatusText</string>
-							<string>startTime</string>
-							<string>stopTime</string>
+							<string>startTimeTextField</string>
+							<string>stopTimeTextField</string>
 							<string>userDefaultsController</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">

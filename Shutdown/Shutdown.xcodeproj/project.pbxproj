@@ -39,6 +39,12 @@
 		52BD946D10B1B0CB00291F3D /* AbstractSingletonObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 52BD946B10B1B0CB00291F3D /* AbstractSingletonObject.h */; };
 		52BD946E10B1B0CB00291F3D /* AbstractSingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BD946C10B1B0CB00291F3D /* AbstractSingletonObject.m */; };
 		52BD946F10B1B0CB00291F3D /* AbstractSingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BD946C10B1B0CB00291F3D /* AbstractSingletonObject.m */; };
+		52D570C210BABA3300D8CC2F /* NSDate+JGUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 52D570C010BABA3300D8CC2F /* NSDate+JGUtilities.h */; };
+		52D570C310BABA3300D8CC2F /* NSDate+JGUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D570C110BABA3300D8CC2F /* NSDate+JGUtilities.m */; };
+		52D570C410BABA3300D8CC2F /* NSDate+JGUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D570C110BABA3300D8CC2F /* NSDate+JGUtilities.m */; };
+		52D570C510BABA3300D8CC2F /* NSDate+JGUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D570C110BABA3300D8CC2F /* NSDate+JGUtilities.m */; };
+		52D570C610BABA3300D8CC2F /* NSDate+JGUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 52D570C010BABA3300D8CC2F /* NSDate+JGUtilities.h */; };
+		52D570C710BABA3300D8CC2F /* NSDate+JGUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D570C110BABA3300D8CC2F /* NSDate+JGUtilities.m */; };
 		52DCC1A310B2D49400C9D6CE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52DCC1A210B2D49400C9D6CE /* Cocoa.framework */; };
 		52DCC2FB10B3075A00C9D6CE /* DefaultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DCC2FA10B3075A00C9D6CE /* DefaultsController.m */; };
 		52E69F9510B6F213006998F9 /* HelperApp_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5217B30210B1DDC0008A3DE6 /* HelperApp_AppDelegate.m */; };
@@ -152,6 +158,8 @@
 		52BD946710B1A5C800291F3D /* JGConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGConstants.m; sourceTree = "<group>"; };
 		52BD946B10B1B0CB00291F3D /* AbstractSingletonObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractSingletonObject.h; sourceTree = "<group>"; };
 		52BD946C10B1B0CB00291F3D /* AbstractSingletonObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractSingletonObject.m; sourceTree = "<group>"; };
+		52D570C010BABA3300D8CC2F /* NSDate+JGUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+JGUtilities.h"; sourceTree = "<group>"; };
+		52D570C110BABA3300D8CC2F /* NSDate+JGUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JGUtilities.m"; sourceTree = "<group>"; };
 		52DCC1A210B2D49400C9D6CE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		52DCC2F910B3075A00C9D6CE /* DefaultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultsController.h; sourceTree = "<group>"; };
 		52DCC2FA10B3075A00C9D6CE /* DefaultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultsController.m; sourceTree = "<group>"; };
@@ -369,6 +377,8 @@
 				5217B30110B1DDC0008A3DE6 /* HelperApp_AppDelegate.h */,
 				5217B30210B1DDC0008A3DE6 /* HelperApp_AppDelegate.m */,
 				52A896DE10B5C3C900220B47 /* shutdown.sh */,
+				52D570C010BABA3300D8CC2F /* NSDate+JGUtilities.h */,
+				52D570C110BABA3300D8CC2F /* NSDate+JGUtilities.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -429,6 +439,7 @@
 				52E69FA910B6F3AC006998F9 /* AbstractSingletonObject.h in Headers */,
 				52E69FAA10B6F3AC006998F9 /* Shutdown_AppDelegate.h in Headers */,
 				52E69FAB10B6F3AC006998F9 /* JGDefines.h in Headers */,
+				52D570C210BABA3300D8CC2F /* NSDate+JGUtilities.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +455,7 @@
 				52BD946D10B1B0CB00291F3D /* AbstractSingletonObject.h in Headers */,
 				5217B0EF10B1B567008A3DE6 /* Shutdown_AppDelegate.h in Headers */,
 				5217B30010B1DCFF008A3DE6 /* JGDefines.h in Headers */,
+				52D570C610BABA3300D8CC2F /* NSDate+JGUtilities.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,6 +684,7 @@
 				520F2C7F10B6CEF2001D0EB2 /* ShutdownHelperToolExecutor.m in Sources */,
 				52E69F9510B6F213006998F9 /* HelperApp_AppDelegate.m in Sources */,
 				52E69F9610B6F226006998F9 /* JGConstants.m in Sources */,
+				52D570C410BABA3300D8CC2F /* NSDate+JGUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,6 +697,7 @@
 				5217B30310B1DDC0008A3DE6 /* HelperApp_AppDelegate.m in Sources */,
 				52DCC2FB10B3075A00C9D6CE /* DefaultsController.m in Sources */,
 				52A896D810B5C39400220B47 /* ShellTask.m in Sources */,
+				52D570C510BABA3300D8CC2F /* NSDate+JGUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -697,6 +711,7 @@
 				52E69FB510B6F3AC006998F9 /* JGConstants.m in Sources */,
 				52E69FB610B6F3AC006998F9 /* AbstractSingletonObject.m in Sources */,
 				52E69FB710B6F3AC006998F9 /* Shutdown_AppDelegate.m in Sources */,
+				52D570C310BABA3300D8CC2F /* NSDate+JGUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,6 +725,7 @@
 				52BD946910B1A5C800291F3D /* JGConstants.m in Sources */,
 				52BD946E10B1B0CB00291F3D /* AbstractSingletonObject.m in Sources */,
 				5217B0F010B1B567008A3DE6 /* Shutdown_AppDelegate.m in Sources */,
+				52D570C710BABA3300D8CC2F /* NSDate+JGUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

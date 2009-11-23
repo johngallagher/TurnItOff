@@ -11,6 +11,7 @@
 @implementation ShutdownPref
 
 -(void)awakeFromNib {
+    
 }
 
 -(void)mainViewDidLoad {

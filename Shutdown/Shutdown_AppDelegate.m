@@ -12,6 +12,9 @@
 @implementation Shutdown_AppDelegate
 
 @synthesize shutdownIsRunning;
+@synthesize startTime;
+@synthesize stopTime;
+@synthesize reminderTime;
 
 //+(void)initialize {
 //    NSDictionary *defaultsDict = [NSDictionary dictionaryWithObjectsAndKeys:[NSDate dateWithTimeIntervalSince1970:(NSTimeInterval)32400], kStartTime,
@@ -28,29 +31,37 @@
     CFPropertyListRef startTimeValue = CFPreferencesCopyValue((CFStringRef)kStartTime, (CFStringRef)HELPERAPP_BUNDLE_IDENTIFIER, kCFPreferencesCurrentUser, kCFPreferencesAnyHost);
     CFPropertyListRef stopTimeValue = CFPreferencesCopyValue((CFStringRef)kStopTime, (CFStringRef)HELPERAPP_BUNDLE_IDENTIFIER, kCFPreferencesCurrentUser, kCFPreferencesAnyHost);
     CFPropertyListRef reminderTimeValue = CFPreferencesCopyValue((CFStringRef)kReminderTime, (CFStringRef)HELPERAPP_BUNDLE_IDENTIFIER, kCFPreferencesCurrentUser, kCFPreferencesAnyHost);
-    [startTime      setObjectValue:(NSDate *)startTimeValue];
-    [stopTime       setObjectValue:(NSDate *)stopTimeValue];
-    [reminderTime   setObjectValue:(NSNumber *)reminderTimeValue];
+    [self setStartTime: (NSDate *)startTimeValue];
+    [self setStopTime:  (NSDate *)stopTimeValue];
+    [self setReminderTime:(NSNumber *)reminderTimeValue];
+//    startTime       = (NSDate *)startTimeValue;
+//    stopTime        = (NSDate *)stopTimeValue;
+//    reminderTime    = (NSNumber *)reminderTimeValue;
+//    [startTimeTextField      setObjectValue:startTime];
+//    [stopTimeTextField       setObjectValue:stopTime];
+//    [reminderTimeTextField   setObjectValue:reminderTime];
+    
 }
 
 -(void)controlTextDidEndEditing:(NSNotification *)aNotification {
     [self applyPreferences];
 }
+
 -(void)applyPreferences {
     CFPreferencesSetValue((CFStringRef)kStartTime,
-                          (CFStringRef)[startTime objectValue],
+                          (CFStringRef)[startTimeTextField objectValue],
                           (CFStringRef)HELPERAPP_BUNDLE_IDENTIFIER,
                           kCFPreferencesCurrentUser,
                           kCFPreferencesAnyHost);
     
     CFPreferencesSetValue((CFStringRef)kStopTime,
-                          (CFStringRef)[stopTime objectValue],
+                          (CFStringRef)[stopTimeTextField objectValue],
                           (CFStringRef)HELPERAPP_BUNDLE_IDENTIFIER,
                           kCFPreferencesCurrentUser,
                           kCFPreferencesAnyHost);
     
     CFPreferencesSetValue((CFStringRef)kReminderTime,
-                          (CFStringRef)[reminderTime objectValue],
+                          (CFStringRef)[reminderTimeTextField objectValue],
                           (CFStringRef)HELPERAPP_BUNDLE_IDENTIFIER,
                           kCFPreferencesCurrentUser,
                           kCFPreferencesAnyHost);
@@ -67,19 +78,19 @@
     // Set up the preference.
     NSLog(@"About to set the prefs.");
     CFPreferencesSetValue((CFStringRef)kStartTime,
-                          (CFStringRef)[startTime objectValue],
+                          (CFStringRef)[startTimeTextField objectValue],
                           (CFStringRef)HELPERAPP_BUNDLE_IDENTIFIER,
                           kCFPreferencesCurrentUser,
                           kCFPreferencesAnyHost);
 
     CFPreferencesSetValue((CFStringRef)kStopTime,
-                          (CFStringRef)[stopTime objectValue],
+                          (CFStringRef)[stopTimeTextField objectValue],
                           (CFStringRef)HELPERAPP_BUNDLE_IDENTIFIER,
                           kCFPreferencesCurrentUser,
                           kCFPreferencesAnyHost);
 
     CFPreferencesSetValue((CFStringRef)kReminderTime,
-                          (CFStringRef)[reminderTime objectValue],
+                          (CFStringRef)[reminderTimeTextField objectValue],
                           (CFStringRef)HELPERAPP_BUNDLE_IDENTIFIER,
                           kCFPreferencesCurrentUser,
                           kCFPreferencesAnyHost);
@@ -99,6 +110,12 @@
 -(void)awakeFromNib {
     
     helperAppController = [HelperAppController sharedInstance];
+//    NSTimeInterval daylightSavingOffset = [[NSDate date] daylightSavingTimeOffset];
+    NSDateFormatter *dateFormatter = [startTimeTextField formatter];
+    NSTimeZone *timeZone = [dateFormatter timeZone];
+    [[startTimeTextField formatter] setTimeZone:[NSTimeZone systemTimeZone]];
+    [[stopTimeTextField formatter] setTimeZone:[NSTimeZone systemTimeZone]];
+    
 //    [[NSNotificationCenter defaultCenter] addObserver:self
 //                                             selector:@selector(preferencesChanged:)
 //                                                 name:NSUserDefaultsDidChangeNotification 
@@ -178,6 +195,71 @@
 
 -(IBAction)shutdownComputer:(id)sender {
     [helperAppController shutdownComputer];
+}
+
+#pragma mark Text Field Delegate Methods
+// Text Field Delegate Methods
+
+-(BOOL)control:(NSControl *)control textShouldEndEditing:(NSText *)fieldEditor {
+    // Identify field editing based on the tag
+    // Start time: 1, Stop time: 2, Reminder time: 3
+    BOOL editImpliesShutdown = NO;
+    BOOL newStartTimeIsOutsideLimits = NO;
+    BOOL newStopTimeIsOutsideLimits = NO;
+    BOOL startOrStopTimeInvalid = NO;
+    
+    NSDate *editedStartTime;
+    NSDate *editedStopTime;
+    NSNumber *editedReminderTime;
+    id editor = fieldEditor;
+    switch ([control tag]) {
+        case 1:
+            editedStartTime = [[control objectValue] convert1970RefTimeToToday];
+            newStartTimeIsOutsideLimits = ([[NSDate date] timeIntervalSinceDate:editedStartTime] < 0);
+            editImpliesShutdown = newStartTimeIsOutsideLimits;
+            
+            startOrStopTimeInvalid = ([editedStartTime timeIntervalSinceDate:[[stopTime convert1970RefTimeToToday] dateByAddingTimeInterval:-([reminderTime intValue]*60)]] > 0);
+            break;
+        case 2:
+            editedStopTime = [[control objectValue] convert1970RefTimeToToday];
+            newStopTimeIsOutsideLimits = ([[NSDate date] timeIntervalSinceDate:editedStopTime] > 0);
+            editImpliesShutdown = newStopTimeIsOutsideLimits;
+
+            startOrStopTimeInvalid = ([[startTime convert1970RefTimeToToday] timeIntervalSinceDate:[editedStopTime dateByAddingTimeInterval:-([reminderTime intValue]*60)]] > 0);
+            break;
+        case 3:
+            editedReminderTime = [control objectValue];
+            startOrStopTimeInvalid = ([[startTime convert1970RefTimeToToday] timeIntervalSinceDate:[[stopTime convert1970RefTimeToToday] dateByAddingTimeInterval:-([editedReminderTime intValue]*60)]] > 0);
+            break;
+        default:
+            break;
+    }
+    
+    if (startOrStopTimeInvalid) {
+        NSAlert *alert = [NSAlert alertWithMessageText:@"Invalid Edit" 
+                                         defaultButton:@"OK" 
+                                       alternateButton:nil 
+                                           otherButton:nil 
+                             informativeTextWithFormat:@"The start time must be earlier than the stop time - reminder time."];
+        [alert runModal];
+        return NO;
+        
+    } else if (editImpliesShutdown) {
+        NSAlert *alert = [NSAlert alertWithMessageText:@"Commit Edit?" 
+                                         defaultButton:@"Continue Editing" 
+                                       alternateButton:@"Shutdown Now" 
+                                           otherButton:nil 
+                             informativeTextWithFormat:@"The current time is outside these new limits. If you commit this change, the computer will shutdown."];
+        NSInteger retValue = [alert runModal];
+        if (retValue == NSAlertDefaultReturn) {
+            return NO;
+        } else {
+            return YES;
+        }
+        
+    } else {
+        return YES;
+    }
 }
 
 @end
