@@ -15,8 +15,6 @@
 		520F2C6E10B6CE5F001D0EB2 /* BetterAuthorizationSampleLibInstallTool.c in Sources */ = {isa = PBXBuildFile; fileRef = 52FE19CE10B62FDF00AC2DA3 /* BetterAuthorizationSampleLibInstallTool.c */; };
 		52154BB610B069A30018F774 /* HelperAppController.h in Headers */ = {isa = PBXBuildFile; fileRef = 52154BB410B069A30018F774 /* HelperAppController.h */; };
 		52154BB710B069A30018F774 /* HelperAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52154BB510B069A30018F774 /* HelperAppController.m */; };
-		52154C0710B073670018F774 /* PrefPaneController.h in Headers */ = {isa = PBXBuildFile; fileRef = 52154C0510B073670018F774 /* PrefPaneController.h */; };
-		52154C0810B073670018F774 /* PrefPaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52154C0610B073670018F774 /* PrefPaneController.m */; };
 		5217B0EF10B1B567008A3DE6 /* Shutdown_AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5217B0ED10B1B567008A3DE6 /* Shutdown_AppDelegate.h */; };
 		5217B0F010B1B567008A3DE6 /* Shutdown_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5217B0EE10B1B567008A3DE6 /* Shutdown_AppDelegate.m */; };
 		5217B30010B1DCFF008A3DE6 /* JGDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 5217B2FF10B1DCFF008A3DE6 /* JGDefines.h */; };
@@ -102,8 +100,6 @@
 		52154BB510B069A30018F774 /* HelperAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelperAppController.m; sourceTree = "<group>"; };
 		52154BC410B0716E0018F774 /* ShutdownHelperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShutdownHelperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52154BC610B0716E0018F774 /* ShutdownHelperApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShutdownHelperApp-Info.plist"; sourceTree = "<group>"; };
-		52154C0510B073670018F774 /* PrefPaneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefPaneController.h; sourceTree = "<group>"; };
-		52154C0610B073670018F774 /* PrefPaneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefPaneController.m; sourceTree = "<group>"; };
 		5217B0ED10B1B567008A3DE6 /* Shutdown_AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shutdown_AppDelegate.h; sourceTree = "<group>"; };
 		5217B0EE10B1B567008A3DE6 /* Shutdown_AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shutdown_AppDelegate.m; sourceTree = "<group>"; };
 		5217B2FF10B1DCFF008A3DE6 /* JGDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGDefines.h; sourceTree = "<group>"; };
@@ -121,8 +117,6 @@
 		52D570C010BABA3300D8CC2F /* NSDate+JGUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+JGUtilities.h"; sourceTree = "<group>"; };
 		52D570C110BABA3300D8CC2F /* NSDate+JGUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JGUtilities.m"; sourceTree = "<group>"; };
 		52DCC1A210B2D49400C9D6CE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		52DCC2F910B3075A00C9D6CE /* DefaultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultsController.h; sourceTree = "<group>"; };
-		52DCC2FA10B3075A00C9D6CE /* DefaultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultsController.m; sourceTree = "<group>"; };
 		52E69FC010B6F3AD006998F9 /* Info copy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info copy.plist"; sourceTree = "<group>"; };
 		52FE19CC10B62FDF00AC2DA3 /* BetterAuthorizationSampleLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetterAuthorizationSampleLib.h; sourceTree = "<group>"; };
 		52FE19CD10B62FDF00AC2DA3 /* BetterAuthorizationSampleLib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BetterAuthorizationSampleLib.c; sourceTree = "<group>"; };
@@ -226,12 +220,8 @@
 				F506C03D013D9D7901CA16C8 /* ShutdownPref.m */,
 				52154BB410B069A30018F774 /* HelperAppController.h */,
 				52154BB510B069A30018F774 /* HelperAppController.m */,
-				52154C0510B073670018F774 /* PrefPaneController.h */,
-				52154C0610B073670018F774 /* PrefPaneController.m */,
 				52BD946B10B1B0CB00291F3D /* AbstractSingletonObject.h */,
 				52BD946C10B1B0CB00291F3D /* AbstractSingletonObject.m */,
-				52DCC2F910B3075A00C9D6CE /* DefaultsController.h */,
-				52DCC2FA10B3075A00C9D6CE /* DefaultsController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -371,7 +361,6 @@
 				8D202CEA0486D31800D8A456 /* Shutdown_Prefix.pch in Headers */,
 				8D202CEB0486D31800D8A456 /* ShutdownPref.h in Headers */,
 				52154BB610B069A30018F774 /* HelperAppController.h in Headers */,
-				52154C0710B073670018F774 /* PrefPaneController.h in Headers */,
 				52BD946810B1A5C800291F3D /* JGConstants.h in Headers */,
 				52BD946D10B1B0CB00291F3D /* AbstractSingletonObject.h in Headers */,
 				5217B0EF10B1B567008A3DE6 /* Shutdown_AppDelegate.h in Headers */,
@@ -548,7 +537,6 @@
 			files = (
 				8D202CF10486D31800D8A456 /* ShutdownPref.m in Sources */,
 				52154BB710B069A30018F774 /* HelperAppController.m in Sources */,
-				52154C0810B073670018F774 /* PrefPaneController.m in Sources */,
 				52BD946910B1A5C800291F3D /* JGConstants.m in Sources */,
 				52BD946E10B1B0CB00291F3D /* AbstractSingletonObject.m in Sources */,
 				5217B0F010B1B567008A3DE6 /* Shutdown_AppDelegate.m in Sources */,

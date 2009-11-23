@@ -103,26 +103,16 @@
     NSLog(@"Just synced the prefs data. Sending notification.");
     [[NSDistributedNotificationCenter defaultCenter] postNotificationName:PrefPanePreferencesChanged 
                                                                    object:@"PrefPane"];
-//    [helperAppController preferencesChangedTo:nil error:&tellError];
 
 }
 
 -(void)awakeFromNib {
-    
     helperAppController = [HelperAppController sharedInstance];
-//    NSTimeInterval daylightSavingOffset = [[NSDate date] daylightSavingTimeOffset];
     NSDateFormatter *dateFormatter = [startTimeTextField formatter];
     NSTimeZone *timeZone = [dateFormatter timeZone];
     [[startTimeTextField formatter] setTimeZone:[NSTimeZone systemTimeZone]];
     [[stopTimeTextField formatter] setTimeZone:[NSTimeZone systemTimeZone]];
     
-//    [[NSNotificationCenter defaultCenter] addObserver:self
-//                                             selector:@selector(preferencesChanged:)
-//                                                 name:NSUserDefaultsDidChangeNotification 
-//                                               object:nil];
-    
-//    [self startHelperApp];
-//    [self readPrefs];
 }
 
 -(IBAction)startStopHelperApp:(id)sender {
@@ -236,6 +226,7 @@
     }
     
     if (startOrStopTimeInvalid) {
+        // If start or stop time is invalid, display message then exit with NO.
         NSAlert *alert = [NSAlert alertWithMessageText:@"Invalid Edit" 
                                          defaultButton:@"OK" 
                                        alternateButton:nil 
@@ -245,6 +236,7 @@
         return NO;
         
     } else if (editImpliesShutdown) {
+        // If edit implies shutdown, give the user the option to continue editing, or shutdown immediately.
         NSAlert *alert = [NSAlert alertWithMessageText:@"Commit Edit?" 
                                          defaultButton:@"Continue Editing" 
                                        alternateButton:@"Shutdown Now" 

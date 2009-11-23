@@ -13,7 +13,6 @@
 @implementation HelperApp_AppDelegate
 
 +(void)initialize {
-//    
     NSDictionary *defaultsDict = [NSDictionary dictionaryWithObjectsAndKeys:[NSDate dateWithTimeIntervalSince1970:(NSTimeInterval)32400], kStartTime,
                                   [NSDate dateWithTimeIntervalSince1970:(NSTimeInterval)62400], kStopTime,
                                   [NSNumber numberWithInt:10], kReminderTime, nil];
@@ -30,13 +29,10 @@
     NSTimeInterval      reminderTimeIntervalBeforeShutdown = (NSTimeInterval)reminderSecondsBeforeShutdown;
     
     reminderTimeToday   = [stopTimeToday  dateByAddingTimeInterval:reminderTimeIntervalBeforeShutdown];
-
 }
 
 
 -(void)installShutdownTimer {
-    // Start time should be before the reminder time. If not, something's gone wrong.
-    NSAssert([reminderTimeToday timeIntervalSinceDate:startTimeToday] > 0, @"Start time should be before reminder time.");
     // Should we be able to use our computer now? 
     BOOL timeIsAfterStart = ([[NSDate date] timeIntervalSinceDate:startTimeToday] > 0);
     BOOL timeIsBeforeStop = ([[NSDate date] timeIntervalSinceDate:stopTimeToday] < 0);
@@ -44,8 +40,6 @@
     BOOL currentTimeIsLegal = (timeIsAfterStart && timeIsBeforeStop);
     if (currentTimeIsLegal) {
         // If so, setup the timers to warn and shutdown the computer.
-        // Setup timers for shutdown NSTimeZone
-//        stopTimeToday = [NSDate dateWithString:@"2009-11-22 18:50 +0000"];
         [warnBeforeShutdownTimer    invalidate];
         [shutdownTimer              invalidate];
         warnBeforeShutdownTimer     = [[NSTimer alloc] initWithFireDate:reminderTimeToday interval:0 target:self selector:@selector(warnBeforeShutdown:) userInfo:nil repeats:NO];
@@ -110,26 +104,12 @@
     NSLog(@"Prefs changed. From helper app.");
     // We've changed startup/shutdown times so update the NSTimers and shutdown if needed.
     [self updateShutdownTimes];
-
-    //   [[NSUserDefaults standardUserDefaults] synchronize];
-//    
-//    startTime      = [[NSUserDefaults standardUserDefaults] objectForKey:kStartTime];
-//    stopTime       = [[NSUserDefaults standardUserDefaults] objectForKey:kStopTime];
-//    reminderTime   = [[NSUserDefaults standardUserDefaults] objectForKey:kReminderTime];
-
-//    NSLog(@"Start Time: %@",    startTime);
-//    NSLog(@"Stop Time: %@",     stopTime);
-//    NSLog(@"Reminder Time: %d", [reminderTime intValue]);
 }
 
 -(void)terminateHelperApp:(NSNotification *)note {
 #pragma unused(note)
     NSLog(@"Shutdown message recieved. From helper app. Shutting down.");
 	[NSApp terminate:nil];
-}
-
--(IBAction)shutdownComputerTestAction:(id)sender {
-    [self shutdownComputer:nil];
 }
 
 -(void)warnBeforeShutdown:(NSTimer *)timer {
@@ -145,6 +125,16 @@
 }
 
 -(void)shutdownComputer:(NSTimer *)timer {
+    NSAlert *alert = [[NSAlert alloc] init];
+    [alert setAlertStyle:NSCriticalAlertStyle];
+    [alert setMessageText:@"Shutdown."];
+    [alert addButtonWithTitle:@"OK"];
+    [alert setInformativeText:[NSString stringWithFormat:@"The computer will now shutdown.", [reminderTime intValue]]];
+    
+    [NSApp activateIgnoringOtherApps:YES];
+    
+    NSInteger returnValue = [alert runModal];
+
     NSLog(@"Shutting down the computer...");
     //    ShutdownHelperToolExecutor *helperTool = [[ShutdownHelperToolExecutor alloc] init];
     //    [helperTool doShutdown];

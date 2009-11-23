@@ -15,15 +15,7 @@
 }
 
 -(void)startHelperApp:(NSError **)error {
-    // Launch the helper app
-    
-    // Check to see if it's running a couple of seconds later.
-    
-    // If it's not running, try launching the app again.
-    
-    // Check a couple more seconds later to see if it's running.
-    
-    // If it's still not running, log an error and return.
+    // Launch the helper app if it's not already running.
     if ([self isHelperAppRunning]) {
         NSLog(@"Helper app is already running.");
     } else {
@@ -34,15 +26,7 @@
 }
 
 -(void)stopHelperApp:(NSError **)error {
-    // Send the helper app a signal to terminate
-    
-    // Check to see if it's running a couple of seconds later.
-    
-    // If it's still running, resend the message.
-    
-    // Check a couple more seconds later to see if it's running.
-    
-    // If it's still running, log an error and return.
+    // Send the helper app a signal to terminate if it's running.
     if ([self isHelperAppRunning]) {
         NSLog(@"Stop Helper app");
         [self terminateHelperApp];
@@ -52,20 +36,8 @@
 }
 
 -(void)preferencesChangedTo:(NSDictionary *)preferencesDict error:(NSError **)error {
-    // send message to the helper app with the updated preferences
-    
-    // ask the helper app to echo back the new preferences
-    
-    // If prefs are incorrect, or we get no reply in a second, repeat the message.
-    
-    // If the message has been sent a second time without any reply or the incorrect reply, log an error.
-    //NSLog(@"Prefs changed to: %@", preferencesDict);
-
     [[NSDistributedNotificationCenter defaultCenter] postNotificationName:PrefPanePreferencesChanged 
                                                                    object:@"PrefPane"];
-//    [[NSDistributedNotificationCenter defaultCenter] postNotificationName:PrefPanePreferencesChanged 
-//                                                                   object:@"PrefPane" 
-//                                                                 userInfo:preferencesDict];
 }
 
 -(BOOL)isHelperAppRunning {
@@ -93,8 +65,6 @@
 
 
 -(void)launchHelperApp {
-//    NSString *helperAppPath = [[NSBundle bundleWithIdentifier:@"com.synapticmishap.shutdown"] pathForResource:@"ShutdownHelperApp" ofType:@"app"];
-// TODO: Switch for top line once we've got the test working and the real one integrated.
     NSString *helperAppPath = [[NSBundle bundleWithIdentifier:@"com.synapticmishap.shutdown"] pathForResource:@"ShutdownHelperApp" ofType:@"app"];
 	NSURL *helperURL = [NSURL fileURLWithPath:helperAppPath];
     

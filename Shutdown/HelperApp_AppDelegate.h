@@ -31,8 +31,6 @@
 
 -(void)terminateHelperApp:(NSNotification *)note;
 
--(IBAction)shutdownComputerTestAction:(id)sender;
-
 -(void)warnBeforeShutdown:(NSTimer *)timer;
 
 -(void)shutdownComputer:(NSTimer *)timer;
