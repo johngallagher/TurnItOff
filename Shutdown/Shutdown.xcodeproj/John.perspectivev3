@@ -286,6 +286,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
 								<string>089C166AFE841209C02AAC07</string>
+								<string>5217B2E110B1DB73008A3DE6</string>
+								<string>089C167CFE841241C02AAC07</string>
 								<string>5217B2E010B1DB6B008A3DE6</string>
 								<string>52E023FA10B2C49B0013F8A8</string>
 								<string>52E69F9810B6F248006998F9</string>
@@ -298,9 +300,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>8</integer>
-									<integer>6</integer>
-									<integer>3</integer>
+									<integer>29</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -338,7 +338,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>529FA54710B05ADE00E98B76</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ShutdownHelperApp-Info.plist</string>
+								<string>ShutdownHelperAppTest-Info.plist</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -346,16 +346,15 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>529FA54810B05ADE00E98B76</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ShutdownHelperApp-Info.plist</string>
+										<string>ShutdownHelperAppTest-Info.plist</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>52D5728910BAD72600D8CC2F</string>
+										<string>52D5729110BADBE600D8CC2F</string>
 										<key>history</key>
 										<array>
 											<string>52BD947510B1B34500291F3D</string>
 											<string>5217B22510B1CE41008A3DE6</string>
-											<string>52DCC2FE10B308A100C9D6CE</string>
 											<string>52DCC30510B308A100C9D6CE</string>
 											<string>52FE1AEF10B63A1200AC2DA3</string>
 											<string>52FE1AF110B63A1200AC2DA3</string>
@@ -400,8 +399,9 @@
 											<string>52D5726010BAD5FE00D8CC2F</string>
 											<string>52D5726110BAD5FE00D8CC2F</string>
 											<string>52D5728610BAD71D00D8CC2F</string>
-											<string>52D5728710BAD71D00D8CC2F</string>
-											<string>52D5728810BAD71D00D8CC2F</string>
+											<string>52D5728E10BADBE600D8CC2F</string>
+											<string>52D5728F10BADBE600D8CC2F</string>
+											<string>52D5729010BADBE600D8CC2F</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -699,7 +699,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>280680230.33491302</real>
+	<real>280681446.23619002</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
