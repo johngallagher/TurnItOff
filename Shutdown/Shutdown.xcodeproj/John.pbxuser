@@ -5,8 +5,6 @@
 		activeExecutable = 5217B14810B1BE74008A3DE6 /* System Prefs */;
 		activeTarget = 8D202CE80486D31800D8A456 /* Shutdown */;
 		addToTargets = (
-			52E69FA010B6F3AC006998F9 /* Shutdown test */,
-			520F2C2210B6CCCE001D0EB2 /* ShutdownHelperAppTest */,
 			52154BC310B0716E0018F774 /* ShutdownHelperApp */,
 			8D202CE80486D31800D8A456 /* Shutdown */,
 		);
@@ -26,7 +24,6 @@
 			52154BC510B0716E0018F774 /* ShutdownHelperApp */,
 			520F2C0F10B6CC68001D0EB2 /* HelperTool */,
 			520F2C1610B6CC7D001D0EB2 /* InstallTool */,
-			520F2C2410B6CCCF001D0EB2 /* ShutdownHelperAppTest */,
 		);
 		perUserDictionary = {
 			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
@@ -533,44 +530,6 @@
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
-	};
-	520F2C2210B6CCCE001D0EB2 /* ShutdownHelperAppTest */ = {
-		activeExec = 0;
-		executables = (
-			520F2C2410B6CCCF001D0EB2 /* ShutdownHelperAppTest */,
-		);
-	};
-	520F2C2410B6CCCF001D0EB2 /* ShutdownHelperAppTest */ = {
-		isa = PBXExecutable;
-		activeArgIndices = (
-		);
-		argumentStrings = (
-		);
-		autoAttachOnCrash = 1;
-		breakpointsEnabled = 0;
-		configStateDict = {
-		};
-		customDataFormattersEnabled = 1;
-		dataTipCustomDataFormattersEnabled = 1;
-		dataTipShowTypeColumn = 1;
-		dataTipSortType = 0;
-		debuggerPlugin = GDBDebugging;
-		disassemblyDisplayState = 0;
-		dylibVariantSuffix = "";
-		enableDebugStr = 1;
-		environmentEntries = (
-		);
-		executableSystemSymbolLevel = 0;
-		executableUserSymbolLevel = 0;
-		libgmallocEnabled = 0;
-		name = ShutdownHelperAppTest;
-		savedGlobals = {
-		};
-		showTypeColumn = 0;
-		sourceDirectories = (
-		);
-		variableFormatDictionary = {
-		};
 	};
 	520F2C2510B6CCCF001D0EB2 /* ShutdownHelperAppTest-Info.plist */ = {
 		uiCtxt = {
@@ -2564,9 +2523,6 @@
 		name = NSUserDefaults.h;
 		path = /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSUserDefaults.h;
 		sourceTree = "<absolute>";
-	};
-	52E69FA010B6F3AC006998F9 /* Shutdown test */ = {
-		activeExec = 0;
 	};
 	52E6A01510B6FD2B006998F9 /* HelperAppController.m:99 */ = {
 		isa = PBXFileBreakpoint;
