@@ -9,5 +9,5 @@
 #import "JGConstants.h"
 #import "AbstractSingletonObject.h"
 #import "HelperAppController.h"
-#import "PrefPaneController.h"
+//#import "PrefPaneController.h"
 #import "NSDate+JGUtilities.h"

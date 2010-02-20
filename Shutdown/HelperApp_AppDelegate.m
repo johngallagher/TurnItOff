@@ -49,7 +49,8 @@
         
         [runLoop addTimer:warnBeforeShutdownTimer   forMode:NSDefaultRunLoopMode];
         [runLoop addTimer:shutdownTimer             forMode:NSDefaultRunLoopMode];
-
+        NSLog(@"Installed Timer to shutdown at: %@", stopTimeToday);
+        
     } else {
         // If not, tell the user then shutdown the computer immediately.
         NSAlert *alert = [[NSAlert alloc] init];
@@ -76,7 +77,6 @@
     
     // Calculate shutdown dates
     [self convertShutdownTimesToToday];
-        
     [self installShutdownTimer];
 }
 
@@ -97,8 +97,18 @@
                   name:Shutdown_Computer
                 object:nil];
     
+    [self installSleepWakeObservers];
     [self updateShutdownTimes];
 }
+
+-(void)installSleepWakeObservers {
+    [[[NSWorkspace sharedWorkspace] notificationCenter] addObserver:self 
+                                                           selector:@selector(updateShutdownTimes) 
+                                                               name:NSWorkspaceDidWakeNotification 
+                                                             object:NULL];
+}
+
+
 
 -(void)preferencesChanged:(NSNotification *)note {
     NSLog(@"Prefs changed. From helper app.");

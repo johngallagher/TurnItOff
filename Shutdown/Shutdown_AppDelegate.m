@@ -83,7 +83,7 @@
                           kCFPreferencesCurrentUser,
                           kCFPreferencesAnyHost);
 
-    CFPreferencesSetValue((CFStringRef)kStopTime,
+    ((CFStringRef)kStopTime,
                           (CFStringRef)[stopTimeTextField objectValue],
                           (CFStringRef)HELPERAPP_BUNDLE_IDENTIFIER,
                           kCFPreferencesCurrentUser,

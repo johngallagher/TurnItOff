@@ -30,6 +30,7 @@
 @property (assign) NSDate *stopTime;
 @property (assign) NSNumber *reminderTime;
 
+
 -(void)readPrefs;
 
 -(void)controlTextDidEndEditing:(NSNotification *)aNotification;

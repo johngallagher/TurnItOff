@@ -2004,14 +2004,6 @@
 					</object>
 					<int key="connectionID">812</int>
 				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">shutdownComputerTestAction:</string>
-						<reference key="source" ref="19359659"/>
-						<reference key="destination" ref="887990415"/>
-					</object>
-					<int key="connectionID">834</int>
-				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -3546,10 +3538,6 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">HelperApp_AppDelegate</string>
 					<string key="superclassName">NSObject</string>
-					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">shutdownComputerTestAction:</string>
-						<string key="NS.object.0">id</string>
-					</object>
 					<object class="NSMutableDictionary" key="outlets">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">

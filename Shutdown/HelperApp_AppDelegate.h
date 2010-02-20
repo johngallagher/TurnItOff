@@ -35,5 +35,6 @@
 
 -(void)shutdownComputer:(NSTimer *)timer;
 
+-(void)installSleepWakeObservers;
 
 @end
