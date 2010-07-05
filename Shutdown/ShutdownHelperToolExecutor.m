@@ -10,6 +10,20 @@
 
 @implementation ShutdownHelperToolExecutor
 
+-(IBAction)testQuitOtherApps:(id)sender {
+    [self quitOtherApps];
+}
+
+-(void)quitOtherApps {
+    NSDictionary *error = [NSDictionary dictionary];
+    NSURL *scriptURL = [[NSBundle mainBundle] URLForResource:@"QuitAllApps" withExtension:@"scpt"];
+    NSAppleScript *quitAllAppsScript = [[NSAppleScript alloc] initWithContentsOfURL:scriptURL error:&error];
+    [quitAllAppsScript executeAndReturnError:&error];
+    if (error) {
+        NSLog(@"Couldn't quit other apps due to applesript error %@", error);
+    }
+}
+
 -(void)doShutdown {
     OSStatus        err;
     BASFailCode     failCode;

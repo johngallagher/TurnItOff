@@ -61,7 +61,7 @@
         
         [NSApp activateIgnoringOtherApps:YES];
         
-        NSInteger returnValue = [alert runModal];
+        [alert performSelectorInBackground:@selector(runModal) withObject:nil];
         [self shutdownComputer:nil];
     }
 
@@ -131,7 +131,8 @@
     
     [NSApp activateIgnoringOtherApps:YES];
     
-    NSInteger returnValue = [alert runModal];
+    [alert performSelectorInBackground:@selector(runModal) withObject:nil];
+
 }
 
 -(void)shutdownComputer:(NSTimer *)timer {
@@ -143,11 +144,12 @@
     
     [NSApp activateIgnoringOtherApps:YES];
     
-    NSInteger returnValue = [alert runModal];
+    [alert performSelectorInBackground:@selector(runModal) withObject:nil];
 
     NSLog(@"Shutting down the computer...");
-    //    ShutdownHelperToolExecutor *helperTool = [[ShutdownHelperToolExecutor alloc] init];
-    //    [helperTool doShutdown];
+    ShutdownHelperToolExecutor *helperTool = [[ShutdownHelperToolExecutor alloc] init];
+    [helperTool quitOtherApps];
+    [helperTool doShutdown];
 }
 
 @end

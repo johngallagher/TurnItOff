@@ -3,6 +3,7 @@
 //
 //#include "BetterAuthorizationSampleLib.h"
 
+#import "KillEveryOneButMe.h"
 #include "SampleCommon.h"
 
 /////////////////////////////////////////////////////////////////
@@ -20,6 +21,13 @@ static AuthorizationRef gAuth;
 
 @interface ShutdownHelperToolExecutor : NSObject {
 }
+
+-(void)quitOtherApps;
+
+-(IBAction)testQuitOtherApps:(id)sender;
+
+
+
 
 -(void)doShutdown;
 
