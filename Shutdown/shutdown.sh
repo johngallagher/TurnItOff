@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# shutdown.sh
+# shutdown.sh - this currently needs to be manually copied to /opt/local/sbin
 # Shutdown
 #
 # Created by John Gallagher on 19/11/2009.

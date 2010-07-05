@@ -301,15 +301,17 @@
 								<string>1058C7ACFEA557BF11CA2CBB</string>
 								<string>1058C7AEFEA557BF11CA2CBB</string>
 								<string>19C28FB8FE9D52D311CA2CBB</string>
+								<string>8D202CF80486D31800D8A456</string>
+								<string>52AC6EA711E23E7800FA36C9</string>
+								<string>52AC6EAB11E23E7800FA36C9</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FAAC04509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>33</integer>
-									<integer>28</integer>
-									<integer>19</integer>
+									<integer>54</integer>
+									<integer>52</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -347,7 +349,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>529FA54710B05ADE00E98B76</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ShutdownHelperToolExecutor.m</string>
+								<string>shutdown.sh</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -355,11 +357,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>529FA54810B05ADE00E98B76</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ShutdownHelperToolExecutor.m</string>
+										<string>shutdown.sh</string>
 										<key>_historyCapacity</key>
 										<integer>20</integer>
 										<key>bookmark</key>
-										<string>5299F73111E23CF100C49ADA</string>
+										<string>52AC6EBF11E23F4E00FA36C9</string>
 										<key>history</key>
 										<array>
 											<string>52E595111187D56900197896</string>
@@ -369,13 +371,14 @@
 											<string>52BC260511BC490400057B94</string>
 											<string>52BD735411E1FC3F00704EC8</string>
 											<string>52BD735511E1FC3F00704EC8</string>
-											<string>52BD735A11E1FE2000704EC8</string>
-											<string>52BD73A711E203F800704EC8</string>
 											<string>52BD73A811E203F800704EC8</string>
 											<string>52CC105F11E23B0B00B1FB07</string>
 											<string>52D09CBA11E23BBD009BCCC8</string>
 											<string>52D09CBB11E23BBD009BCCC8</string>
-											<string>52D09CBC11E23BBD009BCCC8</string>
+											<string>52AC6EBA11E23F4A00FA36C9</string>
+											<string>52AC6EBB11E23F4A00FA36C9</string>
+											<string>52AC6EBC11E23F4A00FA36C9</string>
+											<string>52AC6EBE11E23F4A00FA36C9</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -389,18 +392,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {764, 771}}</string>
+								<string>{{0, 0}, {764, 749}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 59 1050 1599 0 0 1050 1658 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>771pt</string>
+							<string>749pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>782pt</string>
+							<string>804pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -414,9 +417,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {764, 755}}</string>
-										<key>RubberWindowFrame</key>
-										<string>0 59 1050 1599 0 0 1050 1658 </string>
+										<string>{{10, 27}, {764, 777}}</string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -432,7 +433,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {840, 851}}</string>
+										<string>{{10, 27}, {764, 777}}</string>
 									</dict>
 									<key>Module</key>
 									<string>PBXProjectFindModule</string>
@@ -470,7 +471,9 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {764, 735}}</string>
+										<string>{{10, 27}, {764, 777}}</string>
+										<key>RubberWindowFrame</key>
+										<string>0 59 1050 1599 0 0 1050 1658 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -498,11 +501,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>5299F73211E23CF100C49ADA</string>
+				<string>52AC6EC011E23F4E00FA36C9</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>5299F73311E23CF100C49ADA</string>
+				<string>52AC6EC111E23F4E00FA36C9</string>
 				<string>529FA54710B05ADE00E98B76</string>
-				<string>5299F73411E23CF100C49ADA</string>
+				<string>52AC6EC211E23F4E00FA36C9</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -673,7 +676,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>300039409.92227298</real>
+	<real>300040014.73698002</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
@@ -690,7 +693,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>5299F73511E23CF100C49ADA</string>
 		<string>/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/Time Tracking/Code Repo (GitHub)/Shutdown/Shutdown/Shutdown.xcodeproj</string>
 	</array>
 	<key>WindowString</key>

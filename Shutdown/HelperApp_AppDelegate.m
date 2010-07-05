@@ -140,13 +140,13 @@
     [alert setAlertStyle:NSCriticalAlertStyle];
     [alert setMessageText:@"Shutdown."];
     [alert addButtonWithTitle:@"OK"];
-    [alert setInformativeText:[NSString stringWithFormat:@"The computer will now shutdown.", [reminderTime intValue]]];
+    [alert setInformativeText:@"The computer will shutdown in 1 minute."];
     
     [NSApp activateIgnoringOtherApps:YES];
     
     [alert performSelectorInBackground:@selector(runModal) withObject:nil];
 
-    NSLog(@"Shutting down the computer...");
+    NSLog(@"Shutting down the computer in 1`minute...");
     ShutdownHelperToolExecutor *helperTool = [[ShutdownHelperToolExecutor alloc] init];
     [helperTool quitOtherApps];
     [helperTool doShutdown];
