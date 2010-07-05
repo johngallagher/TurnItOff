@@ -22,10 +22,6 @@
 		5217B30810B1DE59008A3DE6 /* HelperApp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5217B30710B1DE59008A3DE6 /* HelperApp.xib */; };
 		5217B37210B1E16F008A3DE6 /* ShutdownHelperApp.app in Resources */ = {isa = PBXBuildFile; fileRef = 52154BC410B0716E0018F774 /* ShutdownHelperApp.app */; };
 		525762AA11E2388300548760 /* QuitAllApps.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 5257627B11E2367400548760 /* QuitAllApps.scpt */; };
-		52BD734211E1FC2A00704EC8 /* build.sitx in Resources */ = {isa = PBXBuildFile; fileRef = 52BD733411E1FC2A00704EC8 /* build.sitx */; };
-		52BD734511E1FC2A00704EC8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52BD733911E1FC2A00704EC8 /* Info.plist */; };
-		52BD734611E1FC2A00704EC8 /* KillEveryOneButMe.c in Sources */ = {isa = PBXBuildFile; fileRef = 52BD733A11E1FC2A00704EC8 /* KillEveryOneButMe.c */; };
-		52BD734811E1FC2A00704EC8 /* version.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52BD734111E1FC2A00704EC8 /* version.plist */; };
 		52BD737E11E2006000704EC8 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BD737D11E2006000704EC8 /* Carbon.framework */; };
 		52BD946810B1A5C800291F3D /* JGConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 52BD946610B1A5C800291F3D /* JGConstants.h */; };
 		52BD946910B1A5C800291F3D /* JGConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BD946710B1A5C800291F3D /* JGConstants.m */; };
@@ -116,13 +112,6 @@
 		52A896D610B5C39300220B47 /* ShellTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShellTask.h; sourceTree = "<group>"; };
 		52A896D710B5C39300220B47 /* ShellTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShellTask.m; sourceTree = "<group>"; };
 		52A896DE10B5C3C900220B47 /* shutdown.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = shutdown.sh; sourceTree = "<group>"; };
-		52BD733411E1FC2A00704EC8 /* build.sitx */ = {isa = PBXFileReference; lastKnownFileType = file; path = build.sitx; sourceTree = "<group>"; };
-		52BD733911E1FC2A00704EC8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52BD733A11E1FC2A00704EC8 /* KillEveryOneButMe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = KillEveryOneButMe.c; sourceTree = "<group>"; };
-		52BD733B11E1FC2A00704EC8 /* KillEveryOneButMe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KillEveryOneButMe.h; sourceTree = "<group>"; };
-		52BD733F11E1FC2A00704EC8 /* KillEveryOneButMe_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KillEveryOneButMe_Prefix.pch; sourceTree = "<group>"; };
-		52BD734011E1FC2A00704EC8 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		52BD734111E1FC2A00704EC8 /* version.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = version.plist; sourceTree = "<group>"; };
 		52BD737D11E2006000704EC8 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		52BD946610B1A5C800291F3D /* JGConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGConstants.h; sourceTree = "<group>"; };
 		52BD946710B1A5C800291F3D /* JGConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGConstants.m; sourceTree = "<group>"; };
@@ -284,7 +273,6 @@
 		5217B2E010B1DB6B008A3DE6 /* Helper App */ = {
 			isa = PBXGroup;
 			children = (
-				52BD733311E1FC2A00704EC8 /* KillEveryOneButMe */,
 				52FE19CA10B62F0400AC2DA3 /* BetterAuthorisation */,
 				5217B2E510B1DBC2008A3DE6 /* Classes */,
 				52E023FA10B2C49B0013F8A8 /* Resources */,
@@ -322,20 +310,6 @@
 				52D570C110BABA3300D8CC2F /* NSDate+JGUtilities.m */,
 			);
 			name = Classes;
-			sourceTree = "<group>";
-		};
-		52BD733311E1FC2A00704EC8 /* KillEveryOneButMe */ = {
-			isa = PBXGroup;
-			children = (
-				52BD733411E1FC2A00704EC8 /* build.sitx */,
-				52BD733911E1FC2A00704EC8 /* Info.plist */,
-				52BD733A11E1FC2A00704EC8 /* KillEveryOneButMe.c */,
-				52BD733B11E1FC2A00704EC8 /* KillEveryOneButMe.h */,
-				52BD733F11E1FC2A00704EC8 /* KillEveryOneButMe_Prefix.pch */,
-				52BD734011E1FC2A00704EC8 /* main.c */,
-				52BD734111E1FC2A00704EC8 /* version.plist */,
-			);
-			path = KillEveryOneButMe;
 			sourceTree = "<group>";
 		};
 		52E023FA10B2C49B0013F8A8 /* Resources */ = {
@@ -502,9 +476,6 @@
 				525762AA11E2388300548760 /* QuitAllApps.scpt in Resources */,
 				52D5712A10BAC4E500D8CC2F /* ShutdownAuthorizationPrompt.strings in Resources */,
 				5217B30810B1DE59008A3DE6 /* HelperApp.xib in Resources */,
-				52BD734211E1FC2A00704EC8 /* build.sitx in Resources */,
-				52BD734511E1FC2A00704EC8 /* Info.plist in Resources */,
-				52BD734811E1FC2A00704EC8 /* version.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,7 +532,6 @@
 				52D571E410BAC54A00D8CC2F /* ShutdownHelperToolExecutor.m in Sources */,
 				5217B30310B1DDC0008A3DE6 /* HelperApp_AppDelegate.m in Sources */,
 				52D570C510BABA3300D8CC2F /* NSDate+JGUtilities.m in Sources */,
-				52BD734611E1FC2A00704EC8 /* KillEveryOneButMe.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

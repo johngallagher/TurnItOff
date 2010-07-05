@@ -2,8 +2,8 @@
 {
 	089C1669FE841209C02AAC07 /* Project object */ = {
 		activeBuildConfigurationName = Debug;
-		activeExecutable = 52154BC510B0716E0018F774 /* ShutdownHelperApp */;
-		activeTarget = 52154BC310B0716E0018F774 /* ShutdownHelperApp */;
+		activeExecutable = 5217B14810B1BE74008A3DE6 /* System Prefs */;
+		activeTarget = 8D202CE80486D31800D8A456 /* Shutdown */;
 		addToTargets = (
 			52154BC310B0716E0018F774 /* ShutdownHelperApp */,
 		);
@@ -76,8 +76,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 300038481;
-			PBXWorkspaceStateSaveDate = 300038481;
+			PBXPerProjectTemplateStateSaveDate = 300039394;
+			PBXWorkspaceStateSaveDate = 300039394;
 		};
 		perUserProjectItems = {
 			52147886113028E600C979D7 = 52147886113028E600C979D7 /* PBXTextBookmark */;
@@ -99,6 +99,7 @@
 			525762B511E238D000548760 = 525762B511E238D000548760 /* PBXTextBookmark */;
 			525762B611E238D200548760 = 525762B611E238D200548760 /* PBXTextBookmark */;
 			525762B911E238D500548760 = 525762B911E238D500548760 /* PBXTextBookmark */;
+			5299F73111E23CF100C49ADA /* PBXTextBookmark */ = 5299F73111E23CF100C49ADA /* PBXTextBookmark */;
 			52AE26A311E2324B00800DF9 = 52AE26A311E2324B00800DF9 /* PBXTextBookmark */;
 			52AE26A711E2324B00800DF9 = 52AE26A711E2324B00800DF9 /* PBXTextBookmark */;
 			52BC25FF11BC490400057B94 = 52BC25FF11BC490400057B94 /* PBXTextBookmark */;
@@ -122,11 +123,25 @@
 			52BD73DC11E205EA00704EC8 = 52BD73DC11E205EA00704EC8 /* PBXTextBookmark */;
 			52BD740911E231C900704EC8 = 52BD740911E231C900704EC8 /* PBXTextBookmark */;
 			52BD740A11E231C900704EC8 = 52BD740A11E231C900704EC8 /* PBXTextBookmark */;
-			52CC104511E2395800B1FB07 /* PBXTextBookmark */ = 52CC104511E2395800B1FB07 /* PBXTextBookmark */;
-			52CC104E11E239C800B1FB07 /* PBXTextBookmark */ = 52CC104E11E239C800B1FB07 /* PBXTextBookmark */;
-			52CC104F11E239D600B1FB07 /* PBXTextBookmark */ = 52CC104F11E239D600B1FB07 /* PBXTextBookmark */;
-			52CC105011E239D600B1FB07 /* PlistBookmark */ = 52CC105011E239D600B1FB07 /* PlistBookmark */;
-			52CC105111E239D600B1FB07 /* PlistBookmark */ = 52CC105111E239D600B1FB07 /* PlistBookmark */;
+			52CC104511E2395800B1FB07 = 52CC104511E2395800B1FB07 /* PBXTextBookmark */;
+			52CC104E11E239C800B1FB07 = 52CC104E11E239C800B1FB07 /* PBXTextBookmark */;
+			52CC104F11E239D600B1FB07 = 52CC104F11E239D600B1FB07 /* PBXTextBookmark */;
+			52CC105011E239D600B1FB07 = 52CC105011E239D600B1FB07 /* PlistBookmark */;
+			52CC105111E239D600B1FB07 = 52CC105111E239D600B1FB07 /* PlistBookmark */;
+			52CC105811E23A2300B1FB07 = 52CC105811E23A2300B1FB07 /* PlistBookmark */;
+			52CC105911E23A2300B1FB07 = 52CC105911E23A2300B1FB07 /* PlistBookmark */;
+			52CC105A11E23A2300B1FB07 = 52CC105A11E23A2300B1FB07 /* PlistBookmark */;
+			52CC105F11E23B0B00B1FB07 = 52CC105F11E23B0B00B1FB07 /* PlistBookmark */;
+			52CC106011E23B0B00B1FB07 = 52CC106011E23B0B00B1FB07 /* PlistBookmark */;
+			52CC106111E23B0B00B1FB07 = 52CC106111E23B0B00B1FB07 /* PlistBookmark */;
+			52CC107211E23B1200B1FB07 = 52CC107211E23B1200B1FB07 /* PlistBookmark */;
+			52D09CB611E23B7D009BCCC8 = 52D09CB611E23B7D009BCCC8 /* PlistBookmark */;
+			52D09CBA11E23BBD009BCCC8 = 52D09CBA11E23BBD009BCCC8 /* PlistBookmark */;
+			52D09CBB11E23BBD009BCCC8 = 52D09CBB11E23BBD009BCCC8 /* PBXTextBookmark */;
+			52D09CBC11E23BBD009BCCC8 = 52D09CBC11E23BBD009BCCC8 /* PBXTextBookmark */;
+			52D09CBF11E23BF3009BCCC8 = 52D09CBF11E23BF3009BCCC8 /* PBXTextBookmark */;
+			52D09CC011E23BF3009BCCC8 = 52D09CC011E23BF3009BCCC8 /* PBXTextBookmark */;
+			52D09CC111E23BF3009BCCC8 = 52D09CC111E23BF3009BCCC8 /* PBXTextBookmark */;
 			52E5950D1187D56900197896 = 52E5950D1187D56900197896 /* PBXBookmark */;
 			52E595111187D56900197896 = 52E595111187D56900197896 /* PBXTextBookmark */;
 		};
@@ -288,9 +303,9 @@
 	};
 	5217B0EE10B1B567008A3DE6 /* Shutdown_AppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1447, 3870}}";
-			sepNavSelRange = "{3261, 0}";
-			sepNavVisRange = "{224, 1760}";
+			sepNavIntBoundsRect = "{{0, 0}, {1307, 3660}}";
+			sepNavSelRange = "{5008, 0}";
+			sepNavVisRange = "{3890, 2406}";
 		};
 	};
 	5217B14810B1BE74008A3DE6 /* System Prefs */ = {
@@ -365,8 +380,8 @@
 	5217B30210B1DDC0008A3DE6 /* HelperApp_AppDelegate.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1258, 2340}}";
-			sepNavSelRange = "{6321, 10}";
-			sepNavVisRange = "{4774, 1568}";
+			sepNavSelRange = "{5675, 40}";
+			sepNavVisRange = "{4594, 1748}";
 		};
 	};
 	5217B30410B1DDF0008A3DE6 /* HelperApp_Prefix.pch */ = {
@@ -392,7 +407,7 @@
 		fRef = 52FE1AC310B6335D00AC2DA3 /* ShutdownHelperToolExecutor.m */;
 		name = "ShutdownHelperToolExecutor.m: 19";
 		rLen = 0;
-		rLoc = 754;
+		rLoc = 755;
 		rType = 0;
 		vrLen = 1303;
 		vrLoc = 0;
@@ -402,7 +417,7 @@
 		fRef = 52FE1AC310B6335D00AC2DA3 /* ShutdownHelperToolExecutor.m */;
 		name = "ShutdownHelperToolExecutor.m: 21";
 		rLen = 0;
-		rLoc = 747;
+		rLoc = 748;
 		rType = 0;
 		vrLen = 1683;
 		vrLoc = 0;
@@ -412,7 +427,7 @@
 		fRef = 52FE1AC310B6335D00AC2DA3 /* ShutdownHelperToolExecutor.m */;
 		name = "ShutdownHelperToolExecutor.m: 21";
 		rLen = 0;
-		rLoc = 747;
+		rLoc = 748;
 		rType = 0;
 		vrLen = 1683;
 		vrLoc = 0;
@@ -422,7 +437,7 @@
 		fRef = 52FE1AC310B6335D00AC2DA3 /* ShutdownHelperToolExecutor.m */;
 		name = "ShutdownHelperToolExecutor.m: 23";
 		rLen = 0;
-		rLoc = 754;
+		rLoc = 755;
 		rType = 0;
 		vrLen = 1452;
 		vrLoc = 0;
@@ -575,6 +590,16 @@
 		vrLen = 1415;
 		vrLoc = 20;
 	};
+	5299F73111E23CF100C49ADA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52FE1AC310B6335D00AC2DA3 /* ShutdownHelperToolExecutor.m */;
+		name = "ShutdownHelperToolExecutor.m: 29";
+		rLen = 0;
+		rLoc = 843;
+		rType = 0;
+		vrLen = 1434;
+		vrLoc = 0;
+	};
 	529FA54D10B05ADE00E98B76 /* Source Control */ = {
 		isa = PBXSourceControlManager;
 		fallbackIsa = XCSourceControlManager;
@@ -609,7 +634,7 @@
 		fRef = 52FE1AC310B6335D00AC2DA3 /* ShutdownHelperToolExecutor.m */;
 		name = "ShutdownHelperToolExecutor.m: 18";
 		rLen = 0;
-		rLoc = 754;
+		rLoc = 755;
 		rType = 0;
 		vrLen = 1277;
 		vrLoc = 3013;
@@ -619,7 +644,7 @@
 		fRef = 52FE1AC310B6335D00AC2DA3 /* ShutdownHelperToolExecutor.m */;
 		name = "ShutdownHelperToolExecutor.m: 18";
 		rLen = 0;
-		rLoc = 754;
+		rLoc = 755;
 		rType = 0;
 		vrLen = 1328;
 		vrLoc = 0;
@@ -674,35 +699,45 @@
 		vrLen = 641;
 		vrLoc = 0;
 	};
+	52BD733911E1FC2A00704EC8 /* Info.plist */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = text.plist.xml;
+		name = Info.plist;
+		path = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/Time Tracking/Code Repo (GitHub)/Shutdown/Shutdown/KillEveryOneButMe/Info.plist";
+		sourceTree = "<absolute>";
+	};
 	52BD733A11E1FC2A00704EC8 /* KillEveryOneButMe.c */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1003, 4575}}";
-			sepNavSelRange = "{11241, 20}";
-			sepNavVisRange = "{6596, 1588}";
-			sepNavWindowFrame = "{{0, 4}, {1050, 827}}";
-		};
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.c;
+		name = KillEveryOneButMe.c;
+		path = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/Time Tracking/Code Repo (GitHub)/Shutdown/Shutdown/KillEveryOneButMe/KillEveryOneButMe.c";
+		sourceTree = "<absolute>";
 	};
 	52BD733B11E1FC2A00704EC8 /* KillEveryOneButMe.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1003, 1395}}";
-			sepNavSelRange = "{4414, 35}";
-			sepNavVisRange = "{2398, 2082}";
-		};
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = KillEveryOneButMe.h;
+		path = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/Time Tracking/Code Repo (GitHub)/Shutdown/Shutdown/KillEveryOneButMe/KillEveryOneButMe.h";
+		sourceTree = "<absolute>";
 	};
 	52BD733F11E1FC2A00704EC8 /* KillEveryOneButMe_Prefix.pch */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {791, 631}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 197}";
-		};
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = KillEveryOneButMe_Prefix.pch;
+		path = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/Time Tracking/Code Repo (GitHub)/Shutdown/Shutdown/KillEveryOneButMe/KillEveryOneButMe_Prefix.pch";
+		sourceTree = "<absolute>";
 	};
 	52BD734011E1FC2A00704EC8 /* main.c */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1003, 7950}}";
-			sepNavSelRange = "{6389, 0}";
-			sepNavVisRange = "{16783, 1537}";
-			sepNavWindowFrame = "{{0, 879}, {1050, 774}}";
-		};
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.c;
+		name = main.c;
+		path = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/Time Tracking/Code Repo (GitHub)/Shutdown/Shutdown/KillEveryOneButMe/main.c";
+		sourceTree = "<absolute>";
 	};
 	52BD735411E1FC3F00704EC8 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -810,7 +845,7 @@
 		fRef = 52FE1AC210B6335D00AC2DA3 /* ShutdownHelperToolExecutor.h */;
 		name = "ShutdownHelperToolExecutor.h: 30";
 		rLen = 0;
-		rLoc = 811;
+		rLoc = 817;
 		rType = 0;
 		vrLen = 837;
 		vrLoc = 0;
@@ -820,7 +855,7 @@
 		fRef = 52FE1AC210B6335D00AC2DA3 /* ShutdownHelperToolExecutor.h */;
 		name = "ShutdownHelperToolExecutor.h: 12";
 		rLen = 31;
-		rLoc = 247;
+		rLoc = 217;
 		rType = 0;
 		vrLen = 794;
 		vrLoc = 0;
@@ -830,7 +865,7 @@
 		fRef = 52FE1AC310B6335D00AC2DA3 /* ShutdownHelperToolExecutor.m */;
 		name = "ShutdownHelperToolExecutor.m: 18";
 		rLen = 0;
-		rLoc = 754;
+		rLoc = 755;
 		rType = 0;
 		vrLen = 1235;
 		vrLoc = 50;
@@ -840,7 +875,7 @@
 		fRef = 52FE1AC310B6335D00AC2DA3 /* ShutdownHelperToolExecutor.m */;
 		name = "ShutdownHelperToolExecutor.m: 18";
 		rLen = 0;
-		rLoc = 754;
+		rLoc = 755;
 		rType = 0;
 		vrLen = 1328;
 		vrLoc = 0;
@@ -850,7 +885,7 @@
 		fRef = 52FE1AC310B6335D00AC2DA3 /* ShutdownHelperToolExecutor.m */;
 		name = "ShutdownHelperToolExecutor.m: 18";
 		rLen = 0;
-		rLoc = 754;
+		rLoc = 755;
 		rType = 0;
 		vrLen = 1277;
 		vrLoc = 3013;
@@ -860,7 +895,7 @@
 		fRef = 52FE1AC310B6335D00AC2DA3 /* ShutdownHelperToolExecutor.m */;
 		name = "ShutdownHelperToolExecutor.m: 18";
 		rLen = 0;
-		rLoc = 754;
+		rLoc = 755;
 		rType = 0;
 		vrLen = 1328;
 		vrLoc = 0;
@@ -932,7 +967,7 @@
 		);
 		name = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/Time Tracking/Code Repo (GitHub)/Shutdown/Shutdown/ShutdownHelperAppTest-Info.plist";
 		rLen = 0;
-		rLoc = 9223372036854775807;
+		rLoc = 9223372036854775808;
 	};
 	52CC105111E239D600B1FB07 /* PlistBookmark */ = {
 		isa = PlistBookmark;
@@ -944,7 +979,156 @@
 		);
 		name = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/Time Tracking/Code Repo (GitHub)/Shutdown/Shutdown/ShutdownHelperAppTest-Info.plist";
 		rLen = 0;
-		rLoc = 9223372036854775807;
+		rLoc = 9223372036854775808;
+	};
+	52CC105811E23A2300B1FB07 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 52154BC610B0716E0018F774 /* ShutdownHelperApp-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/Time Tracking/Code Repo (GitHub)/Shutdown/Shutdown/ShutdownHelperApp-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	52CC105911E23A2300B1FB07 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 520F2C2510B6CCCF001D0EB2 /* ShutdownHelperAppTest-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/Time Tracking/Code Repo (GitHub)/Shutdown/Shutdown/ShutdownHelperAppTest-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	52CC105A11E23A2300B1FB07 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 520F2C2510B6CCCF001D0EB2 /* ShutdownHelperAppTest-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/Time Tracking/Code Repo (GitHub)/Shutdown/Shutdown/ShutdownHelperAppTest-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	52CC105F11E23B0B00B1FB07 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 520F2C2510B6CCCF001D0EB2 /* ShutdownHelperAppTest-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/Time Tracking/Code Repo (GitHub)/Shutdown/Shutdown/ShutdownHelperAppTest-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	52CC106011E23B0B00B1FB07 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 52154BC610B0716E0018F774 /* ShutdownHelperApp-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/Time Tracking/Code Repo (GitHub)/Shutdown/Shutdown/ShutdownHelperApp-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	52CC106111E23B0B00B1FB07 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 52154BC610B0716E0018F774 /* ShutdownHelperApp-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/Time Tracking/Code Repo (GitHub)/Shutdown/Shutdown/ShutdownHelperApp-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	52CC107211E23B1200B1FB07 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 52154BC610B0716E0018F774 /* ShutdownHelperApp-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/Time Tracking/Code Repo (GitHub)/Shutdown/Shutdown/ShutdownHelperApp-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	52D09CB611E23B7D009BCCC8 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 52154BC610B0716E0018F774 /* ShutdownHelperApp-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/Time Tracking/Code Repo (GitHub)/Shutdown/Shutdown/ShutdownHelperApp-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	52D09CBA11E23BBD009BCCC8 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 52154BC610B0716E0018F774 /* ShutdownHelperApp-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/Time Tracking/Code Repo (GitHub)/Shutdown/Shutdown/ShutdownHelperApp-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	52D09CBB11E23BBD009BCCC8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52FE1AC210B6335D00AC2DA3 /* ShutdownHelperToolExecutor.h */;
+		name = "ShutdownHelperToolExecutor.h: 30";
+		rLen = 36;
+		rLoc = 781;
+		rType = 0;
+		vrLen = 873;
+		vrLoc = 0;
+	};
+	52D09CBC11E23BBD009BCCC8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52FE1AC310B6335D00AC2DA3 /* ShutdownHelperToolExecutor.m */;
+		name = "ShutdownHelperToolExecutor.m: 28";
+		rLen = 0;
+		rLoc = 843;
+		rType = 0;
+		vrLen = 1413;
+		vrLoc = 0;
+	};
+	52D09CBF11E23BF3009BCCC8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52FE1AC310B6335D00AC2DA3 /* ShutdownHelperToolExecutor.m */;
+		name = "ShutdownHelperToolExecutor.m: 28";
+		rLen = 0;
+		rLoc = 820;
+		rType = 0;
+		vrLen = 1434;
+		vrLoc = 0;
+	};
+	52D09CC011E23BF3009BCCC8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52FE1AC710B635B200AC2DA3 /* ShutdownAuthorizationPrompt.strings */;
+		name = "ShutdownAuthorizationPrompt.strings: 8";
+		rLen = 0;
+		rLoc = 160;
+		rType = 0;
+		vrLen = 231;
+		vrLoc = 0;
+	};
+	52D09CC111E23BF3009BCCC8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52FE19D310B6301D00AC2DA3 /* SampleCommon.c */;
+		name = "SampleCommon.c: 22";
+		rLen = 45;
+		rLoc = 820;
+		rType = 0;
+		vrLen = 1503;
+		vrLoc = 0;
 	};
 	52D570C010BABA3300D8CC2F /* NSDate+JGUtilities.h */ = {
 		uiCtxt = {
@@ -983,9 +1167,9 @@
 	};
 	52FE19CD10B62FDF00AC2DA3 /* BetterAuthorizationSampleLib.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {831, 36300}}";
+			sepNavIntBoundsRect = "{{0, 0}, {831, 35805}}";
 			sepNavSelRange = "{51618, 73}";
-			sepNavVisRange = "{50758, 1517}";
+			sepNavVisRange = "{50758, 1540}";
 			sepNavWindowFrame = "{{0, 207}, {1050, 774}}";
 		};
 	};
@@ -1012,30 +1196,30 @@
 	};
 	52FE19D310B6301D00AC2DA3 /* SampleCommon.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1370, 540}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1370, 749}}";
 			sepNavSelRange = "{820, 45}";
-			sepNavVisRange = "{276, 1227}";
+			sepNavVisRange = "{0, 1503}";
 		};
 	};
 	52FE1AC210B6335D00AC2DA3 /* ShutdownHelperToolExecutor.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {715, 746}}";
-			sepNavSelRange = "{811, 0}";
-			sepNavVisRange = "{0, 837}";
+			sepNavIntBoundsRect = "{{0, 0}, {654, 749}}";
+			sepNavSelRange = "{217, 31}";
+			sepNavVisRange = "{0, 843}";
 			sepNavWindowFrame = "{{0, 879}, {1050, 774}}";
 		};
 	};
 	52FE1AC310B6335D00AC2DA3 /* ShutdownHelperToolExecutor.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {824, 2040}}";
-			sepNavSelRange = "{754, 0}";
-			sepNavVisRange = "{0, 1436}";
+			sepNavIntBoundsRect = "{{0, 0}, {768, 2235}}";
+			sepNavSelRange = "{843, 0}";
+			sepNavVisRange = "{0, 1434}";
 			sepNavWindowFrame = "{{0, 879}, {1050, 774}}";
 		};
 	};
 	52FE1AC710B635B200AC2DA3 /* ShutdownAuthorizationPrompt.strings */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {438, 334}}";
+			sepNavIntBoundsRect = "{{0, 0}, {654, 749}}";
 			sepNavSelRange = "{160, 0}";
 			sepNavVisRange = "{0, 231}";
 		};

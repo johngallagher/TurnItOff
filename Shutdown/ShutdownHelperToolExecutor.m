@@ -20,8 +20,13 @@
     NSAppleScript *quitAllAppsScript = [[NSAppleScript alloc] initWithContentsOfURL:scriptURL error:&error];
     [quitAllAppsScript executeAndReturnError:&error];
     if (error) {
-        NSLog(@"Couldn't quit other apps due to applesript error %@", error);
+        NSLog(@"Couldn't quit other apps due to applescript error %@", error);
     }
+}
+
+-(IBAction)testShutdown:(id)sender {
+    [self quitOtherApps];
+    [self doShutdown];
 }
 
 -(void)doShutdown {

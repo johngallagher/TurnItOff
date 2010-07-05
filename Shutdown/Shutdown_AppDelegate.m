@@ -108,11 +108,8 @@
 
 -(void)awakeFromNib {
     helperAppController = [HelperAppController sharedInstance];
-    NSDateFormatter *dateFormatter = [startTimeTextField formatter];
-    NSTimeZone *timeZone = [dateFormatter timeZone];
     [[startTimeTextField formatter] setTimeZone:[NSTimeZone systemTimeZone]];
     [[stopTimeTextField formatter] setTimeZone:[NSTimeZone systemTimeZone]];
-    
 }
 
 -(IBAction)startStopHelperApp:(id)sender {
@@ -201,7 +198,6 @@
     NSDate *editedStartTime;
     NSDate *editedStopTime;
     NSNumber *editedReminderTime;
-    id editor = fieldEditor;
     switch ([control tag]) {
         case 1:
             editedStartTime = [[control objectValue] convert1970RefTimeToToday];
