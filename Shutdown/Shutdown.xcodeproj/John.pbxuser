@@ -123,6 +123,10 @@
 			52BD740911E231C900704EC8 = 52BD740911E231C900704EC8 /* PBXTextBookmark */;
 			52BD740A11E231C900704EC8 = 52BD740A11E231C900704EC8 /* PBXTextBookmark */;
 			52CC104511E2395800B1FB07 /* PBXTextBookmark */ = 52CC104511E2395800B1FB07 /* PBXTextBookmark */;
+			52CC104E11E239C800B1FB07 /* PBXTextBookmark */ = 52CC104E11E239C800B1FB07 /* PBXTextBookmark */;
+			52CC104F11E239D600B1FB07 /* PBXTextBookmark */ = 52CC104F11E239D600B1FB07 /* PBXTextBookmark */;
+			52CC105011E239D600B1FB07 /* PlistBookmark */ = 52CC105011E239D600B1FB07 /* PlistBookmark */;
+			52CC105111E239D600B1FB07 /* PlistBookmark */ = 52CC105111E239D600B1FB07 /* PlistBookmark */;
 			52E5950D1187D56900197896 = 52E5950D1187D56900197896 /* PBXBookmark */;
 			52E595111187D56900197896 = 52E595111187D56900197896 /* PBXTextBookmark */;
 		};
@@ -899,6 +903,49 @@
 		vrLen = 1678;
 		vrLoc = 0;
 	};
+	52CC104E11E239C800B1FB07 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52FE1AC310B6335D00AC2DA3 /* ShutdownHelperToolExecutor.m */;
+		name = "ShutdownHelperToolExecutor.m: 24";
+		rLen = 0;
+		rLoc = 754;
+		rType = 0;
+		vrLen = 2513;
+		vrLoc = 0;
+	};
+	52CC104F11E239D600B1FB07 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 52FE1AC310B6335D00AC2DA3 /* ShutdownHelperToolExecutor.m */;
+		name = "ShutdownHelperToolExecutor.m: 24";
+		rLen = 0;
+		rLoc = 754;
+		rType = 0;
+		vrLen = 1629;
+		vrLoc = 0;
+	};
+	52CC105011E239D600B1FB07 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 520F2C2510B6CCCF001D0EB2 /* ShutdownHelperAppTest-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/Time Tracking/Code Repo (GitHub)/Shutdown/Shutdown/ShutdownHelperAppTest-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	52CC105111E239D600B1FB07 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 520F2C2510B6CCCF001D0EB2 /* ShutdownHelperAppTest-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			LSUIElement,
+		);
+		name = "/Users/John/Drop Box/Dropbox/Projects/Programming Projects/Current Projects/Time Tracking/Code Repo (GitHub)/Shutdown/Shutdown/ShutdownHelperAppTest-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
 	52D570C010BABA3300D8CC2F /* NSDate+JGUtilities.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {755, 515}}";
@@ -980,9 +1027,9 @@
 	};
 	52FE1AC310B6335D00AC2DA3 /* ShutdownHelperToolExecutor.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {768, 2085}}";
-			sepNavSelRange = "{482, 0}";
-			sepNavVisRange = "{0, 1678}";
+			sepNavIntBoundsRect = "{{0, 0}, {824, 2040}}";
+			sepNavSelRange = "{754, 0}";
+			sepNavVisRange = "{0, 1436}";
 			sepNavWindowFrame = "{{0, 879}, {1050, 774}}";
 		};
 	};
