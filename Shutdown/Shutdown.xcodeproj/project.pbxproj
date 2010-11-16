@@ -108,6 +108,7 @@
 		5217B30210B1DDC0008A3DE6 /* HelperApp_AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelperApp_AppDelegate.m; sourceTree = "<group>"; };
 		5217B30410B1DDF0008A3DE6 /* HelperApp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperApp_Prefix.pch; sourceTree = "<group>"; };
 		5217B30710B1DE59008A3DE6 /* HelperApp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelperApp.xib; sourceTree = "<group>"; };
+		523FE5CE12929F510085CEE3 /* Shutdown.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.scpt; path = Shutdown.scpt; sourceTree = "<group>"; };
 		5257627B11E2367400548760 /* QuitAllApps.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.scpt; path = QuitAllApps.scpt; sourceTree = "<group>"; };
 		52A896D610B5C39300220B47 /* ShellTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShellTask.h; sourceTree = "<group>"; };
 		52A896D710B5C39300220B47 /* ShellTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShellTask.m; sourceTree = "<group>"; };
@@ -315,6 +316,7 @@
 		52E023FA10B2C49B0013F8A8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				523FE5CE12929F510085CEE3 /* Shutdown.scpt */,
 				5257627B11E2367400548760 /* QuitAllApps.scpt */,
 				5217B30710B1DE59008A3DE6 /* HelperApp.xib */,
 				52154BC610B0716E0018F774 /* ShutdownHelperApp-Info.plist */,

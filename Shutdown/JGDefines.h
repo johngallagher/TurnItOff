@@ -14,8 +14,9 @@
 #endif
 
 #define PrefPanePreferencesChanged              XSTR("PrefPanePreferencesChanged")
-#define Terminate_Helper_App                      XSTR("TerminateHelperApp")
-#define Shutdown_Computer                      XSTR("ShutdownComputer")
+#define Terminate_Helper_App                    XSTR("TerminateHelperApp")
+#define Shutdown_Computer                       XSTR("ShutdownComputer")
+#define DisablePrefPaneControls                 XSTR("DisablePrefPaneControls")
 
 #define HELPERAPP_BUNDLE_IDENTIFIER             XSTR("com.synapticmishap.shutdown.HelperApp")
 #define PREFPANE_BUNDLE_IDENTIFIER              XSTR("com.synapticmishap.shutdown.SysPrefPane")

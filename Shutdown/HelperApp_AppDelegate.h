@@ -20,7 +20,15 @@
     
     IBOutlet    NSTimer     *shutdownTimer;
     IBOutlet    NSTimer     *warnBeforeShutdownTimer;
+    
+    NSAlert     *xMinutesLeftAlert;
+    NSAlert     *oneMinuteLeftAlert;
 }
+
+-(void)sendDisablePrefPane;
+
+
+
 +(void)initialize;
 
 -(void)convertShutdownTimesToToday;

@@ -16,6 +16,22 @@
 @synthesize stopTime;
 @synthesize reminderTime;
 
+-(void)applicationDidFinishLaunching:(NSNotification *)note {
+    // Register for distributed notifications
+    NSDistributedNotificationCenter *NSDNC = [NSDistributedNotificationCenter defaultCenter];
+    
+    [NSDNC addObserver:self
+              selector:@selector(disablePrefPaneControls)
+                  name:DisablePrefPaneControls
+                object:nil];
+}
+
+-(void)disablePrefPaneControls {
+    [shutdownControlButton  setEnabled:NO];
+    [startTimeTextField     setEnabled:NO];
+    [stopTimeTextField      setEnabled:NO];
+    [reminderTimeTextField  setEnabled:NO];
+}
 //+(void)initialize {
 //    NSDictionary *defaultsDict = [NSDictionary dictionaryWithObjectsAndKeys:[NSDate dateWithTimeIntervalSince1970:(NSTimeInterval)32400], kStartTime,
 //                                  [NSDate dateWithTimeIntervalSince1970:(NSTimeInterval)62400], kStopTime,

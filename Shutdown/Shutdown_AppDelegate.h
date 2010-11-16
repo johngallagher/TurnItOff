@@ -30,6 +30,9 @@
 @property (assign) NSDate *stopTime;
 @property (assign) NSNumber *reminderTime;
 
+-(void)disablePrefPaneControls;
+
+
 
 -(void)readPrefs;
 

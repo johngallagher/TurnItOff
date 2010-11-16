@@ -61,8 +61,8 @@
         
         [NSApp activateIgnoringOtherApps:YES];
         
-        [alert performSelectorInBackground:@selector(runModal) withObject:nil];
         [self shutdownComputer:nil];
+        [alert runModal];
     }
 
 }
@@ -122,34 +122,69 @@
 	[NSApp terminate:nil];
 }
 
--(void)warnBeforeShutdown:(NSTimer *)timer {
-    NSAlert *alert = [[NSAlert alloc] init];
-    [alert setAlertStyle:NSCriticalAlertStyle];
-    [alert setMessageText:@"Shutdown."];
-    [alert addButtonWithTitle:@"OK"];
-    [alert setInformativeText:[NSString stringWithFormat:@"The computer will shut down in %d minutes. Please save your work.", [reminderTime intValue]]];
-    
-    [NSApp activateIgnoringOtherApps:YES];
-    
-    [alert performSelectorInBackground:@selector(runModal) withObject:nil];
+-(void)sendDisablePrefPane {
+    [[NSDistributedNotificationCenter defaultCenter] postNotificationName:DisablePrefPaneControls 
+                                                                   object:nil];
 
 }
 
--(void)shutdownComputer:(NSTimer *)timer {
-    NSAlert *alert = [[NSAlert alloc] init];
-    [alert setAlertStyle:NSCriticalAlertStyle];
-    [alert setMessageText:@"Shutdown."];
-    [alert addButtonWithTitle:@"OK"];
-    [alert setInformativeText:@"The computer will shutdown in 1 minute."];
+-(void)warnBeforeShutdown:(NSTimer *)timer {
+    [self sendDisablePrefPane];
+    
+    xMinutesLeftAlert = [[NSAlert alloc] init];
+    [xMinutesLeftAlert setAlertStyle:NSCriticalAlertStyle];
+    [xMinutesLeftAlert setMessageText:@"Shutdown."];
+    [xMinutesLeftAlert addButtonWithTitle:@"OK"];
+    [xMinutesLeftAlert setInformativeText:[NSString stringWithFormat:@"The computer will shut down in %d minutes. Please save your work.", [reminderTime intValue]]];
     
     [NSApp activateIgnoringOtherApps:YES];
     
-    [alert performSelectorInBackground:@selector(runModal) withObject:nil];
+    NSTimer *myTimer = [NSTimer timerWithTimeInterval:5.0
+                                               target:self
+                                             selector:@selector(killXMinutesLeftAlert:)
+                                             userInfo:nil
+                                              repeats:NO];
+    
+    [[NSRunLoop currentRunLoop] addTimer:myTimer
+                                 forMode:NSModalPanelRunLoopMode];
+    
+    [xMinutesLeftAlert runModal];
+    [myTimer invalidate];
+}
 
+-(void)killXMinutesLeftAlert:(NSTimer *)timer {
+    [[xMinutesLeftAlert window] close];
+}
+
+-(void)shutdownComputer:(NSTimer *)timer {
+    oneMinuteLeftAlert = [[NSAlert alloc] init];
+    [oneMinuteLeftAlert setAlertStyle:NSCriticalAlertStyle];
+    [oneMinuteLeftAlert setMessageText:@"Shutdown."];
+    [oneMinuteLeftAlert addButtonWithTitle:@"OK"];
+    [oneMinuteLeftAlert setInformativeText:@"The computer will shutdown in 1 minute."];
+    
+    [NSApp activateIgnoringOtherApps:YES];
+    
+    NSTimer *myTimer = [NSTimer timerWithTimeInterval:5.0
+                                               target:self
+                                             selector:@selector(killOneMinuteLeftAlert:)
+                                             userInfo:nil
+                                              repeats:NO];
+    
+    [[NSRunLoop currentRunLoop] addTimer:myTimer
+                                 forMode:NSModalPanelRunLoopMode];
+    
     NSLog(@"Shutting down the computer in 1`minute...");
     ShutdownHelperToolExecutor *helperTool = [[ShutdownHelperToolExecutor alloc] init];
     [helperTool quitOtherApps];
     [helperTool doShutdown];
+    
+    [oneMinuteLeftAlert runModal];
+    [myTimer invalidate];
 }
 
+-(void)killOneMinuteLeftAlert:(NSTimer *)timer {
+    [[oneMinuteLeftAlert window] close];
+}
+    
 @end
